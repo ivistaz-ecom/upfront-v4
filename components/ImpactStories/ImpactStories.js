@@ -87,8 +87,8 @@ const ImpactStories = () => {
                               {post.title.rendered}
                             </h3>
                             <Image
-                            width={400}
-                            height={400}
+                              width={400}
+                              height={400}
                               src={post.acf.thumbnail_image.url}
                               alt={post.title.rendered}
                               className="lg:h-72 object-cover w-full transform transition-transform duration-500 group-hover:scale-110"
@@ -122,59 +122,6 @@ const ImpactStories = () => {
               )}
             </div>
           </div>
-          //   <div className="grid md:grid-cols-2 border border-gray-300">
-          //     {data.length > 0 ? (
-          //       data.map((post) => (
-          //         <div
-          //           key={post.id}
-          //           className={`relative flex flex-col bg-white overflow-hidden p-10 group
-          //       ${
-          //         post < ThematicAreas.length - 1
-          //           ? "border-b border-gray-300"
-          //           : ""
-          //       }
-          //       ${post % 2 === 0 ? "md:border-r border-gray-300" : ""}`}
-          //         >
-          //           {/* Background Effect */}
-          //           <div className="absolute inset-0 text-black group-hover:text-white bg-[#0A0A0A] transform scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100 z-0"></div>
-          //   <div className="relative z-10">
-          //     <div className="relative overflow-hidden">
-          //       {post.acf && post.acf.thumbnail_image && (
-          //         <>
-          //           <h3 className="text-2xl text-[#262626] group-hover:text-white flex items-center mb-6">
-          //             {post.title.rendered}
-          //           </h3>
-          //           <img
-          //             src={post.acf.thumbnail_image.url}
-          //             alt={post.title.rendered}
-          //             className="h-80 object-cover w-full transform transition-transform duration-500 group-hover:scale-110"
-          //           />
-          //         </>
-          //       )}
-          //     </div>
-          //     <div className="pt-4 text-left transition-colors duration-300 flex items-center group-hover:text-white ">
-          //       <div
-          //         dangerouslySetInnerHTML={{
-          //           __html: post["excerpt"]["rendered"],
-          //         }}
-          //         className="mx-3 mt-5 p-1 post-content"
-          //       ></div>
-          //       <div className="transform opacity-0 h-7 justify-center w-7 flex items-center  bg-[#E82B52] group-hover:opacity-100 transition-transform duration-500 group-hover:scale-150">
-          //         <Link
-          //           href={`/impact-stories/${post.slug}`}
-          //           className="px-7"
-          //         >
-          //           <FiArrowRight className="text-[white] text-[20px]" />
-          //         </Link>
-          //       </div>
-          //     </div>
-          //   </div>
-          //         </div>
-          //       ))
-          //     ) : (
-          //       <div className="text-center text-gray-500">No results found</div>
-          //     )}
-          //   </div>
         )}
       </div>
     </>
