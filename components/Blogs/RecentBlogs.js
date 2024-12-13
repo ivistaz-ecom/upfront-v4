@@ -87,7 +87,7 @@ const RecentBlogs = () => {
                     <div className="w-full md:w-1/2 px-4 py-4 ">
                       <Link href={`/blogs/${post.slug}`}>
                         <h2
-                          className="text-2xl post-content-title lg:text-3xl group-hover:text-white group-hover:underline"
+                          className="text-2xl post-content lg:text-3xl group-hover:text-white group-hover:underline"
                           dangerouslySetInnerHTML={{
                             __html: post.title.rendered,
                           }}
@@ -98,7 +98,7 @@ const RecentBlogs = () => {
                         dangerouslySetInnerHTML={{
                           __html: post.excerpt.rendered,
                         }}
-                        className="text-gray-600 mt-2 post-content group-hover:text-white"
+                        className="text-gray-600 mt-2 post-content-title group-hover:text-white"
                       ></div>
                       <Link href={`/blogs/${post.slug}`}>
                         <button className="mt-4 px-6 py-2 bg-black text-white text-lg rounded-lg hover:bg-gray-700 lg:hidden sm:block">

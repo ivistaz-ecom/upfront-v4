@@ -90,7 +90,7 @@ const BlogPosts = ({ slug }) => {
           </div>
         </div>
       ) : post ? (
-        <div className="bg-[#EFEFEF] lg:p-10 p-3">
+        <div className="bg-[#EFEFEF] lg:p-10 p-5">
           <div>
             <p className="text-[#0A0A0A] container mx-auto lg:text-xl">
               <Link href="/">Home /</Link>
@@ -217,16 +217,16 @@ const BlogPosts = ({ slug }) => {
                             </div>
                           </div>
                           <div className="flex justify-center mt-10">
-                      <Link href={`/blogs/${post.slug}`}>
-                        <button className="relative group px-7 py-2 bg-transparent text-black w-96 text-lg font-semibold transition-all duration-500 hover:bg-black group-hover:text-white">
-                          <span className="absolute inset-0 bg-black scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100"></span>
-                          <span className="relative z-10 flex items-center">
-                            Read more
-                            <FiArrowRight className="text-[20px] transform transition-transform duration-500 group-hover:translate-x-52 opacity-0 group-hover:opacity-100" />
-                          </span>
-                        </button>
-                      </Link>
-                    </div>
+                            <Link href={`/blogs/${post.slug}`}>
+                              <button className="relative group px-7 py-2 bg-transparent text-black lg:w-[30vw] text-lg font-semibold transition-all duration-500 hover:bg-black group-hover:text-white">
+                                <span className="absolute inset-0 bg-black scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100"></span>
+                                <span className="relative z-10 flex items-center ">
+                                  Read more
+                                  <FiArrowRight className="text-[20px] transform transition-transform duration-500 translate-x-0 lg:group-hover:translate-x-72 opacity-0 group-hover:opacity-100" />
+                                </span>
+                              </button>
+                            </Link>
+                          </div>
                         </div>
                       ))
                     ) : (

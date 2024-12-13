@@ -87,8 +87,8 @@ const ImpactStories = () => {
                               {post.title.rendered}
                             </h3>
                             <Image
-                              width={400}
-                              height={400}
+                            width={400}
+                            height={400}
                               src={post.acf.thumbnail_image.url}
                               alt={post.title.rendered}
                               className="lg:h-72 object-cover w-full transform transition-transform duration-500 group-hover:scale-110"
@@ -122,6 +122,7 @@ const ImpactStories = () => {
               )}
             </div>
           </div>
+          
         )}
       </div>
     </>
