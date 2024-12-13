@@ -1,13 +1,12 @@
-import React from 'react'
-import NewsAndPublications from '../../components/NewsAndPublications/NewsAndPublications'
+import React from "react";
+import NewsAndPublications from "../../components/NewsAndPublications/NewsAndPublications";
 
 const page = () => {
   return (
     <div>
-        
-        <NewsAndPublications/>
+      <NewsAndPublications />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;
