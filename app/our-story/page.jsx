@@ -1,5 +1,5 @@
 import React from 'react'
-import OurStory from "../../Components/OurStory"
+import OurStory from "../../components/OurStory"
 const page = () => {
   return (
     <div>
