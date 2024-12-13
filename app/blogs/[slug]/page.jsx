@@ -1,16 +1,15 @@
-'use client'
+'use client';
+
 import React from 'react';
 import Posts from './Blogpost'; // Adjust the import path accordingly
 
-const Page = async ({ params }) => {
-    const { slug } = await params; // Ensure params is awaited if it's asynchronous
+const Page = ({ params }) => {
+    const { slug } = params; // params is directly available in the props
 
     return (
-        <>
-            <div>
-                <Posts slug={slug} />
-            </div>
-        </>
+        <div>
+            <Posts slug={slug} />
+        </div>
     );
 };
 

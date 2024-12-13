@@ -48,7 +48,7 @@ const Blogs = () => {
       </div>
       {/* Recent blogs Section */}
       <div className="w-full max-w-screen-lg mx-auto px-4">
-        {/* <RecentBlogs /> */}
+        <RecentBlogs />
       </div>
       {/*  */}
       <div className="container mx-auto px-4 py-8">
