@@ -10,7 +10,7 @@ import Financial from "./Financial";
 import Workplace from "./Workplace";
 import SocialProtection from "./SocialProtection";
 
-const ThematicDesktop = () => {
+const ThematicArea = () => {
   const [selectedTab, setSelectedTab] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const modalRef = useRef(null);
@@ -68,7 +68,7 @@ const ThematicDesktop = () => {
     <>
       <div className="container mx-auto px-4 py-8">
         <div className="text-center flex flex-col justify-center items-center">
-          <p className="custom-title mt-10 lg:text-3xl text-xl">
+          <p className="custom-title lg:mt-28 mt-10 lg:text-3xl text-xl">
             Thematic Areas
           </p>
           <p className="secondary-title lg:text-5xl lg:w-[50vw] text-2xl text-center mt-2 mb-10">
@@ -102,7 +102,7 @@ const ThematicDesktop = () => {
                   />
                 </div>
                 <div className="pt-4 text-left">
-                  <h3 className="text-lg font-semibold text-gray-900 flex items-center transition-colors duration-300">
+                  <h3 className="text-xl group-hover:underline font-semibold text-gray-900 flex items-center transition-colors duration-300">
                     {card.title}
                     <span className="ml-2 transform transition-transform duration-500 group-hover:scale-150">
                       <FiArrowRight className="text-[#E82B52] text-[20px]" />
@@ -126,10 +126,10 @@ const ThematicDesktop = () => {
         >
           <div
             ref={modalRef}
-            className="bg-white lg:p-10 p-3 rounded-lg shadow-lg max-w-4xl relative overflow-auto max-h-[80vh]"
+            className="bg-white lg:p-10 p-3 rounded-lg shadow-lg max-w-7xl relative overflow-auto max-h-[90vh]"
           >
             <button
-              className="absolute top-2 right-0 text-white p-1 bg-black rounded-full"
+              className="absolute top-2 right-0 text-white p-1 bg-black rounded-full lg:mr-10 lg:mt-5"
               onClick={closeModal}
             >
               <svg
@@ -147,14 +147,17 @@ const ThematicDesktop = () => {
                 />
               </svg>
             </button>
-            <div className="overflow-y-auto">
+            <div className="">
               {getTabContent()}
             </div>
           </div>
         </div>
+        
       )}
     </>
+    
   );
 };
 
-export default ThematicDesktop;
+
+export default ThematicArea;

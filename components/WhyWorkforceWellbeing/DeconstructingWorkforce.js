@@ -3,7 +3,7 @@ import React from "react";
 
 const DeconstructingWorkforce = () => {
   return (
-    <div className="">
+    <div className="mb-32">
       <div className="bg-[#DEDEDE] container mx-auto lg:p-20 p-10 text-center flex flex-col items-center justify-center">
         <p className="lg:text-3xl text-2xl secondary-title">
           Deconstructing Workforce Wellbeing for Businesses

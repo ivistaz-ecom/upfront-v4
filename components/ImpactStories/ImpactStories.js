@@ -46,7 +46,7 @@ const ImpactStories = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-8 mb-32">
         {isLoading ? ( // Render loading indicator while loading
           <>
             <div className="lg:flex gap-5 justify-center">
@@ -81,7 +81,7 @@ const ImpactStories = () => {
                     <div className="absolute inset-0 bg-[#000] transform scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100 z-0"></div>
                     <div className="relative z-10">
                       <div className="relative overflow-hidden">
-                        {post.acf && post.acf.thumbnail_image && (
+                        {post.acf && post.acf.additional_thumbnail_image && (
                           <>
                             <h3 className="lg:text-2x text-xl text-[#262626] group-hover:text-white flex items-center mb-6">
                               {post.title.rendered}
@@ -89,7 +89,7 @@ const ImpactStories = () => {
                             <Image
                             width={400}
                             height={400}
-                              src={post.acf.thumbnail_image.url}
+                              src={post.acf.additional_thumbnail_image.url}
                               alt={post.title.rendered}
                               className="lg:h-72 object-cover w-full transform transition-transform duration-500 group-hover:scale-110"
                             />

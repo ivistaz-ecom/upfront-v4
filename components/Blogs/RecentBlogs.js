@@ -60,7 +60,7 @@ const RecentBlogs = () => {
       <div className="container mx-auto text-center lg:text-3xl text-2xl mt-10">
         Recent Blogs
       </div>
-      <div className="w-full max-w-screen-lg mx-auto px-4">
+      <div className="w-full max-w-screen-lg mx-auto lg:px-4">
         {isLoading ? (
           <div className="flex gap-5 justify-center">
             <div className="animate-pulse flex justify-center items-center border-2 p-4 mt-10">
@@ -89,40 +89,49 @@ const RecentBlogs = () => {
           >
             {data.map((post) => (
               <div key={post.id} className="flex border lg:mt-10 mt-5">
-                <div className="lg:flex justify-center items-center group hover:bg-black">
+                <div className="lg:flex justify-center items-center group relative z-10">
                   <div className="w-full md:w-1/2">
-                    {post.acf && post.acf.thumbnail_image && (
+                    {post.acf && post.acf.additional_thumbnail_image && (
                       <Image
-                        width={700}
+                        width={500}
                         height={500}
-                        src={post.acf.thumbnail_image.url}
+                        src={post.acf.additional_thumbnail_image.url}
                         alt={post.title.rendered}
-                        className="h-auto object-cover transform transition-transform duration-500 group-hover:scale-100 w-full"
+                        className="h-80 object-cover"
                       />
                     )}
                   </div>
-                  <div className="w-full md:w-1/2 px-4 py-4 ">
-                    <Link href={`/blogs/${post.slug}`}>
-                      <h2
-                        className="text-2xl post-content lg:text-3xl group-hover:text-white group-hover:underline"
-                        dangerouslySetInnerHTML={{
-                          __html: post.title.rendered,
-                        }}
-                      ></h2>
-                    </Link>
 
-                    <div
-                      dangerouslySetInnerHTML={{
-                        __html: post.excerpt.rendered,
-                      }}
-                      className="text-gray-600 mt-2 post-content-title group-hover:text-white"
-                    ></div>
-                    <Link href={`/blogs/${post.slug}`}>
-                      <button className="mt-4 px-6 py-2 bg-black text-white text-lg rounded-lg hover:bg-gray-700 lg:hidden sm:block">
-                        Read More
-                        <FiArrowRight className="inline-block ml-2" />
-                      </button>
-                    </Link>
+                  {/* Content Section */}
+                  <div className="w-full md:w-1/2 lg:px-4 py-4 relative overflow-hidden">
+                    {/* Pseudo-element for transition */}
+                    <div className="absolute inset-0 bg-black transform scale-x-0  group-hover:scale-x-100 origin-left transition-transform duration-500"></div>
+
+                    {/* Content Wrapper */}
+                    <div className="relative z-10 group-hover:text-white text-black h-72 lg:p-10 p-5">
+                      <Link href={`/blogs/${post.slug}`}>
+                        <h2
+                          className="text-2xl lg:text-3xl post-content-title group-hover:underline"
+                          dangerouslySetInnerHTML={{
+                            __html: post.title.rendered,
+                          }}
+                        ></h2>
+                      </Link>
+
+                      <div
+                        dangerouslySetInnerHTML={{
+                          __html: post.excerpt.rendered,
+                        }}
+                        className="mt-2 post-content"
+                      ></div>
+
+                      <Link href={`/blogs/${post.slug}`}>
+                        <button className="mt-10 px-6 py-2 bg-black text-white group-hover:text-black text-lg rounded-lg group-hover:bg-white sm:block lg:hidden">
+                          Read More
+                          <FiArrowRight className="inline-block ml-2" />
+                        </button>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>

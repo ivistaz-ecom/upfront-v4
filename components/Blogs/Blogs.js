@@ -54,7 +54,7 @@ const Blogs = () => {
       <div className="container mx-auto px-4 py-8">
         {isLoading ? ( // Render loading indicator while loading
           <>
-            <div className=" gap-5 justify-center grid lg:grid-cols-3 grid-cols-1">
+            <div className=" gap-5 justify-center grid lg:grid-cols-3 grid-cols-1 pb-32">
               <div className="animate-pulse flex flex-col justify-center items-center">
                 <div className="mb-2 h-3 w-96 rounded-none bg-[#B9B9B9]"></div>
                 <div className="mb-2 h-3 w-96 rounded-none bg-[#B9B9B9]"></div>
@@ -79,7 +79,7 @@ const Blogs = () => {
             </div>
           </>
         ) : (
-          <div className="container mx-auto lg:px-4 py-8">
+          <div className="container mx-auto lg:px-4 py-8 pb-32">
             <div className="grid md:grid-cols-3 border border-gray-300">
               {data.length > 0 ? (
                 data.map((post, index) => (
@@ -93,12 +93,12 @@ const Blogs = () => {
                     <div className=""></div>
                     <div className="relative z-10">
                       <div className="relative overflow-hidden">
-                        {post.acf && post.acf.thumbnail_image && (
+                        {post.acf && post.acf.additional_thumbnail_image && (
                           <>
                             <Image
                             width={500}
                             height={300}
-                              src={post.acf.thumbnail_image.url}
+                              src={post.acf.additional_thumbnail_image.url}
                               alt={post.title.rendered}
                               className="h- object-cover w-full transform transition-transform duration-500 group-hover:scale-110"
                             />
@@ -106,7 +106,7 @@ const Blogs = () => {
                         )}
                       </div>
                       <div className="pt-4 text-left">
-                        <h3 className="lg:text-2xl text-xl text-[#262626] flex items-center mt-6 post-content">
+                        <h3 className="lg:text-2xl text-xl text-[#262626] flex items-center mt-6 post-content-title">
                           <span
                             dangerouslySetInnerHTML={{
                               __html: post.title.rendered,
@@ -117,17 +117,17 @@ const Blogs = () => {
                           dangerouslySetInnerHTML={{
                             __html: post["excerpt"]["rendered"],
                           }}
-                          className="mt-5 p-1 text-gray-600 post-content-title"
+                          className="mt-5 p-1 text-gray-600 post-content"
                         ></div>
                       </div>
                     </div>
                     <div className="flex justify-center mt-10">
                       <Link href={`/blogs/${post.slug}`}>
-                        <button className="relative group px-7 py-2 bg-transparent text-black lg:w-[25vw] text-lg font-semibold transition-all duration-500 hover:bg-black group-hover:text-white">
+                        <button className="relative group px-7 py-2 bg-transparent text-black w-96 text-lg font-semibold transition-all duration-500 hover:bg-black group-hover:text-white">
                           <span className="absolute inset-0 bg-black scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100"></span>
                           <span className="relative z-10 flex items-center ">
                             Read more
-                            <FiArrowRight className="text-[20px] transform transition-transform duration-500 translate-x-0 lg:group-hover:translate-x-56 opacity-0 group-hover:opacity-100" />
+                            <FiArrowRight className="text-[20px] transform transition-transform duration-500 translate-x-0 lg:group-hover:translate-x-52 opacity-0 group-hover:opacity-100" />
                           </span>
                         </button>
                       </Link>

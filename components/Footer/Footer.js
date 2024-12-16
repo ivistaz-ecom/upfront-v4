@@ -23,7 +23,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#080808] text-[#909090] py-10 mt-28">
+    <footer className="bg-[#080808] text-[#909090] py-10">
       {/* Logo Section */}
       <div className="text-center mb-6">
         <Image
@@ -37,7 +37,7 @@ const Footer = () => {
 
       {/* Navigation Links */}
       <div className="lg:text-center mb-6 -mt-20 lg:-mt-10">
-        <div className="border-[#909090] border-t-2 container mx-auto py-3"></div>
+        <div className="border-[#909090] border-t container mx-auto py-3"></div>
         <ul className="lg:flex flex-wrap lg:justify-center lg:space-x-4 lg:px-0 px-5 md:space-x-8">
           {navItems.map((item, index) => (
             <li
@@ -60,7 +60,7 @@ const Footer = () => {
             </li>
           ))}
         </ul>
-        <div className="border-[#909090] border-b-2 container mx-auto py-3"></div>
+        <div className="border-[#909090] border-b container mx-auto py-3"></div>
       </div>
 
       <div className="text-center mb-6">
@@ -106,7 +106,7 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="text-center text-[20px] text-gray-400">
-        <div className="border-[#909090] border-t-2 container mx-auto py-3"></div>
+        <div className="border-[#909090] border-t container mx-auto py-3"></div>
         <div className="container mx-auto">
           Upfront is an initiative of the Catalyst Group.{" "}
           {new Date().getFullYear()}. All Rights Reserved.

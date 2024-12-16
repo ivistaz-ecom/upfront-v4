@@ -50,15 +50,15 @@ const OurHistory = () => {
           We provide technical support for:
         </p>
         <div className="flex flex-col sm:flex-row text-center justify-center mx-auto items-center container my-8 gap-3 sm:gap-5 md:gap-8">
-          <p className="sm:border-r-2 border-[#E82B52] sm:pr-3 md:pr-5">
+          <p className="lg:border-r-2 border-b-2 lg:border-b-0 py-2 border-[#E82B52] sm:pr-3 md:pr-5">
             Building
             <br className="hidden lg:block" /> Capacities
           </p>
-          <p className="sm:border-r-2 border-[#E82B52] sm:pr-3 md:pr-5 sm:pl-3 md:pl-5">
+          <p className="lg:border-r-2 border-b-2 lg:border-b-0 py-2 border-[#E82B52] sm:pr-3 md:pr-5 sm:pl-3 md:pl-5">
             Implementing
             <br className="hidden lg:block" /> Programmes
           </p>
-          <p className="sm:border-r-2 border-[#E82B52] sm:pr-3 md:pr-5 sm:pl-3 md:pl-5">
+          <p className="lg:border-r-2 border-b-2 lg:border-b-0 py-2 border-[#E82B52] sm:pr-3 md:pr-5 sm:pl-3 md:pl-5">
             Strengthening
             <br className="hidden lg:block" /> Systems
           </p>

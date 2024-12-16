@@ -48,13 +48,23 @@ const BlogPosts = ({ slug }) => {
         if (response.ok) {
           const data = await response.json();
           setAllPosts(data);
-          const filteredPosts = data.filter((p) => p.slug !== slug).slice(0, 2);
-          setRelatedPosts(filteredPosts);
-
+  
+          // Find the current post's index
           const currentIndex = data.findIndex((p) => p.slug === slug);
+  
           if (currentIndex !== -1) {
+            // Select the next two posts for related stories
+            const nextTwoPosts = data.slice(currentIndex + 1, currentIndex + 3);
+  
+            // Handle case where fewer than 2 posts are available
+            const additionalPostsNeeded = Math.max(0, 2 - nextTwoPosts.length);
+            const fallbackPosts = data
+              .filter((p) => p.slug !== slug) // Avoid showing the same post
+              .slice(0, additionalPostsNeeded);
+            setRelatedPosts([...nextTwoPosts, ...fallbackPosts]);
+  
+            // Set the next post for "Next Blog" navigation
             setNextPost(data[currentIndex + 1] || null);
-            setAllPosts(data);
           }
         } else {
           console.error("Failed to fetch posts:", response.statusText);
@@ -63,9 +73,10 @@ const BlogPosts = ({ slug }) => {
         console.error("Error fetching all posts:", error);
       }
     };
-
+  
     fetchCategoryPosts();
   }, [siteUrl, slug]);
+  
 
   return (
     <div className="custom-container">
@@ -90,7 +101,7 @@ const BlogPosts = ({ slug }) => {
           </div>
         </div>
       ) : post ? (
-        <div className="bg-[#EFEFEF] lg:p-10 p-5">
+        <div className="bg-[#EFEFEF] lg:p-10 p-3">
           <div>
             <p className="text-[#0A0A0A] container mx-auto lg:text-xl">
               <Link href="/">Home /</Link>
@@ -102,7 +113,7 @@ const BlogPosts = ({ slug }) => {
           </div>
 
           {/* Next Blog and Back to All Blogs Buttons */}
-          <div className="bg-white container mx-auto border-2 my-10">
+          <div className="bg-white container mx-auto border-2 my-10 mb-32">
             <div className="flex justify-between p-3 items-center container mx-auto border-b-2">
               {allPosts && (
                 <Link href="/blogs">
@@ -131,12 +142,12 @@ const BlogPosts = ({ slug }) => {
                   className="lg:text-3xl text-xl p-5 text-center text-[#0A0A0A]"
                   dangerouslySetInnerHTML={{ __html: post.title.rendered }}
                 />
-                {post.acf?.banner_image?.url && (
+                {post.acf?.additional_banner_image?.url && (
                   <div>
                     <Image
-                    width={600}
-                    height={400}
-                      src={post.acf.banner_image.url}
+                      width={600}
+                      height={400}
+                      src={post.acf.additional_banner_image.url}
                       alt={post.title.rendered}
                       className="w-full mb-5 p-5 lg:p-0"
                     />
@@ -190,18 +201,18 @@ const BlogPosts = ({ slug }) => {
                           <div className=""></div>
                           <div className="relative z-10">
                             <div className="relative overflow-hidden">
-                              {post.acf?.banner_image?.url && (
+                              {post.acf?.additional_banner_image?.url && (
                                 <Image
-                                width={400}
-                                height={400}
-                                  src={post.acf.banner_image.url}
+                                  width={400}
+                                  height={400}
+                                  src={post.acf.additional_banner_image.url}
                                   alt={post.title.rendered}
                                   className="object-cover w-full transform transition-transform duration-500 group-hover:scale-110"
                                 />
                               )}
                             </div>
                             <div className="pt-4 text-left">
-                              <h3 className="lg:text-2xl text-xl text-[#262626] flex items-center mt-6 post-content">
+                              <h3 className="lg:text-2xl text-xl text-[#262626] flex items-center mt-6 ">
                                 <span
                                   dangerouslySetInnerHTML={{
                                     __html: post.title.rendered,
@@ -212,17 +223,17 @@ const BlogPosts = ({ slug }) => {
                                 dangerouslySetInnerHTML={{
                                   __html: post.excerpt?.rendered || "",
                                 }}
-                                className="mt-5 p-1 text-gray-600 post-content-title"
+                                className="mt-5 p-1 text-gray-600 post-content"
                               ></div>
                             </div>
                           </div>
                           <div className="flex justify-center mt-10">
                             <Link href={`/blogs/${post.slug}`}>
-                              <button className="relative group px-7 py-2 bg-transparent text-black lg:w-[30vw] text-lg font-semibold transition-all duration-500 hover:bg-black group-hover:text-white">
+                              <button className="relative group px-7 py-2 bg-transparent text-black w-96 text-lg font-semibold transition-all duration-500 hover:bg-black group-hover:text-white">
                                 <span className="absolute inset-0 bg-black scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100"></span>
                                 <span className="relative z-10 flex items-center ">
                                   Read more
-                                  <FiArrowRight className="text-[20px] transform transition-transform duration-500 translate-x-0 lg:group-hover:translate-x-72 opacity-0 group-hover:opacity-100" />
+                                  <FiArrowRight className="text-[20px] transform transition-transform duration-500 translate-x-0 lg:group-hover:translate-x-52 opacity-0 group-hover:opacity-100" />
                                 </span>
                               </button>
                             </Link>

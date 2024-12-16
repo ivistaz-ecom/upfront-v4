@@ -21,7 +21,7 @@ const OurVisionMission = () => {
   return (
     <div className="relative flex flex-col justify-center items-center my-36 lg:my-20">
      
-      <div className="relative rounded-full hover:scale-105 transition-transform duration-300 ease-in-out">
+      <div className="relative rounded-full hover:scale-105 transition-transform duration-300 ease-in-out p-5 lg:p-0">
         <Image
           src="/OurStory/vision-mission.png"
           className="rounded-full border p-5"
@@ -32,7 +32,7 @@ const OurVisionMission = () => {
         
         <div
           className={`absolute ${
-            isScrolled ? "lg:top-[28%] " : "lg:top-[70%] lg:bottom-0 bottom-[70%] lg:left-0 left-40"
+            isScrolled ? "lg:top-[28%] " : "lg:top-[70%] lg:bottom-0 bottom-[80%] lg:left-0 left-40"
           } left-0 transform -translate-x-1/3 flex flex-col justify-center items-center bg-black text-white rounded-full w-56 h-56 transition-all duration-700 ease-in-out`}
         >
           <p className="text-xl font-bold">Our Vision</p>
@@ -42,7 +42,7 @@ const OurVisionMission = () => {
         </div>
         <div
           className={`absolute ${
-            isScrolled ? "lg:top-[28%] " : "lg:top-[5%] top-[70%] lg:right-0 right-40"
+            isScrolled ? "lg:top-[28%] " : "lg:top-[5%] top-[80%] lg:right-0 right-40"
           } right-0 transform translate-x-1/3 flex flex-col justify-center items-center bg-black text-white rounded-full w-56 h-56 transition-all duration-700 ease-in-out`}
         >
           <p className="text-xl font-bold">Our Mission</p>

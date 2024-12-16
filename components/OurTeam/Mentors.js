@@ -5,7 +5,7 @@ import React from "react";
 
 const Mentors = () => {
   return (
-    <div className="bg-black py-10">
+    <div className="bg-black py-10 pb-48 border-b border-[#909090]">
       <div className="text-center mb-8">
         <p className="text-white text-3xl">Our Mentors</p>
       </div>

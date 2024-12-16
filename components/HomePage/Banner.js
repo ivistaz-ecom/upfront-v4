@@ -1,16 +1,19 @@
-import Image from "next/image";
 import React from "react";
 
 const Banner = () => {
   return (
-    <div className="">
+    <div>
       <div className="text-center">
-        <Image
-          src="/HomePage/banner.png"
+        <video
+          src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/Upfront-Banner-Video.mp4"
           width={1200}
           height={900}
           className="w-full"
           alt="home banner"
+          autoPlay
+          loop
+          muted
+          playsInline
         />
       </div>
     </div>

@@ -18,6 +18,15 @@ body {
   .para-color {
     color: #0a0a0a !important;
     font-size: 20px;
+    font-weight: 300;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .para-color {
+        color: #0a0a0a !important;
+        font-size: 16px;
+        font-weight: 300;
+      }
   }
   
   /* Base styles */
@@ -36,20 +45,20 @@ body {
   }
   
   .post-content {
-    max-height: 4 * 1.2em;
+    max-height: 4em;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 2 !important;
     -webkit-box-orient: vertical;
   }
   
   .post-content-title {
-    height: 5em !important;
+    height: 2.5em !important;
     overflow: hidden !important;
     text-overflow: ellipsis !important;
     display: -webkit-box !important;
-    -webkit-line-clamp: 3 !important;
+    -webkit-line-clamp: 2 !important;
     -webkit-box-orient: vertical !important;
   }
   

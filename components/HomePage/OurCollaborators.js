@@ -33,7 +33,7 @@ const Collaborators = () => {
 
   return (
     <>
-    <div className="bg-[#EFEFEF] py-10 mt-10">
+    <div className="bg-[#EFEFEF] pb-36 pt-10 mt-10">
     <div className="relative w-[70vw] mx-auto container">
       <div className="text-center">
         <p className="lg:text-5xl text-2xl secondary-title lg:my-4">Our Collaborators</p>

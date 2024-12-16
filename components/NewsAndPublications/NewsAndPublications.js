@@ -65,7 +65,7 @@ const NewsAndPublications = () => {
         </div>
       </div>
       {isLoading ? ( // Render loading indicator while loading
-        <div className="flex gap-5 justify-center">
+        <div className="flex gap-5 justify-center pb-32">
           <div className="animate-pulse flex justify-center items-center border-2 p-4 mt-10">
             <div className="lg:flex justify-between items-center gap-4">
               <div className="flex flex-col">
@@ -78,7 +78,7 @@ const NewsAndPublications = () => {
           </div>
         </div>
       ) : (
-        <ul className="grid lg:grid-cols-1 container mx-auto my-8">
+        <ul className="grid lg:grid-cols-1 container mx-auto my-8 mb-32">
           {data.length > 0 ? (
             data.slice(0, visibleItems).map((post) => (
               <li key={post.id} className="mb-10 lg:m-0 p-3 border-b lg:p-10">

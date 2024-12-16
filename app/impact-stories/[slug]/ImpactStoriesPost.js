@@ -101,7 +101,7 @@ const ImpactStoriesPost = ({ slug }) => {
           </div>
 
           {/* Next Impact Story and Back to All Impact Stories Buttons */}
-          <div className="bg-white container mx-auto border-2 my-10">
+          <div className="bg-white container mx-auto border-2 my-10 mb-32">
             <div className="flex justify-between p-3 items-center container mx-auto border-b-2">
               {allPosts && (
                 <Link href="/impact-stories">
@@ -129,12 +129,12 @@ const ImpactStoriesPost = ({ slug }) => {
                   className="lg:text-3xl text-xl p-5 text-center text-[#0A0A0A]"
                   dangerouslySetInnerHTML={{ __html: post.title.rendered }}
                 />
-                {post.acf?.banner_image?.url && (
+                {post.acf?.additional_banner_image?.url && (
                   <div>
                     <Image
                     width={600}
                     height={400}
-                      src={post.acf.banner_image.url}
+                      src={post.acf.additional_banner_image.url}
                       alt={post.title.rendered}
                       className="w-full mb-5"
                     />
@@ -166,7 +166,7 @@ const ImpactStoriesPost = ({ slug }) => {
                         <div className="absolute inset-0  bg-[#000] transform scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100 z-0"></div>
                         <div className="relative z-10">
                           <div className="relative overflow-hidden">
-                            {post.acf?.banner_image?.url && (
+                            {post.acf?.additional_banner_image?.url && (
                               <>
                                 <h3 className="lg:text-2xl text-[#262626] group-hover:text-white flex items-center mb-6">
                                   {post.title.rendered}
@@ -174,7 +174,7 @@ const ImpactStoriesPost = ({ slug }) => {
                                 <Image
                                 width={400}
                                 height={400}
-                                  src={post.acf.banner_image.url}
+                                  src={post.acf.additional_banner_image.url}
                                   alt={post.title.rendered}
                                   className="h-60 object-cover w-full transform transition-transform duration-500 group-hover:scale-110"
                                 />

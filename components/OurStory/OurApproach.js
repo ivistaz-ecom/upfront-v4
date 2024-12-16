@@ -4,7 +4,7 @@ import React from "react";
 
 const OurApproach = () => {
   return (
-    <div className="">
+    <div className="pb-32">
       <div className="text-center my-5 border-t-4 border-gray-500 border-dashed container mx-auto pt-16">
         <p className="text-3xl">Our Approach</p>
       </div>

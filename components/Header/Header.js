@@ -58,7 +58,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="bg-white shadow-md lg:p-3 lg:px-0 px-4">
+    <div className="bg-white shadow-md p-3 lg:px-0 px-4">
       <div className="flex justify-between items-center container mx-auto">
         {/* Logo */}
         <div className="flex items-center space-x-2">
@@ -110,24 +110,27 @@ const Header = () => {
         <div ref={menuRef} className="absolute left-0 w-full bg-gray-50 shadow-lg z-50">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 p-6 container mx-auto">
             {navItems.map((item, index) => (
-              <div key={index} className="border-b pb-2">
-                <Link
-                  href={item.href}
-                  className={`hover:text-[#E82B52] ${
-                    pathName === item.href
-                      ? "font-bold text-[#E82B52]"
-                      : "text-[#262626]"
-                  }`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  <p className="flex justify-between items-end group text-2xl">
-                    <span className="group-hover:translate-x-7 transition-all duration-500 group-hover:scale-125">
-                      {item.name}
-                    </span>
-                    <FaChevronRight className="group-hover:translate-x-2 transition-all duration-500 group-hover:scale-125" />
-                  </p>
-                </Link>
-              </div>
+            <div key={index} className="border-b pb-2">
+            <Link
+              href={item.href}
+              className={`hover:text-[#E82B52] ${
+                pathName === item.href
+                  ? "font-bold text-[#E82B52]"
+                  : "text-[#262626]"
+              }`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <p className="flex justify-between items-end group text-xl">
+                <span className="group-hover:translate-x-7 transition-all duration-500 flex items-center gap-3">
+                  {/* Red bar visible only on hover */}
+                  <p className="bg-red-600 h-1 w-7 lg:mx-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></p>
+                  {item.name}
+                </span>
+                <FaChevronRight className="group-hover:translate-x-1 transition-all duration-500 group-hover:scale-125" />
+              </p>
+            </Link>
+          </div>
+          
             ))}
           </div>
         </div>

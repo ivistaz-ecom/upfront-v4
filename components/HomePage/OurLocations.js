@@ -12,8 +12,8 @@ export default function BubbleTabs() {
     <div className="bg-black py-10">
       <div className="text-white text-center flex flex-col items-center">
         <p className="lg:text-5xl text-2xl my-4">Our Locations</p>
-        <p className="lg:text-2xl text-xl mb-5">Expanding Impact Across India and Beyond</p>
-        <p className="lg:text-xl lg:w-[60vw] lg:p-0 p-3">
+        <p className="lg:text-2xl text-xl mb-5 text-gray-300">Expanding Impact Across India and Beyond</p>
+        <p className="lg:text-xl lg:w-[60vw] lg:p-0 p-3 text-gray-300">
           We are based out of India and have worked across 19 states and union
           territories within the country. Globally, we have worked in 13
           countries across Asia and Africa, touching the lives of 9 million
@@ -50,7 +50,7 @@ export default function BubbleTabs() {
         {activeTab === "global" && (
           <div className="flex flex-col items-center">
             <Image
-            width={400}
+            width={900}
             height={300}
               src="/HomePage/OurLocations/WorldMap.svg"
               alt="Global Image"

@@ -3,8 +3,8 @@
 import React from 'react';
 import Posts from './Blogpost'; // Adjust the import path accordingly
 
-const Page = ({ params }) => {
-    const { slug } = params; // params is directly available in the props
+const Page = async ({ params }) => {
+    const { slug } = await params; // Ensure params is awaited
 
     return (
         <div>
