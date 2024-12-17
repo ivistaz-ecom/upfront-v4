@@ -1,6 +1,7 @@
-'use client'
+"use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Thinking = () => {
@@ -8,7 +9,13 @@ const Thinking = () => {
     <div className="bg-[#EAEAEA]">
       <div className="text-center">
         <div className="flex justify-center">
-          <Image src="/WhyWorkForce/upfront.png" width={200} height={200}className="mt-10" alt="upfront"/>
+          <Image
+            src="/WhyWorkForce/upfront.png"
+            width={200}
+            height={200}
+            className="mt-10"
+            alt="upfront"
+          />
         </div>
         <div className="flex justify-center items-center container mx-auto lg:mt-7 mt-3">
           <p className="lg:text-3xl text-2xl secondary-title lg:w-[55vw] lg:p-0 p-2">
@@ -25,24 +32,28 @@ const Thinking = () => {
             ‘investment’.
           </p>
         </div>
-        <div className="container mx-auto flex items-center lg:gap-5 lg:mt-12 mt-5">
+        <div className="container mx-auto flex items-center lg:gap-5 lg:mt-20 mt-5">
           <p className="bg-red-600 h-1 lg:w-20 w-32 lg:-mt-12  -mt-28 mx-5 lg:mx-0"></p>
           <p className="text-left para-color lg:w-[46vw] lg:p-0 p-3">
             A large number of the workforce are migrants, experiencing exclusion
-            and poverty as a result of inadequate resources, and support, and a
-            lack of inclusive infrastructure, leadership, practices, policies,
-            and systems.
+            and poverty as a result of inadequate resources, support, and a lack
+            of inclusive infrastructure, leadership, practices, policies, and
+            systems.
           </p>
         </div>
       </div>
 
-      <div className="bg-black  flex lg:flex-row flex-col justify-center items-center container mx-auto lg:p-5 p-7 mt-12">
+      <div className="bg-black  flex lg:flex-row flex-col justify-center items-center container mx-auto lg:p-5 p-7 mt-5">
         <p className="text-white lg:w-[55vw] lg:pe-10">
           With rising climate, health, and occupational risks threatening
           millions of lives and livelihoods, the world is transitioning from
-          being Volatile, Uncertain, Complex, and Ambiguous (VUCA) to being
-          Brittle, Anxious, Non-Linear, and Incomprehensible (BANI), where the
-          workforce tend to get caught in a vicious loop of poverty,
+          being Volatile, Uncertain, Complex, and Ambiguous (VUCA) to being <Link
+            className="text-blue-500"
+            href="https://www.forbes.com/sites/jeroenkraaijenbrink/2022/06/22/what-bani-really-means-and-how-it-corrects-your-world-view/"
+            target="_blank"
+          >
+            {""}Brittle, Anxious, Non-Linear, and Incomprehensible (BANI),
+          </Link> where the workforce tend to get caught in a vicious loop of poverty,
           unemployment, precarious work, and living conditions. In both
           VUCA/BANI-led labour markets, employers and industries too are caught
           up between businesses, growth, and production at one end and
@@ -58,7 +69,6 @@ const Thinking = () => {
       </div>
 
       <div className="lg:flex gap-24 items-center container mx-auto lg:p-10 p-5 mt-5">
-       
         <Image
           width={500}
           height={300}
@@ -66,7 +76,7 @@ const Thinking = () => {
           className="lg:w-full mx-auto w-56"
           alt="upfront"
         />
-       
+
         <div className="container mx-auto lg:mt-0 mt-5">
           <h2 className="lg:text-3xl text-2xl secondary-title lg:w-[30vw] ">
             So why should we invest in making wellbeing a reality for the
@@ -82,7 +92,7 @@ const Thinking = () => {
         </div>
       </div>
       <div className="flex justify-center">
-        <button className="flex justify-between items-center gap-4 bg-[#2F2F2F] text-white py-2 px-2 w-48 my-10 rounded-full hover:bg-gray-900">
+        <a href="/WhyWorkForce/pdf/WWW-Section 2.pdf" download><button className="flex justify-between items-center gap-4 bg-[#2F2F2F] text-white py-2 px-2 w-48 my-10 rounded-full hover:bg-gray-900">
           <span className="px-3">Download Now</span>
           <span className="bg-[#5C5C5C] p-2 rounded-full">
             <svg
@@ -101,6 +111,7 @@ const Thinking = () => {
             </svg>
           </span>
         </button>
+        </a>
       </div>
     </div>
   );

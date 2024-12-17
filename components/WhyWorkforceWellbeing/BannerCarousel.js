@@ -13,7 +13,7 @@ const BannerCarousel = () => {
          </div>
          <p className="text-[60px] -mt-5">Workforce</p>
          <div className="flex items-center gap-3">
-         <p className="text-[60px] -mt-5">wellbeing?</p>
+         <p className="text-[60px] -mt-5">Wellbeing?</p>
          <p className="bg-[#E0E0E0] h-1 w-20 hidden lg:block"></p>
          </div>
         </div>

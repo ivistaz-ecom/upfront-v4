@@ -30,9 +30,9 @@ const Banner = () => {
         />
 
         {/* "We Believe" Section as Overlay */}
-        <div className="lg:absolute bottom-0 rounded-t-xl lg:left-1/2 transform lg:-translate-x-1/2 lg:w-[80vw] bg-white py-8 flex flex-col justify-center items-center">
+        <div className="lg:absolute bottom-0 rounded-t-xl lg:left-1/2 lg:top-2/3 transform lg:-translate-x-1/2 container mx-auto bg-white py-8 flex flex-col justify-center items-center">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="lg:text-3xl text-2xl mb-8">We Believe</h2>
+            <h2 className="lg:text-3xl text-2xl lg:pt-40 mb-10">We Believe</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Card 1 */}
               <div className="flex flex-col items-center text-center lg:border-r-2 border-b-2 py-4 lg:border-b-0">
@@ -42,10 +42,10 @@ const Banner = () => {
                   height={50}
                     src="/OurStory/img-1.svg"
                     alt="Potential Icon"
-                    className="w-12 h-12"
+                    className="w-16 h-16"
                   />
                 </div>
-                <h3 className="para-color">Every human being has potential</h3>
+                <h3 className="para-color p-2">Every human being has potential</h3>
               </div>
 
               {/* Card 2 */}
@@ -56,10 +56,10 @@ const Banner = () => {
                   height={50}
                     src="/OurStory/img-2.svg"
                     alt="Wellbeing Icon"
-                    className="w-12 h-12"
+                    className="w-16 h-16"
                   />
                 </div>
-                <h3 className="para-color">
+                <h3 className="para-color p-2">
                   Wellbeing outcomes for the workforce and businesses can both
                   be achieved; but not at the cost of each other
                 </h3>
@@ -73,10 +73,10 @@ const Banner = () => {
                   height={50}
                     src="/OurStory/img-3.svg"
                     alt="Human Rights Icon"
-                    className="w-12 h-12 mt-2"
+                    className="w-16 h-16 mt-3"
                   />
                 </div>
-                <h3 className="para-color mt-3">
+                <h3 className="para-color mt-3 p-2">
                   Human rights are central to human and economic development
                 </h3>
               </div>

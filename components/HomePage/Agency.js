@@ -34,14 +34,14 @@ const Agency = () => {
                   height={400}
                   src={section.icon}
                   alt={section.title}
-                  className="w-12 h-12"
+                  className="w-16 h-16"
                 />
                 {/* Content */}
                 <div className="">
-                  <h4 className="font-semibold text-lg w-96">
+                  <h4 className="text-3xl w-96">
                     {section.title}
                   </h4>
-                  <p className="text-gray-600 text-sm w-96">
+                  <p className="text-gray-600 text-xl w-96 mt-5">
                     {section.description}
                   </p>
                 </div>

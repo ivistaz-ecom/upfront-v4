@@ -32,7 +32,7 @@ const CarouseReach = () => {
   return (
     <div className="relative my-14  mx-auto container ">
       <Carousel
-      key={OurReach}
+        key={OurReach}
         ref={(el) => (carouselRef = el)} // Assign reference to carousel
         responsive={responsive}
         infinite={true}
@@ -43,35 +43,36 @@ const CarouseReach = () => {
         arrows={false}
       >
         {OurReach.map((item, index) => (
-  <div key={index}> {/* Added the key prop here */}
-    <div className="relative group flex flex-col justify-center items-center container mx-auto">
-      <div className="relative overflow-hidden rounded-none">
-        <Image
-          width={280}
-          height={200}
-          src={item.imageUrl}
-          alt={item.title}
-          className="transition-transform duration-500 lg:w-60"
-        />
-        <div className="absolute inset-0 bg-black translate-x-full transition-transform duration-500 group-hover:translate-x-0"></div>
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-          <CountUp
-            start={0}
-            end={item.count}
-            duration={30}
-            className="text-3xl"
-          />
-        </div>
-      </div>
-    </div>
-    <div>
-      <p className="text-lg md:mx-2 2xl:mx-8 mt-3 text-center lg:text-">
-        {item.subtitle}
-      </p>
-    </div>
-  </div>
-))}
-
+          <div key={index}>
+            {" "}
+            {/* Added the key prop here */}
+            <div className="relative group flex flex-col justify-center items-center container mx-auto">
+              <div className="relative overflow-hidden rounded-none">
+                <Image
+                  width={280}
+                  height={200}
+                  src={item.imageUrl}
+                  alt={item.title}
+                  className="transition-transform duration-500 lg:w-60"
+                />
+                <div className="absolute inset-0 bg-black translate-x-full transition-transform duration-500 group-hover:translate-x-0"></div>
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <CountUp
+                    start={0}
+                    end={item.count}
+                    duration={30}
+                    className="text-3xl"
+                  />
+                </div>
+              </div>
+            </div>
+            <div>
+              <p className="text-lg md:mx-2 2xl:mx-8 mt-3 text-center lg:text-">
+                {item.subtitle}
+              </p>
+            </div>
+          </div>
+        ))}
       </Carousel>
 
       {/* Custom Arrow Buttons Below Carousel */}

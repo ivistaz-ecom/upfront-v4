@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Image from "next/image";
 import React from "react";
 
@@ -50,19 +50,23 @@ const OurHistory = () => {
           We provide technical support for:
         </p>
         <div className="flex flex-col sm:flex-row text-center justify-center mx-auto items-center container my-8 gap-3 sm:gap-5 md:gap-8">
-          <p className="lg:border-r-2 border-b-2 lg:border-b-0 py-2 border-[#E82B52] sm:pr-3 md:pr-5">
+          <p className="flex">
             Building
             <br className="hidden lg:block" /> Capacities
+            <p className="lg:border-r-2 border-b-2 lg:border-b-0 py-2 border-[#E82B52] sm:pr-3 md:pr-5"></p>
           </p>
-          <p className="lg:border-r-2 border-b-2 lg:border-b-0 py-2 border-[#E82B52] sm:pr-3 md:pr-5 sm:pl-3 md:pl-5">
+          <p className="flex">
+            {" "}
             Implementing
             <br className="hidden lg:block" /> Programmes
+            <p className="lg:border-r-2 border-b-2 lg:border-b-0 py-2 border-[#E82B52] sm:pr-3 md:pr-5 sm:pl-3 md:pl-5"></p>
           </p>
-          <p className="lg:border-r-2 border-b-2 lg:border-b-0 py-2 border-[#E82B52] sm:pr-3 md:pr-5 sm:pl-3 md:pl-5">
+          <p className="flex">
             Strengthening
             <br className="hidden lg:block" /> Systems
+            <p className="lg:border-r-2 border-b-2 lg:border-b-0 py-2 border-[#E82B52] sm:pr-3 md:pr-5 sm:pl-3 md:pl-5"></p>
           </p>
-          <p className="sm:pl-3 md:pl-5">
+          <p className="">
             Improving
             <br className="hidden lg:block" /> Workplace Policies
           </p>

@@ -112,7 +112,7 @@ const Carouselwww = () => {
         </div>
       </div>
       <div className="flex justify-center">
-        <button className="flex justify-between items-center gap-4 bg-[#2F2F2F] text-white py-2 px-2 w-48 mt-20 mb-10 rounded-full hover:bg-gray-900">
+      <a href="/WhyWorkForce/pdf/WWW-Section 1.pdf" download><button className="flex justify-between items-center gap-4 bg-[#2F2F2F] text-white py-2 px-2 w-48 mt-20 mb-10 rounded-full hover:bg-gray-900">
           <span className="px-3">Download Now</span>
           <span className="bg-[#5C5C5C] p-2 rounded-full">
             <svg
@@ -131,6 +131,7 @@ const Carouselwww = () => {
             </svg>
           </span>
         </button>
+        </a>
       </div>
     </div>
   );

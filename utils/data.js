@@ -85,7 +85,7 @@ export const HealthWellbeingData = {
 
   sections: [
     {
-      icon: "/HomePage/ThematicAreas/Popup/img-1.svg", // Replace with an actual path or icon component
+      icon: "/HomePage/ThematicAreas/Popup/img-1.svg", 
       title: "Nutrition, Sanitation & Personal Hygiene:",
       description:
         "We believe that everyday habits play a crucial role in maintaining good health. Through education and resources, we empower the workforce to make informed choices about nutrition, sanitation, and personal hygiene, promoting overall wellness in the workplace.",
@@ -104,7 +104,7 @@ export const HealthWellbeingData = {
     },
     {
       icon: "/HomePage/ThematicAreas/Popup/img-4.svg",
-      title: "Women’s Health and Wellbeing:",
+      title: "<p class='mt-5'>Women’s Health and Wellbeing:</p>",
       description:
         "Women’s health requires special attention. Through targeted initiatives, we raise awareness about menstrual health and hygiene, maternal health, and family planning and offer screenings for cancers related to women, ensuring comprehensive care for all women in the workforce.",
     },
@@ -409,9 +409,9 @@ export const StrengtheningData = [
     id: 2,
     title: "Closing the Gender Pay Gap",
     description: `
-      Implementing effective transformative policies and programmes has demonstrated measurable outcomes. The study by Tuft University indicates that increasing women’s earnings to 91 cents for every dollar earned by men, thereby contributing to a more equitable workplace. Study by Gartner has shown that inclusive teams <a href="" target="_blank" className="text-blue-500 underline">improve team performance by up to 30 percent</a> in high-diversity environments.
+      Implementing effective transformative policies and programmes has demonstrated measurable outcomes. The study by Tuft University indicates that increasing women’s earnings to 91 cents for every dollar earned by men, thereby contributing to a more equitable workplace. Study by Gartner has shown that inclusive teams <a href="https://www.gartner.com/en/documents/3979855" target="_blank" class="text-blue-500 underline">improve team performance by up to 30 percent</a> in high-diversity environments.
     `,
-    description2: `“Furthermore, the SDGs promote <a href="" className="text-blue-500 underline">decent work and economic growth</a> by seeking full and productive employment and decent work for all women and men including for young people and persons with disabilities, and equal pay for work of equal value. Mainstreaming of a gender perspective is crucial in the implementation of the <a href="" className="text-blue-500 underline">2030 Agenda for Sustainable Development</a>” ~ UN`,
+    description2: `“Furthermore, the SDGs promote <a href="https://www.un.org/sustainabledevelopment/economic-growth/" target="_blank" class="text-blue-500 border-blue-500">decent work and economic growth</a> by seeking full and productive employment and decent work for all women and men including for young people and persons with disabilities, and equal pay for work of equal value. Mainstreaming of a gender perspective is crucial in the implementation of the <a href="https://www.un.org/sustainabledevelopment/development-agenda/" target="_blank" class="text-blue-500 underline">2030 Agenda for Sustainable Development</a>” ~ UN`,
     image: "/WhyWorkForce/Strength/img-2.png",
     reverse: true,
   },
@@ -427,7 +427,7 @@ export const StrengtheningData = [
   },
   {
     id: 4,
-    title: "Healthy and Inclusive ecosystem",
+    title: "Healthy and Inclusive Ecosystem",
     description: `
       Occupational health and safety measures, eco-friendly facilities and services, green jobs and safe and environment-friendly practices can boost green carbon credits and environmental outcomes for industries, local governments, and the communities. Governments and Industries can improve climate and environmental outcomes by adaptations of safe, healthy, and green practices in their supply chains.
     `,
