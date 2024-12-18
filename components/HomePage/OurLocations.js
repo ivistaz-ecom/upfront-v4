@@ -54,7 +54,7 @@ export default function BubbleTabs() {
             height={300}
               src="/HomePage/OurLocations/WorldMap.svg"
               alt="Global Image"
-              className="object-cover"
+              className="object-cover mb-10"
             />
           </div>
         )}

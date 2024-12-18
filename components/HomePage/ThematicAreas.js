@@ -82,7 +82,7 @@ const ThematicArea = () => {
               key={index}
               className={`relative flex flex-col bg-white overflow-hidden lg:p-10 p-3 group 
               ${
-                index < ThematicAreas.length - 2
+                index < ThematicAreas.length - 1
                   ? "border-b border-gray-300"
                   : ""
               }
@@ -90,7 +90,7 @@ const ThematicArea = () => {
               onClick={() => handleCardClick(card.tab)} // Open modal on card click
             >
               {/* Background Effect */}
-              <div className="absolute inset-0 bg-[#E8E8E8] transform scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100 z-0"></div>
+              <div className="absolute inset-0 bg-[#E8E8E8] cursor-pointer transform scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100 z-0"></div>
               <div className="relative z-10">
                 <div className="relative overflow-hidden">
                   <Image
@@ -98,17 +98,17 @@ const ThematicArea = () => {
                     height={400}
                     src={card.image}
                     alt={card.title}
-                    className="h-80 object-cover w-full transform transition-transform duration-500 group-hover:scale-110"
+                    className="cursor-pointer h-80 object-cover w-full transform transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 <div className="pt-4 text-left">
-                  <h3 className="text-2xl group-hover:underline font-semibold text-gray-900 flex items-center transition-colors duration-300">
+                  <h3 className="text-2xl cursor-pointer group-hover:underline font-semibold text-gray-900 flex items-center transition-colors duration-300">
                     {card.title}
                     <span className="ml-2 transform transition-transform duration-500 group-hover:scale-150">
-                      <FiArrowRight className="text-[#E82B52] text-[20px]" />
+                      <FiArrowRight className="cursor-pointer text-[#E82B52] text-[20px]" />
                     </span>
                   </h3>
-                  <p className="text-gray-600 mt-2 transition-colors duration-300 text-xl">
+                  <p className="text-gray-600 mt-2 cursor-pointer transition-colors duration-300 text-xl">
                     {card.description}
                   </p>
                 </div>
@@ -126,7 +126,7 @@ const ThematicArea = () => {
         >
           <div
             ref={modalRef}
-            className="bg-white lg:p-10 p-3 rounded-lg shadow-lg max-w-7xl relative overflow-auto max-h-[90vh]"
+            className="bg-white lg:p-10 p-3 rounded-lg shadow-lg max-w-7xl relative overflow-auto max-h-[90vh] "
           >
             <button
               className="absolute top-2 right-0 text-white p-1 bg-black rounded-full lg:mr-10 lg:mt-5"

@@ -37,31 +37,36 @@ const Footer = () => {
 
       {/* Navigation Links */}
       <div className="lg:text-center mb-6 -mt-20 lg:-mt-10">
-        <div className="border-[#909090] border-t container mx-auto py-3"></div>
-        <ul className="lg:flex flex-wrap lg:justify-center lg:space-x-4 lg:px-0 px-5 md:space-x-8">
-          {navItems.map((item, index) => (
-            <li
-              key={index}
-              className={`text-[20px] relative group ${
-                pathName === item.href ? "text-white font-bold" : ""
-              }`}
-            >
-              <Link href={item.href} className="relative">
-                {item.name}
-              </Link>
-              <div className=" border-b lg:border-b-0 my-2"></div>
-              <span
-                className={`absolute left-0 bottom-0 lg:w-full lg:border-b-0 h-[2px] bg-[#E82B52] transform ${
-                  pathName === item.href
-                    ? "scale-x-100"
-                    : "scale-x-0 group-hover:scale-x-100"
-                } transition-transform ease-out duration-200`}
-              ></span>
-            </li>
-          ))}
-        </ul>
-        <div className="border-[#909090] border-b container mx-auto py-3"></div>
-      </div>
+  <div className="border-[#909090] border-t container mx-auto py-3"></div>
+  <ul className="lg:flex flex-wrap lg:justify-center lg:space-x-4 lg:px-0 px-5 md:space-x-8">
+    {navItems.map((item, index) => (
+      <li
+        key={index}
+        className={`text-[20px] relative group ${
+          pathName === item.href ? "text-white font-bold" : ""
+        }`}
+      >
+        <Link
+          href={item.href}
+          className="relative inline-block group"
+        >
+          <span className="relative">
+            {item.name}
+            <span
+              className={`absolute left-0 bottom-0 w-full h-[2px] -mb-[2px] bg-[#E82B52] transform ${
+                pathName === item.href
+                  ? "scale-x-100"
+                  : "scale-x-0 group-hover:scale-x-100"
+              } transition-transform ease-out duration-200`}
+            ></span>
+          </span>
+        </Link>
+      </li>
+    ))}
+  </ul>
+  <div className="border-[#909090] border-b container mx-auto py-3"></div>
+</div>
+
 
       <div className="text-center mb-6">
         <Link
@@ -84,21 +89,21 @@ const Footer = () => {
         <a
           href="https://www.linkedin.com/showcase/upfrontcg/"
           target="_blank"
-          className="inline-block mx-2 hover:text-gray-400"
+          className="inline-block mx-2  hover:text-[#E82B52]"
         >
           <FaLinkedin size={30} />
         </a>
         <a
           href="https://x.com/UpfrontCG"
           target="_blank"
-          className="inline-block mx-2 hover:text-gray-400"
+          className="inline-block mx-2 hover:text-[#E82B52]"
         >
           <FaXTwitter size={30} />
         </a>
         <a
           href="https://www.instagram.com/upfront.global/"
           target="_blank"
-          className="inline-block mx-2 hover:text-gray-400"
+          className="inline-block mx-2 hover:text-[#E82B52]"
         >
           <FaInstagram size={30} />
         </a>

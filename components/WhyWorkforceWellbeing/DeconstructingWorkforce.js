@@ -16,7 +16,7 @@ const DeconstructingWorkforce = () => {
                 src="/WhyWorkForce/Diagram-Framework.png"
                 width={900}
                 height={300}
-                className="w-screen mt-24"
+                className="w-screen lg:mt-24 mt-8"
                 alt="framework"
               />
             </div>

@@ -17,6 +17,7 @@ const BlogPosts = ({ slug }) => {
   const [nextPost, setNextPost] = useState(null);
   const [isLoading, setIsLoading] = useState(true); // Loading state
   const [relatedPosts, setRelatedPosts] = useState([]);
+  const [tooltipVisible, setTooltipVisible] = useState(false);
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true); // Set loading to true when fetching data
@@ -51,21 +52,21 @@ const BlogPosts = ({ slug }) => {
         if (response.ok) {
           const data = await response.json();
           setAllPosts(data);
-  
+
           // Find the current post's index
           const currentIndex = data.findIndex((p) => p.slug === slug);
-  
+
           if (currentIndex !== -1) {
             // Select the next two posts for related stories
             const nextTwoPosts = data.slice(currentIndex + 1, currentIndex + 3);
-  
+
             // Handle case where fewer than 2 posts are available
             const additionalPostsNeeded = Math.max(0, 2 - nextTwoPosts.length);
             const fallbackPosts = data
               .filter((p) => p.slug !== slug) // Avoid showing the same post
               .slice(0, additionalPostsNeeded);
             setRelatedPosts([...nextTwoPosts, ...fallbackPosts]);
-  
+
             // Set the next post for "Next Blog" navigation
             setNextPost(data[currentIndex + 1] || null);
           }
@@ -76,10 +77,9 @@ const BlogPosts = ({ slug }) => {
         console.error("Error fetching all posts:", error);
       }
     };
-  
+
     fetchCategoryPosts();
   }, [siteUrl, slug]);
-  
 
   return (
     <div className="custom-container">
@@ -121,7 +121,7 @@ const BlogPosts = ({ slug }) => {
               {allPosts && (
                 <Link href="/blogs">
                   <button className="focus:outline-none">
-                    <p className="flex items-center gap-3 lg:text-xl text-[#404040]">
+                    <p className="flex justify-center items-center gap-3 lg:text-xl text-[#404040]">
                       <RiArrowLeftLine className="lg:text-3xl" /> Back to All
                       Blogs
                     </p>
@@ -139,6 +139,7 @@ const BlogPosts = ({ slug }) => {
                 </Link>
               )}
             </div>
+            
             <div className="flex flex-wrap lg:flex-nowrap gap-10 lg:pt-16 justify-center lg:p-10">
               <div className="lg:w-3/4 w-full lg:px-10 container 2xl:mx-auto">
                 <div
@@ -154,12 +155,76 @@ const BlogPosts = ({ slug }) => {
                       alt={post.title.rendered}
                       className="w-full mb-5 p-5 lg:p-0"
                     />
-                     <div className="flex lg:flex-col flex-row gap-4 mb-10 items-center">
-                      <p className="flex gap-1">Share<span>on:</span></p>
-                      <FaFacebook size={30} className="text-blue-600"/>
-                      <FaSquareXTwitter size={30}/>
-                      <Image src="/OurTeam/linkedin.png" width={30} height={30}/>
-                      <IoIosLink size={30}/>
+
+                    <div className="flex lg:flex-col flex-row gap-4 mb-10 items-center relative">
+                      <p className="flex gap-1">
+                        Share<span>on:</span>
+                      </p>
+
+                      {/* Facebook Share */}
+                      <a
+                        href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+                          window.location.href
+                        )}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FaFacebook
+                          size={30}
+                          className="text-blue-600 cursor-pointer"
+                        />
+                      </a>
+
+                      {/* Twitter Share */}
+                      <a
+                        href={`https://twitter.com/share?url=${encodeURIComponent(
+                          window.location.href
+                        )}&text=${encodeURIComponent(post.title.rendered)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FaSquareXTwitter
+                          size={30}
+                          className="cursor-pointer"
+                        />
+                      </a>
+
+                      {/* LinkedIn Share */}
+                      <a
+                        href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(
+                          window.location.href
+                        )}&title=${encodeURIComponent(post.title.rendered)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Image
+                          src="/OurTeam/linkedin.png"
+                          width={30}
+                          height={30}
+                          className="cursor-pointer"
+                        />
+                      </a>
+
+                      {/* Copy Link */}
+                      <div className="relative">
+                        <IoIosLink
+                          size={30}
+                          className="cursor-pointer"
+                          onClick={() => {
+                            navigator.clipboard.writeText(window.location.href);
+                            setTooltipVisible(true);
+                            setTimeout(() => setTooltipVisible(false), 2000); // Hide tooltip after 2 seconds
+                          }}
+                        />
+                        {tooltipVisible && (
+                          <div className="absolute bg-green-600 text-white text-xs rounded px-2 py-1 -top-8 left-1/2 transform -translate-x-1/2 mt-16">
+                            <p className="flex gap-1">
+                              {" "}
+                              Link <span>Copied!</span>
+                            </p>
+                          </div>
+                        )}
+                      </div>
                     </div>
                   </div>
                 )}

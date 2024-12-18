@@ -102,7 +102,7 @@ export default function SearchBar() {
 
       {/* Dropdown for search results */}
       {searchQuery && !loading && (
-        <div className="absolute bg-white right-0 lg:w-96 w-72 top-16 border border-gray-300 rounded-md mt-1 shadow-lg max-h-60 overflow-y-auto">
+        <div className="absolute bg-white right-0 lg:w-96 w-72 lg:top-16 top-12 border border-gray-300 rounded-md mt-1 shadow-lg max-h-60 overflow-y-auto">
           {error ? (
             <p className="p-2 text-red-500">{error}</p> // Show error message
           ) : searchResults.length > 0 ? (
@@ -130,7 +130,7 @@ export default function SearchBar() {
                         width={300}
                         height={300}
                           src={
-                            result.acf?.thumbnail_image?.url ||
+                            result.acf?.additional_thumbnail_image?.url ||
                             "/homePage/upfrontLogo.svg"
                           }
                           alt={result.title?.rendered || "Thumbnail"}

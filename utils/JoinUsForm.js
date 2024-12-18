@@ -39,7 +39,13 @@ const JoinUsForm = ({ subject }) => {
   const handleVesselChange = (e) => {
     const vesselId = e.target.value;
     const selectedOption = e.target.options[e.target.selectedIndex];
-    setSelectedVessel(selectedOption.text);
+
+    // Only set selectedVessel if a valid option is selected
+    if (vesselId) {
+      setSelectedVessel(selectedOption.text);
+    } else {
+      setSelectedVessel(""); // Reset to empty if no valid job type is selected
+    }
   };
 
   const handlePositionChange = (e) => {
@@ -257,10 +263,10 @@ const JoinUsForm = ({ subject }) => {
                   <select
                     id="position"
                     name="position"
-                    className={`form-select border  border-gray-300 text-gray-500 px-3 w-full py-2 rounded-md${
+                    className={`form-select border border-gray-300 text-gray-500 px-3 w-full py-2 rounded-md${
                       errors.position ? "is-invalid" : ""
                     }`}
-                    disabled={!selectedVessel}
+                    disabled={!selectedVessel} // Ensure the dropdown is disabled unless a job type is selected
                     onChange={handlePositionChange}
                   >
                     <option value="">Select Position</option>
@@ -276,6 +282,7 @@ const JoinUsForm = ({ subject }) => {
                     </div>
                   )}
                 </div>
+
                 <div className="my-5">
                   <div className="relative mt-2">
                     <input

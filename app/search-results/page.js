@@ -82,7 +82,7 @@ const SearchResultsPage = () => {
                         width={200}
                         height={200}
                         src={
-                          result.acf?.thumbnail_image?.url ||
+                          result.acf?.additional_thumbnail_image?.url ||
                           "/homePage/upfrontLogo.svg"
                         }
                         alt={`${result.title?.rendered}` || "Thumbnail"}
