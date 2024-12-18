@@ -14,7 +14,7 @@ const OurApproach = () => {
         <p className="p-4 lg:w-[50vw] mt-7 lg:mt-10 text-xl">
           Upfront prioritises the wellbeing of both the formal and informal
           workforce, placing their health and happiness at the core of its work
-          and upholding its commitment to the community.
+          and upholding its commitment to the community
         </p>
       </div>
     </div>

@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { FaSearch, FaChevronRight } from "react-icons/fa";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
+import SearchBar from "../SearchBar/SearchBar";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathName = usePathname();
@@ -76,8 +76,7 @@ const Header = () => {
         <div className="flex items-center space-x-8">
           {/* Search */}
           <div className="flex items-center space-x-2 cursor-pointer">
-            <FaSearch className="text-gray-600" />
-            <span className="text-gray-600 font-medium">Search</span>
+            <SearchBar/>
           </div>
 
           {/* Animated Menu Icon */}

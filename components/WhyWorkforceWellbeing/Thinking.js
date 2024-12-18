@@ -82,7 +82,7 @@ const Thinking = () => {
             So why should we invest in making wellbeing a reality for the
             workforce?
           </h2>
-          <p className="para-color lg:w-[50vw] mt-5 text-left">
+          <p className="para-color lg:w-[50vw] mt-5 text-left container mx-auto">
             Research substantiates that an empowered workforce fosters economic
             growth, which can be backed by comprehensive efforts and good
             practices. With an investment of $10 trillion projected by 2035, the
@@ -92,7 +92,7 @@ const Thinking = () => {
         </div>
       </div>
       <div className="flex justify-center">
-        <a href="/WhyWorkForce/pdf/WWW-Section 2.pdf" download><button className="flex justify-between items-center gap-4 bg-[#2F2F2F] text-white py-2 px-2 w-48 my-10 rounded-full hover:bg-gray-900">
+        <a href="/WhyWorkForce/pdf/WWW-Section-002.pdf" download><button className="flex justify-between items-center gap-4 bg-[#2F2F2F] text-white py-2 px-2 w-48 my-10 rounded-full hover:bg-gray-900">
           <span className="px-3">Download Now</span>
           <span className="bg-[#5C5C5C] p-2 rounded-full">
             <svg
