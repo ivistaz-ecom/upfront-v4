@@ -61,6 +61,24 @@ body {
     -webkit-line-clamp: 2 !important;
     -webkit-box-orient: vertical !important;
   }
+
+  .post-content-popup {
+    max-height: 12em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 20 !important;
+    -webkit-box-orient: vertical;
+  }
+  
+  .post-content-title-popup {
+    height: 5em !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 4 !important;
+    -webkit-box-orient: vertical !important;
+  }
   
 
   .bk{

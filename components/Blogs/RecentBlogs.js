@@ -88,7 +88,10 @@ const RecentBlogs = () => {
             itemClass="carousel-item-padding-40-px"
           >
             {data.map((post) => (
-              <div key={post.id} className="flex border lg:mt-10 mt-5">
+              <div
+                key={post.id}
+                className="flex border lg:mt-10 mt-5"
+              >
                 <div className="lg:flex justify-center items-center group relative z-10">
                   <div className="w-full md:w-1/2">
                     {post.acf && post.acf.additional_thumbnail_image && (
@@ -97,7 +100,7 @@ const RecentBlogs = () => {
                         height={500}
                         src={post.acf.additional_thumbnail_image.url}
                         alt={post.title.rendered}
-                        className="h-80 object-cover"
+                        className="lg:h-80 w-full"
                       />
                     )}
                   </div>
@@ -108,7 +111,7 @@ const RecentBlogs = () => {
                     <div className="absolute inset-0 bg-black transform scale-x-0  group-hover:scale-x-100 origin-left transition-transform duration-500"></div>
 
                     {/* Content Wrapper */}
-                    <div className="relative z-10 group-hover:text-white text-black h-72 lg:p-10 p-5">
+                    <div className="relative z-10 group-hover:text-white text-black lg:h-72 lg:p-2 p-5 lg:items-center lg:justify-center flex flex-col">
                       <Link href={`/blogs/${post.slug}`}>
                         <h2
                           className="text-2xl lg:text-3xl post-content-title group-hover:underline"
@@ -122,7 +125,7 @@ const RecentBlogs = () => {
                         dangerouslySetInnerHTML={{
                           __html: post.excerpt.rendered,
                         }}
-                        className="mt-2 post-content"
+                        className="lg:mt-2 mt-5 post-content"
                       ></div>
 
                       <Link href={`/blogs/${post.slug}`}>

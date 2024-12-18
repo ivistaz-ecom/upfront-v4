@@ -63,11 +63,12 @@ const CarouseReach = () => {
                     duration={30}
                     className="text-3xl"
                   />
+                  <p>{item.subtitle}</p>
                 </div>
               </div>
             </div>
             <div>
-              <p className="text-lg md:mx-2 2xl:mx-8 mt-3 text-center lg:text-">
+              <p className="text-lg md:mx-2 2xl:mx-8 mt-3 text-center lg:text-left">
                 {item.subtitle}
               </p>
             </div>

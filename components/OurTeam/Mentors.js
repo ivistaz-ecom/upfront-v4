@@ -19,22 +19,22 @@ const Mentors = () => {
             <div className="relative z-10">
               <Image
                 src={item.imageUrl}
-                width={400}
+                width={600}
                 height={300}
                 alt={item.name}
-                className="rounded-none lg:w-[300px] w-full p-5 lg:p-0 transition-all group-hover:scale-110 duration-500"
+                className="rounded-none lg:w-[400px] w-full p-5 lg:p-0 transition-all group-hover:scale-110 duration-500"
               />
             </div>
 
             {/* Text Content */}
             <div className="relative z-10 p-6 text-white">
-              <p className="text-xl font-semibold group-hover:text-black transition-colors duration-500">
+              <p className="text-3xl group-hover:text-black transition-colors duration-500">
                 {item.name}
               </p>
               <p className="text-md font-light group-hover:text-black transition-colors duration-500">
                 {item.title}
               </p>
-              <p className="text-md font-light group-hover:text-black transition-colors duration-500">
+              <p className="text-3xl font-light group-hover:text-black transition-colors duration-500 mt-3">
                 {item.post}
               </p>
               <a
@@ -46,14 +46,14 @@ const Mentors = () => {
                 <Image
                   src="/OurTeam/linkedin.png" // Replace with your LinkedIn icon URL
                   alt="LinkedIn"
-                  width={40}
+                  width={70}
                   height={40}
                   className=""
                 />
               </a>
             </div>
 
-            <div className="absolute inset-0 lg:right-96 bg-white transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></div>
+            <div className="absolute inset-0  bg-white transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></div>
           </div>
         ))}
       </div>

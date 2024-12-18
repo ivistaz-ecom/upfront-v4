@@ -102,13 +102,13 @@ const ThematicArea = () => {
                   />
                 </div>
                 <div className="pt-4 text-left">
-                  <h3 className="text-xl group-hover:underline font-semibold text-gray-900 flex items-center transition-colors duration-300">
+                  <h3 className="text-2xl group-hover:underline font-semibold text-gray-900 flex items-center transition-colors duration-300">
                     {card.title}
                     <span className="ml-2 transform transition-transform duration-500 group-hover:scale-150">
                       <FiArrowRight className="text-[#E82B52] text-[20px]" />
                     </span>
                   </h3>
-                  <p className="text-gray-600 mt-2 transition-colors duration-300">
+                  <p className="text-gray-600 mt-2 transition-colors duration-300 text-xl">
                     {card.description}
                   </p>
                 </div>

@@ -38,7 +38,7 @@ const OurHistory = () => {
                 alt={`Our history image ${index + 1}`}
               />
             </div>
-            <div className="absolute -bottom-24  bg-black rounded-full h-56 w-56 flex justify-center items-center text-center text-white group-hover:bg-white group-hover:text-black transition-all duration-500">
+            <div className="absolute -bottom-24  bg-black rounded-full lg:h-60 lg:w-60 w-52 h-52 flex justify-center items-center text-center text-white group-hover:bg-white group-hover:text-black transition-all duration-500">
               <p className="p-6 text-sm lg:text-xl">{item.text}</p>
             </div>
           </div>
@@ -50,18 +50,18 @@ const OurHistory = () => {
           We provide technical support for:
         </p>
         <div className="flex flex-col sm:flex-row text-center justify-center mx-auto items-center container my-8 gap-3 sm:gap-5 md:gap-8">
-          <p className="flex">
+          <p className="lg:flex">
             Building
             <br className="hidden lg:block" /> Capacities
             <p className="lg:border-r-2 border-b-2 lg:border-b-0 py-2 border-[#E82B52] sm:pr-3 md:pr-5"></p>
           </p>
-          <p className="flex">
+          <p className="lg:flex ">
             {" "}
             Implementing
             <br className="hidden lg:block" /> Programmes
             <p className="lg:border-r-2 border-b-2 lg:border-b-0 py-2 border-[#E82B52] sm:pr-3 md:pr-5 sm:pl-3 md:pl-5"></p>
           </p>
-          <p className="flex">
+          <p className="lg:flex">
             Strengthening
             <br className="hidden lg:block" /> Systems
             <p className="lg:border-r-2 border-b-2 lg:border-b-0 py-2 border-[#E82B52] sm:pr-3 md:pr-5 sm:pl-3 md:pl-5"></p>

@@ -108,8 +108,7 @@ const Footer = () => {
       <div className="text-center text-[20px] text-gray-400">
         <div className="border-[#909090] border-t container mx-auto py-3"></div>
         <div className="container mx-auto">
-          Upfront is an initiative of the Catalyst Group.{" "}
-          {new Date().getFullYear()}. All Rights Reserved.
+        Upfront is a part of the Catalyst Group. Copyright {new Date().getFullYear()}. All Rights Reserved.
         </div>
       </div>
     </footer>

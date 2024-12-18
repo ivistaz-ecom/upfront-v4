@@ -78,12 +78,12 @@ const NewsAndPublications = () => {
           </div>
         </div>
       ) : (
-        <ul className="grid lg:grid-cols-1 container mx-auto my-8 mb-32">
+        <ul className="grid lg:grid-cols-1 container mx-auto my-8 mb-32  ">
           {data.length > 0 ? (
             data.slice(0, visibleItems).map((post) => (
               <li key={post.id} className="mb-10 lg:m-0 p-3 border-b lg:p-10">
-                <div className="w-full flex justify-between container items-center mx-auto">
-                  <div className="mx-3 p-1 w-10/12">
+                <div className="w-full flex justify-between container items-center mx-auto group">
+                  <div className="mx-3 p-1 w-10/12 group-hover:underline">
                     <Link
                       target="_blank"
                       href={`${post.acf.news_and_publications_url}`}
@@ -97,7 +97,7 @@ const NewsAndPublications = () => {
                     </Link>
                   </div>
 
-                  <div className="relative">
+                  <div className="relative group-hover:translate-x- translate-x-4 transition-all duration-500 group-hover:scale-x-105">
                     {post.acf && post.acf.thumbnail_image && (
                       <Link
                         target="_blank"

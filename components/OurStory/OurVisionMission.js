@@ -37,7 +37,7 @@ const OurVisionMission = () => {
         >
           <p className="text-2xl">Our Vision</p>
           <p className="text-center mt-3 text-lg px-3">
-            Make wellbeing a reality for the workforce.
+            Make wellbeing a reality for the workforce
           </p>
         </div>
         <div
@@ -49,7 +49,7 @@ const OurVisionMission = () => {
           <p className="text-center mt-3 text-lg px-3">
             Enrich the lives of the formal and informal workforce by influencing
             key aspects of their wellbeing, like physical, emotional, financial,
-            and environmental wellbeing.
+            and environmental wellbeing
           </p>
         </div>
       </div>

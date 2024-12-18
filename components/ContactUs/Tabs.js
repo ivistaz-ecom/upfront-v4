@@ -16,7 +16,7 @@ const Tabs = () => {
   return (
     <div className="bg-white mb-40">
       {/* Tabs */}
-      <div className="flex justify-center space-x-4 mt-8 relative">
+      <div className="flex justify-center space-x-4 lg:mt-20 mt-10 p-1 lg:p-0 relative">
         {/* Buttons */}
         <button
           className={`lg:px-6 py-2 font-medium border w-52  rounded-md transition-all duration-300 ${
@@ -74,7 +74,7 @@ const Tabs = () => {
                   </p>
                   <div className="flex items-center gap-3 bg-black h-28 lg:w-96 w-full lg:p-5 p-2 ">
                     <div className="bg-white text-red-500 p-2 rounded-full">
-                      <Image src={item.logo} width={30} height={30} alt="logo"/>
+                      <Image src={item.logo} width={60} height={60} alt="logo"/>
                     </div>
                     <h3 className="text-xl  text-white">{item.title}</h3>
                   </div>
@@ -83,7 +83,7 @@ const Tabs = () => {
             ))}
           </div>
           <div className="flex justify-center items-center">
-            <p className="lg:w-[32vw] lg:my-7 lg:p-0 p-3">
+            <p className="lg:w-[32vw] lg:my-7 lg:p-0 p-3 text-xl">
               If you would like to explore an opportunity to work with Upfront,
               please fill up this form and submit
             </p>

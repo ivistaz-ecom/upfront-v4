@@ -6,6 +6,10 @@ import ConfigData from "../../../config";
 import { RiArrowLeftLine, RiArrowRightLine } from "react-icons/ri";
 import { FiArrowRight } from "react-icons/fi";
 import Image from "next/image";
+import { FaFacebook } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+import { IoIosLink } from "react-icons/io";
 
 const ImpactStoriesPost = ({ slug }) => {
   const siteUrl = ConfigData.wpApiUrl;
@@ -14,6 +18,7 @@ const ImpactStoriesPost = ({ slug }) => {
   const [nextPost, setNextPost] = useState(null);
   const [isLoading, setIsLoading] = useState(true); // Add loading state
   const [relatedPosts, setRelatedPosts] = useState([]);
+  const [tooltipVisible, setTooltipVisible] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -107,7 +112,8 @@ const ImpactStoriesPost = ({ slug }) => {
                 <Link href="/impact-stories">
                   <button className="focus:outline-none">
                     <p className="flex items-center gap-3 lg:text-xl text-[#404040]">
-                      <RiArrowLeftLine className="lg:text-3xl"  /> Back to All Impact Stories
+                      <RiArrowLeftLine className="lg:text-3xl" /> Back to All
+                      Impact Stories
                     </p>
                   </button>
                 </Link>
@@ -117,7 +123,7 @@ const ImpactStoriesPost = ({ slug }) => {
                   <button className="focus:outline-none">
                     <p className="flex lg:text-xl items-center gap-3 text-[#404040]">
                       Next Impact Story
-                      <RiArrowRightLine className="lg:text-3xl"  />
+                      <RiArrowRightLine className="lg:text-3xl" />
                     </p>
                   </button>
                 </Link>
@@ -130,14 +136,64 @@ const ImpactStoriesPost = ({ slug }) => {
                   dangerouslySetInnerHTML={{ __html: post.title.rendered }}
                 />
                 {post.acf?.additional_banner_image?.url && (
-                  <div>
+                  <div className="lg:flex space-x-4">
                     <Image
-                    width={600}
-                    height={400}
+                      width={600}
+                      height={400}
                       src={post.acf.additional_banner_image.url}
                       alt={post.title.rendered}
                       className="w-full mb-5"
                     />
+
+<div className="flex lg:flex-col flex-row gap-4 mb-10 items-center relative">
+  <p className="flex gap-1">Share<span>on:</span></p>
+
+  {/* Facebook Share */}
+  <a
+    href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaFacebook size={30} className="text-blue-600 cursor-pointer" />
+  </a>
+
+  {/* Twitter Share */}
+  <a
+    href={`https://twitter.com/share?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent(post.title.rendered)}`}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaSquareXTwitter size={30} className="cursor-pointer" />
+  </a>
+
+  {/* LinkedIn Share */}
+  <a
+    href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(window.location.href)}&title=${encodeURIComponent(post.title.rendered)}`}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Image src="/OurTeam/linkedin.png" width={30} height={30} className="cursor-pointer" />
+  </a>
+
+  {/* Copy Link */}
+  <div className="relative">
+    <IoIosLink
+      size={30}
+      className="cursor-pointer"
+      onClick={() => {
+        navigator.clipboard.writeText(window.location.href);
+        setTooltipVisible(true);
+        setTimeout(() => setTooltipVisible(false), 2000); // Hide tooltip after 2 seconds
+      }}
+    />
+    {tooltipVisible && (
+      <div className="absolute bg-green-600 text-white text-xs rounded px-2 py-1 -top-8 left-1/2 transform -translate-x-1/2 mt-16">
+       <p className="flex gap-1"> Link <span>Copied!</span></p>
+      </div>
+    )}
+  </div>
+</div>
+
                   </div>
                 )}
                 <div
@@ -172,8 +228,8 @@ const ImpactStoriesPost = ({ slug }) => {
                                   {post.title.rendered}
                                 </h3>
                                 <Image
-                                width={400}
-                                height={400}
+                                  width={400}
+                                  height={400}
                                   src={post.acf.additional_banner_image.url}
                                   alt={post.title.rendered}
                                   className="h-60 object-cover w-full transform transition-transform duration-500 group-hover:scale-110"
@@ -186,9 +242,9 @@ const ImpactStoriesPost = ({ slug }) => {
                               dangerouslySetInnerHTML={{
                                 __html: post.excerpt?.rendered || "",
                               }}
-                              className="mx-3 mt-5 p-1 post-content"
+                              className="lg:mx-3 mt-5 p-1 post-content"
                             ></div>
-                            <div className="transform opacity-0 h-7 justify-center w-7 flex items-center bg-[#E82B52] group-hover:opacity-100 transition-transform duration-500 group-hover:scale-150">
+                            <div className="transform opacity-0 h-9 justify-center w-9 lg:-mx-8 lg:-mb-28 -mb-28 -mx-8 flex items-center bg-[#E82B52] lg:group-hover:opacity-100 transition-transform duration-500 group-hover:scale-150">
                               <Link
                                 href={`/impact-stories/${post.slug}`}
                                 className="px-7"
@@ -197,6 +253,16 @@ const ImpactStoriesPost = ({ slug }) => {
                               </Link>
                             </div>
                           </div>
+                          {/* for mobile read more */}
+                      <div className="mt-7 lg:hidden">
+                        <Link
+                          href={`/impact-stories/${post.slug}`}
+                          className="bg-black text-white group-hover:bg-white group-hover:text-black p-3 rounded-md"
+                        >
+                          Read more
+                        </Link>
+                      </div>
+                      {/* read more end */}
                         </div>
                       </div>
                     ))
@@ -214,7 +280,8 @@ const ImpactStoriesPost = ({ slug }) => {
                 <Link href="/impact-stories">
                   <button className="focus:outline-none">
                     <p className="flex items-center lg:gap-3 lg:text-xl text-[#404040]">
-                      <RiArrowLeftLine className="lg:text-3xl"  /> Back to All Impact Stories
+                      <RiArrowLeftLine className="lg:text-3xl" /> Back to All
+                      Impact Stories
                     </p>
                   </button>
                 </Link>
@@ -224,7 +291,7 @@ const ImpactStoriesPost = ({ slug }) => {
                   <button className="focus:outline-none">
                     <p className="flex lg:text-xl items-center gap-3 text-[#404040]">
                       Next Impact Story
-                      <RiArrowRightLine className="lg:text-3xl"  />
+                      <RiArrowRightLine className="lg:text-3xl" />
                     </p>
                   </button>
                 </Link>

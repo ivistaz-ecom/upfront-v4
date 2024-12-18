@@ -6,6 +6,9 @@ import ConfigData from "../../../config";
 import { RiArrowLeftLine, RiArrowRightLine } from "react-icons/ri";
 import { FiArrowRight } from "react-icons/fi";
 import Image from "next/image";
+import { FaFacebook } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { IoIosLink } from "react-icons/io";
 
 const BlogPosts = ({ slug }) => {
   const siteUrl = ConfigData.wpApiUrl;
@@ -143,7 +146,7 @@ const BlogPosts = ({ slug }) => {
                   dangerouslySetInnerHTML={{ __html: post.title.rendered }}
                 />
                 {post.acf?.additional_banner_image?.url && (
-                  <div>
+                  <div className="lg:flex space-x-4">
                     <Image
                       width={600}
                       height={400}
@@ -151,6 +154,13 @@ const BlogPosts = ({ slug }) => {
                       alt={post.title.rendered}
                       className="w-full mb-5 p-5 lg:p-0"
                     />
+                     <div className="flex lg:flex-col flex-row gap-4 mb-10 items-center">
+                      <p className="flex gap-1">Share<span>on:</span></p>
+                      <FaFacebook size={30} className="text-blue-600"/>
+                      <FaSquareXTwitter size={30}/>
+                      <Image src="/OurTeam/linkedin.png" width={30} height={30}/>
+                      <IoIosLink size={30}/>
+                    </div>
                   </div>
                 )}
                 <div
@@ -190,7 +200,7 @@ const BlogPosts = ({ slug }) => {
                       relatedPosts.map((post, index) => (
                         <div
                           key={post.id}
-                          className={`relative flex flex-col bg-white overflow-hidden lg:p-10 p-3 group 
+                          className={`relative flex flex-col bg-white overflow-hidden lg:p-20 p-3 group 
               ${
                 index < relatedPosts.length - 1
                   ? "lg:border-b-0 border-b border-gray-300"

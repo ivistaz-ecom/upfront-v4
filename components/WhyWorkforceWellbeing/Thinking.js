@@ -44,11 +44,11 @@ const Thinking = () => {
       </div>
 
       <div className="bg-black  flex lg:flex-row flex-col justify-center items-center container mx-auto lg:p-5 p-7 mt-5">
-        <p className="text-white lg:w-[55vw] lg:pe-10">
+        <p className="text-gray-200 lg:w-[55vw] lg:pe-10 text-xl">
           With rising climate, health, and occupational risks threatening
           millions of lives and livelihoods, the world is transitioning from
           being Volatile, Uncertain, Complex, and Ambiguous (VUCA) to being <Link
-            className="text-blue-500"
+            className="text-[#1B6CCB] underline"
             href="https://www.forbes.com/sites/jeroenkraaijenbrink/2022/06/22/what-bani-really-means-and-how-it-corrects-your-world-view/"
             target="_blank"
           >

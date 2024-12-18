@@ -56,16 +56,11 @@ const Carouselwww = () => {
               </div>
             </div>
 
-            <div className="flex lg:gap-5 gap-3 lg:mx-20 py-2">
-              <p className="text-left">
-                * Source: <span className="text-[#1B6CCB]">CEBR</span>
-              </p>
-              <p>
-                ** Source: <span className="text-[#1B6CCB]">npr.org</span>
-              </p>
-              <p>
-                *** Source: <span className="text-[#1B6CCB]">Forbes</span>
-              </p>
+            <div className="flex gap-3 lg:gap-5 lg:mx-20 py-2">
+              <p
+                className="text-left"
+                dangerouslySetInnerHTML={{ __html: item.source }}
+              />
             </div>
           </div>
         ))}
@@ -94,7 +89,7 @@ const Carouselwww = () => {
       </div>
       {/* Custom Arrow Buttons Below Carousel for mobile*/}
       <div className="lg:hidden sm:block">
-        <div className="flex items-center justify-center gap-4 mt-10">
+        <div className="flex items-center justify-center gap-4 mt-5">
           <button
             className="p-3 bg-[#D3D3D3] text-gray-500 border-[#D3D3D3] border rounded-full text-2xl shadow hover:bg-[#0B0B0B]"
             onClick={() => carouselRef.previous()} // Navigate to the previous slide
@@ -112,25 +107,26 @@ const Carouselwww = () => {
         </div>
       </div>
       <div className="flex justify-center">
-      <a href="/WhyWorkForce/pdf/WWW-Section 1.pdf" download><button className="flex justify-between items-center gap-4 bg-[#2F2F2F] text-white py-2 px-2 w-48 mt-20 mb-10 rounded-full hover:bg-gray-900">
-          <span className="px-3">Download Now</span>
-          <span className="bg-[#5C5C5C] p-2 rounded-full">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="2"
-              stroke="currentColor"
-              className="w-4 h-4 text-white"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4 16l8 8m0 0l8-8m-8 8V4"
-              />
-            </svg>
-          </span>
-        </button>
+        <a href="/WhyWorkForce/pdf/www-section-01.pdf" download>
+          <button className="flex justify-between items-center gap-4 bg-[#2F2F2F] text-white py-2 px-2 w-48 mt-20 mb-10 rounded-full hover:bg-gray-900">
+            <span className="px-3">Download Now</span>
+            <span className="bg-[#5C5C5C] p-2 rounded-full">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="2"
+                stroke="currentColor"
+                className="w-4 h-4 text-white"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4 16l8 8m0 0l8-8m-8 8V4"
+                />
+              </svg>
+            </span>
+          </button>
         </a>
       </div>
     </div>

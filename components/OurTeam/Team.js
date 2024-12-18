@@ -34,12 +34,12 @@ const Team = () => {
                   <div className="absolute inset-0  bg-black translate-x-full transition-transform duration-500 group-hover:translate-x-0 border-0"></div>
 
                   <div className="absolute inset-0 flex flex-col justify-center items-center text-white opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                    <p className="text-lg font-bold p-5 text-center">{item.designation}</p>
+                    <p className="text-3xl p-5 text-center">{item.designation}</p>
                   </div>
                 </div>
 
-                <div className="lg:flex justify-between">
-                  <p className="lg:text-2xl text-xl mt-3 lg:mx-0 mx-10">{item.name}</p>
+                <div className="">
+                  <p className="lg:text-3xl text-xl mt-3 lg:mx-0 mx-10">{item.name}</p>
 
                 {item.url && (
                   <>
@@ -47,7 +47,7 @@ const Team = () => {
                     <Link href={item.url} target="_blank" >
                       <Image
                         src="/OurTeam/linkedin.png"
-                        width={30}
+                        width={50}
                         height={30}
                         className="mt-3 lg:mx-0 mx-10"
                         alt="mentor"

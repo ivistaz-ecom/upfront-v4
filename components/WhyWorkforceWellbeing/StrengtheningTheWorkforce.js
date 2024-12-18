@@ -28,9 +28,9 @@ const StrengtheningTheWorkforce = () => {
               className="lg:max-w-[350px]" // Adjusted max width for better fit
             />
           </div>
-          <div className="flex-1 text-container">
+          <div className="flex-1 text-container mx-10">
             {content.title && (
-              <h2 className="text-3xl font-semibold mb-3">{content.title}</h2>
+              <h2 className="text-3xl mb-3">{content.title}</h2>
             )}
             <p
               className="para-color text-lg leading-relaxed mb-2 text-"

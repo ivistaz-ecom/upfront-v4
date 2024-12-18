@@ -83,12 +83,12 @@ const ImpactStories = () => {
                       <div className="relative overflow-hidden">
                         {post.acf && post.acf.additional_thumbnail_image && (
                           <>
-                            <h3 className="lg:text-2x text-xl text-[#262626] group-hover:text-white flex items-center mb-6">
+                            <h3 className="lg:text-2xl text-xl text-[#262626] group-hover:text-white flex items-center mb-6">
                               {post.title.rendered}
                             </h3>
                             <Image
-                            width={400}
-                            height={400}
+                              width={400}
+                              height={400}
                               src={post.acf.additional_thumbnail_image.url}
                               alt={post.title.rendered}
                               className="lg:h-72 object-cover w-full transform transition-transform duration-500 group-hover:scale-110"
@@ -96,22 +96,32 @@ const ImpactStories = () => {
                           </>
                         )}
                       </div>
-                      <div className="pt-4 text-left transition-colors duration-300 flex items-center group-hover:text-white ">
+                      <div className=" text-left transition-colors duration-300 flex  items-end group-hover:text-white ">
                         <div
                           dangerouslySetInnerHTML={{
                             __html: post["excerpt"]["rendered"],
                           }}
-                          className="mx-3 mt-5 p-1 post-content"
+                          className="lg:mx-3 mt-5 p-1 post-content text-lg"
                         ></div>
-                        <div className="transform opacity-0 h-7 justify-center w-7 flex items-center  bg-[#E82B52] group-hover:opacity-100 transition-transform duration-500 group-hover:scale-150">
+                        <div className="hidden sm:block transform opacity-0  justify-center items-center w-9 h-9  bg-[#E82B52] p-2 lg:-mx-8 lg:-mb-8 group-hover:opacity-100 transition-transform duration-500 group-hover:scale-150">
                           <Link
                             href={`/impact-stories/${post.slug}`}
-                            className="px-7"
+                            className=""
                           >
-                            <FiArrowRight className="text-[white] text-[20px]" />
+                            <FiArrowRight className="text-[white]" size={20} />
                           </Link>
                         </div>
                       </div>
+                      {/* for mobile read more */}
+                      <div className="mt-7 lg:hidden">
+                        <Link
+                          href={`/impact-stories/${post.slug}`}
+                          className="bg-black text-white group-hover:bg-white group-hover:text-black p-3 rounded-md"
+                        >
+                          Read more
+                        </Link>
+                      </div>
+                      {/* read more end */}
                     </div>
                   </div>
                 ))
@@ -122,7 +132,6 @@ const ImpactStories = () => {
               )}
             </div>
           </div>
-          
         )}
       </div>
     </>

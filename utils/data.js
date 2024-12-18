@@ -43,7 +43,7 @@ export const OurReach = [
 
 export const ThematicAreas = [
   {
-    title: "Health & Wellbeing",
+    title: "Health and Wellbeing",
     image: "/HomePage/ThematicAreas/img-1.png",
     description: "Promoting good health and wellbeing across communities",
     tab: "profile",
@@ -55,13 +55,13 @@ export const ThematicAreas = [
     tab: "genter_equality",
   },
   {
-    title: "Agency Building for Women & Young Girls",
+    title: "Agency Building for Women and Young Girls",
     image: "/HomePage/ThematicAreas/img-3.png",
     description: "Empowering women and young girls",
     tab: "settings",
   },
   {
-    title: "Financial & Digital Inclusion",
+    title: "Financial and Digital Inclusion",
     image: "/HomePage/ThematicAreas/img-4.png",
     description: "Promoting access to financial and digital services",
     tab: "contacts",
@@ -86,7 +86,7 @@ export const HealthWellbeingData = {
   sections: [
     {
       icon: "/HomePage/ThematicAreas/Popup/img-1.svg", 
-      title: "Nutrition, Sanitation & Personal Hygiene:",
+      title: "Nutrition, Sanitation and Personal Hygiene:",
       description:
         "We believe that everyday habits play a crucial role in maintaining good health. Through education and resources, we empower the workforce to make informed choices about nutrition, sanitation, and personal hygiene, promoting overall wellness in the workplace.",
     },
@@ -98,7 +98,7 @@ export const HealthWellbeingData = {
     },
     {
       icon: "/HomePage/ThematicAreas/Popup/img-3.svg",
-      title: "Primary Health & Non-Communicable Diseases (NCDs):",
+      title: "Primary Health and Non-Communicable Diseases (NCDs):",
       description:
         "We facilitate regular awareness and screening programmes to detect and manage conditions that may affect workforce wellbeing.",
     },
@@ -186,13 +186,13 @@ export const WorkplaceData = {
   sections: [
     {
       icon: "/HomePage/ThematicAreas/Popup/img-11.svg", // Replace with an actual path or icon component
-      title: "Effective Communication & Problem Solving",
+      title: "Effective Communication and Problem Solving",
       description:
         "Effective communication is essential for resolving conflicts and addressing issues in the workplace. We emphasise the importance of clear, respectful communication and provide tools and strategies for effective problem-solving. A significant part of our efforts focus on empathy-building and leadership development, encouraging the workforce to understand and support each other’s perspectives and take on leadership roles in promoting positive change.",
     },
     {
       icon: "/HomePage/ThematicAreas/Popup/img-12.svg",
-      title: "Rights & Responsibilities",
+      title: "Rights and Responsibilities",
       description:
         "The workforce should be aware of its rights and responsibilities in the workplace. Through workshops, training sessions, and informational resources, we educate the workforce about their legal rights under labour laws and human rights principles, empowering the employees to advocate for themselves and others in the workplace.",
     },
@@ -208,7 +208,7 @@ export const SocialProtectionData = {
   sections: [
     {
       icon: "/HomePage/ThematicAreas/Popup/img-13.svg", // Replace with an actual path or icon component
-      title: "Awareness & Access",
+      title: "Awareness and  Access",
       description:
         "Social protection schemes ensure a safety net for the vulnerable workforce. By improving awareness and access, we ensure that the workforce do not fall through the cracks and receive the assistance they need when facing challenges. Through awareness campaigns, workshops, and information sessions, we empower the workforce with knowledge about available support services and how to access them.",
     },
@@ -258,7 +258,7 @@ export const coreTeam = [
     name: "Shaonli Chakraborty",
     post: "CEO, Upfront",
     designation: "CEO, Upfront",
-    url: "https://www.linkedin.com/in/shaonli-chakraborty-she-her-58936b7/",
+    url: "https://www.linkedin.com/in/shaonli-chakraborty-58936b7/",
   },
 
   {
@@ -266,7 +266,7 @@ export const coreTeam = [
     imageUrl: "/OurTeam/coreTeam/sonali.png",
     name: "Sonali Maheshwari",
     post: "Lead, Content and Solutions",
-    designation: "Lead, Content and Solutions",
+    designation: "Associate Director - Programs & Partnerships",
     url: "https://www.linkedin.com/in/sonalimaheshwari/",
   },
   {
@@ -296,14 +296,14 @@ export const coreTeam = [
     url: "https://www.linkedin.com/in/sandhya-shivaramaiah-107296119/",
   },
 
-  {
-    id: 10,
-    imageUrl: "/OurTeam/coreTeam/tanya.png",
-    name: "Tanya Singh",
-    post: "Monitoring Learning and Communication Specialist",
-    designation: "Monitoring Learning and Communication Specialist",
-    url: "https://www.linkedin.com/in/tanya-singh-a394b422b/",
-  },
+  // {
+  //   id: 10,
+  //   imageUrl: "/OurTeam/coreTeam/tanya.png",
+  //   name: "Tanya Singh",
+  //   post: "Monitoring Learning and Communication Specialist",
+  //   designation: "Monitoring Learning and Communication Specialist",
+  //   url: "https://www.linkedin.com/in/tanya-singh-a394b422b/",
+  // },
   {
     id: 11,
     imageUrl: "/OurTeam/coreTeam/abhinav.png",
@@ -409,9 +409,9 @@ export const StrengtheningData = [
     id: 2,
     title: "Closing the Gender Pay Gap",
     description: `
-      Implementing effective transformative policies and programmes has demonstrated measurable outcomes. The study by Tuft University indicates that increasing women’s earnings to 91 cents for every dollar earned by men, thereby contributing to a more equitable workplace. Study by Gartner has shown that inclusive teams <a href="https://www.gartner.com/en/documents/3979855" target="_blank" class="text-blue-500 underline">improve team performance by up to 30 percent</a> in high-diversity environments.
+      Implementing effective transformative policies and programmes has demonstrated measurable outcomes. The study by Tuft University indicates that increasing women’s earnings to 91 cents for every dollar earned by men, thereby contributing to a more equitable workplace. Study by Gartner has shown that inclusive teams <a href="https://www.gartner.com/en/documents/3979855" target="_blank" class="text-[#1B6CCB] underline">improve team performance by up to 30 percent</a> in high-diversity environments.
     `,
-    description2: `“Furthermore, the SDGs promote <a href="https://www.un.org/sustainabledevelopment/economic-growth/" target="_blank" class="text-blue-500 border-blue-500">decent work and economic growth</a> by seeking full and productive employment and decent work for all women and men including for young people and persons with disabilities, and equal pay for work of equal value. Mainstreaming of a gender perspective is crucial in the implementation of the <a href="https://www.un.org/sustainabledevelopment/development-agenda/" target="_blank" class="text-blue-500 underline">2030 Agenda for Sustainable Development</a>” ~ UN`,
+    description2: `“Furthermore, the SDGs promote <a href="https://www.un.org/sustainabledevelopment/economic-growth/" target="_blank" class="text-[#1B6CCB] underline">decent work and economic growth</a> by seeking full and productive employment and decent work for all women and men including for young people and persons with disabilities, and equal pay for work of equal value. Mainstreaming of a gender perspective is crucial in the implementation of the <a href="https://www.un.org/sustainabledevelopment/development-agenda/" target="_blank" class="text-[#1B6CCB] underline">2030 Agenda for Sustainable Development</a>” ~ UN`,
     image: "/WhyWorkForce/Strength/img-2.png",
     reverse: true,
   },
@@ -440,17 +440,22 @@ export const StrengtheningData = [
 export const WhyWorkForceData = [
   {
     image: "/WhyWorkForce/Why-ww-Slides/Slide-1.png",
+    source : "",
   },
   {
-    image: "/WhyWorkForce/Why-ww-Slides/Slide-2.png",
+    image: "/WhyWorkForce/Why-ww-Slides/slides-2nd.png",
+    source : "",
   },
   {
     image: "/WhyWorkForce/Why-ww-Slides/Slide-3.png",
+    source : "* Source: <span class='text-[#1B6CCB]'>CEBR</span>",
   },
   {
     image: "/WhyWorkForce/Why-ww-Slides/Slide-4.png",
+    source : " ** Source: <span class='text-[#1B6CCB]'>npr.org</span>  <span>*** Source:</span> <span class='text-[#1B6CCB]'>Forbes</span>",
   },
   {
     image: "/WhyWorkForce/Why-ww-Slides/Slide-5.png",
+    source : "",
   },
 ];

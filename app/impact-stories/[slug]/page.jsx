@@ -3,8 +3,8 @@
 import React from 'react';
 import Posts from './ImpactStoriesPost'; // Adjust the import path accordingly
 
-const Page = ({ params }) => {
-    const { slug } = params; // Access params directly without `await`
+const Page = async ({ params }) => {
+    const { slug } = await params; // Access params directly without `await`
 
     return (
         <div>

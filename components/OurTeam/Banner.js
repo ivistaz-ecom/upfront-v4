@@ -14,7 +14,7 @@ const Banner = () => {
           <p>
             <Link href="/">Home</Link> /{" "}
           </p>
-          <p className="px-1"> our team</p>
+          <p className="px-1"> Our Team</p>
         </div>
       </div>
       <div className="">
