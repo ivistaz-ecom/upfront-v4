@@ -254,7 +254,7 @@ export const OurCollaborators = [
 export const coreTeam = [
   {
     id: 1,
-    imageUrl: "/OurTeam/coreTeam/shaonli.png",
+    imageUrl: "/OurTeam/coreTeam/img-1.png",
     name: "Shaonli Chakraborty",
     post: "",
     designation: "CEO - Upfront",
@@ -263,7 +263,7 @@ export const coreTeam = [
 
   {
     id: 2,
-    imageUrl: "/OurTeam/coreTeam/sonali.png",
+    imageUrl: "/OurTeam/coreTeam/img-2.png",
     name: "Sonali Maheshwari",
     post: "",
     designation: "Associate Director, Programs & Partnerships",
@@ -271,7 +271,7 @@ export const coreTeam = [
   },
   {
     id: 3,
-    imageUrl: "/OurTeam/coreTeam/sathishKN.png",
+    imageUrl: "/OurTeam/coreTeam/img-3.png",
     name: "Sathish.K.N",
     post: "",
     designation: "Senior Program Manager",
@@ -279,7 +279,7 @@ export const coreTeam = [
   },
   {
     id: 4,
-    imageUrl: "/OurTeam/coreTeam/abhinav.png",
+    imageUrl: "/OurTeam/coreTeam/img-4.png",
     name: "Abhinav Kumar",
     post: "",
     designation: "Project Manager",
@@ -287,7 +287,7 @@ export const coreTeam = [
   },
   {
     id: 5,
-    imageUrl: "/OurTeam/coreTeam/astha_bhora.png",
+    imageUrl: "/OurTeam/coreTeam/img-5.png",
     name: "Astha Bohra",
     post: "",
     designation: "Human Resource Manager",
@@ -298,13 +298,13 @@ export const coreTeam = [
     imageUrl: "/OurTeam/coreTeam/meeta.png",
     name: "Meeta Sen",
     post: "",
-    designation: "Lead operations-Delhi/NCR",
+    designation: "Lead, Operations-Delhi/NCR",
     url: "https://www.linkedin.com/in/meeta-sen-58750228/",
   },
 
   {
     id: 7,
-    imageUrl: "/OurTeam/coreTeam/sandhya.png",
+    imageUrl: "/OurTeam/coreTeam/img-7.png",
     name: "Sandhya G.S",
     post: "",
     designation: "Implementation Manager",
@@ -313,7 +313,7 @@ export const coreTeam = [
   
   {
     id: 8,
-    imageUrl: "/OurTeam/coreTeam/sunitha.png",
+    imageUrl: "/OurTeam/coreTeam/img-8.png",
     name: "Sunitha Bai",
     post: "",
     designation: "State Lead, Tamil Nadu",
@@ -322,7 +322,7 @@ export const coreTeam = [
 
   {
     id: 9,
-    imageUrl: "/OurTeam/coreTeam/prabhakaranV.png",
+    imageUrl: "/OurTeam/coreTeam/img-9.png",
     name: "Prabhakaran V",
     post: "",
     designation: "Program Specialist",
@@ -330,10 +330,10 @@ export const coreTeam = [
   },
   {
     id: 10,
-    imageUrl: "/OurTeam/coreTeam/retuSingh.png",
+    imageUrl: "/OurTeam/coreTeam/img-10.png",
     name: "Retu Singh",
     post: "",
-    designation: "Lead Learning and Development",
+    designation: "Lead, Learning and Development",
     url: "",
   },
   {
@@ -347,7 +347,7 @@ export const coreTeam = [
   {
     id: 12,
     imageUrl: "/OurTeam/coreTeam/mohd.png",
-    name: "Shaoaib Mohd",
+    name: "Shoaib Mohd",
     post: "",
     designation: "Implementation Specialist",
     url: "https://www.linkedin.com/in/md-shoaib-7a03901a5/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",

@@ -38,7 +38,7 @@ const Agency = () => {
               {/* Content */}
               <div className="">
                 <h4 className="lg:text-3xl text-xl lg:w-96">
-                  Equipping Women And Young Girls With Knowledge and Life Skills
+                  Equipping Women and Young Girls With Knowledge and Life Skills
                 </h4>
                 <p className="text-gray-600 lg:text-xl lg:w-96 mt-5">
                   Sharing knowledge with women and young girls that includes
