@@ -373,7 +373,7 @@ export const coreTeam = [
     imageUrl: "/OurTeam/coreTeam/alviya.png",
     name: "Alviya Haider ",
     post: "",
-    designation: "Marketing Communications Speicalist ",
+    designation: "Marketing Communications Specialist ",
     url: "https://www.linkedin.com/in/alviya-haider22/",
   },
 
