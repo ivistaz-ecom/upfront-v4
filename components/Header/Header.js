@@ -120,12 +120,12 @@ const Header = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               <p className="flex justify-between items-end group text-xl">
-                <span className="group-hover:translate-x-7 transition-all duration-500 flex items-center gap-3">
+                <span className="lg:group-hover:translate-x-7 transition-all duration-500 flex items-center gap-3">
                   {/* Red bar visible only on hover */}
-                  <p className="bg-red-600 h-1 w-7 lg:mx-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></p>
+                  <p className="bg-red-600 h-1 w-7 lg:mx-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 hidden lg:block"></p>
                   {item.name}
                 </span>
-                <FaChevronRight className="group-hover:translate-x-1 transition-all duration-500 group-hover:scale-125" />
+                <FaChevronRight className="group-hover:translate-x-1 transition-all duration-500 lg:group-hover:scale-125" />
               </p>
             </Link>
           </div>

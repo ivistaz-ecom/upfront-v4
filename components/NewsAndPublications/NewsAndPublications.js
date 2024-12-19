@@ -97,7 +97,7 @@ const NewsAndPublications = () => {
                     </Link>
                   </div>
 
-                  <div className="relative group-hover:translate-x- translate-x-4 transition-all duration-500 group-hover:scale-x-105">
+                  <div className="relative">
                     {post.acf && post.acf.thumbnail_image && (
                       <Link
                         target="_blank"
@@ -108,7 +108,7 @@ const NewsAndPublications = () => {
                         height={300}
                           src={post.acf.thumbnail_image.url}
                           alt={post.title.rendered}
-                          className="w-52"
+                          className="w-52 transform transition-transform duration-500 group-hover:scale-125"
                         />
                       </Link>
                     )}

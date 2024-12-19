@@ -36,28 +36,27 @@ const Footer = () => {
       </div>
 
       {/* Navigation Links */}
+      
       <div className="lg:text-center mb-6 -mt-20 lg:-mt-10">
   <div className="border-[#909090] border-t container mx-auto py-3"></div>
   <ul className="lg:flex flex-wrap lg:justify-center lg:space-x-4 lg:px-0 px-5 md:space-x-8">
     {navItems.map((item, index) => (
       <li
         key={index}
-        className={`text-[20px] relative group ${
+        className={`text-[20px] relative group lg:border-b-0 border-b my-3 ${
           pathName === item.href ? "text-white font-bold" : ""
         }`}
       >
-        <Link
-          href={item.href}
-          className="relative inline-block group"
-        >
-          <span className="relative">
+        <Link href={item.href} className="relative inline-block group">
+          <span className="relative inline-block">
             {item.name}
             <span
-              className={`absolute left-0 bottom-0 w-full h-[2px] -mb-[2px] bg-[#E82B52] transform ${
+              className={`absolute left-0 bottom-0 w-full h-[2px] lg:bg-[#E82B52] transform ${
                 pathName === item.href
                   ? "scale-x-100"
                   : "scale-x-0 group-hover:scale-x-100"
               } transition-transform ease-out duration-200`}
+              style={{ marginTop: "2px" }} // Adjust spacing between text and underline
             ></span>
           </span>
         </Link>
