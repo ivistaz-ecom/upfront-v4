@@ -96,8 +96,8 @@ const Blogs = () => {
                         {post.acf && post.acf.additional_thumbnail_image && (
                           <>
                             <Image
-                            width={500}
-                            height={300}
+                              width={500}
+                              height={300}
                               src={post.acf.additional_thumbnail_image.url}
                               alt={post.title.rendered}
                               className="h- object-cover w-full transform transition-transform duration-500 group-hover:scale-110"
