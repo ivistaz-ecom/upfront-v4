@@ -79,8 +79,7 @@ body {
     -webkit-line-clamp: 4 !important;
     -webkit-box-orient: vertical !important;
   }
-  
 
-  .bk{
-    font-style: italic;
+  .wp-a-link{
+    color: #d21b1b;
   }

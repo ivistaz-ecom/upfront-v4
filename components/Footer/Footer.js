@@ -69,13 +69,13 @@ const Footer = () => {
 
       <div className="text-center mb-6">
         <Link
-          href="mailto:info@upfrontglobal.com"
+          href="mailto:contactupfront@catalysts.org"
           className="text-sm relative group inline-block"
         >
           <span className="flex justify-center gap-2 items-center">
             <IoIosMailOpen className="text-[#E82B52]" size={30} />
             <span className="text-[24px] relative">
-              info@upfrontglobal.com
+            contactupfront@catalysts.org
               <span className="absolute left-0 bottom-0 w-full h-[2px] -mb-2 bg-[#E82B52] scale-x-0 group-hover:scale-x-100 transition-transform ease-out duration-200"></span>
             </span>
           </span>

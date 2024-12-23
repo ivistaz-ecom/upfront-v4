@@ -36,14 +36,14 @@ const Banner = () => {
 
         {/* Right Section - Contact Details */}
         <div className="md:w-1/2 lg:flex lg:flex-col justify-center lg:px-6 container mx-auto">
-          <div className="lg:flex lg:gap-[105px] p-5">
+          <div className="lg:flex lg:gap-[50px] p-5">
             <div className="mb-6 ">
               <h2 className=" font-semibold mb-2 text-white">Contact Info:</h2>
               <hr className="border-[#CECECE]" />
               <p className="text-[#CECECE] mt-2">
                 Email:{" "}
-                <Link href="mailto:info@upfrontglobal.com" className="">
-                  info@upfrontglobal.com
+                <Link href="mailto: contactupfront@catalysts.org" className="">
+                contactupfront@catalysts.org
                 </Link>
               </p>
             </div>
@@ -101,7 +101,7 @@ const Banner = () => {
             </div>
           </div>
 
-          <div className="lg:flex  lg:gap-32 p-5">
+          <div className="lg:flex  lg:gap-40 2xl:gap-28 p-5">
             <div className="mb-6">
               <h2 className=" font-semibold mb-2 text-white">
                 Office Address:
@@ -118,7 +118,7 @@ const Banner = () => {
               <p className="border-t border-[#CECECE] mt-9"></p>
               <p className="mt-3 text-white">Delhi:</p>
               <p className="text-[#CECECE] mt-2">
-                A-10, Second Floor, Green Park,
+              C-23, Usha Niketan, Safdarjung development Area,
                 <br /> New Delhi - 110016
               </p>
             </div>
