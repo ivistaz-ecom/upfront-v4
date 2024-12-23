@@ -44,7 +44,7 @@ export const OurReach = [
 export const ThematicAreas = [
   {
     title: "Health and Wellbeing",
-    image: "/HomePage/ThematicAreas/img-1.png",
+    image: "/HomePage/ThematicAreas/popup-1.png",
     description: "Promoting good health and wellbeing across communities",
     tab: "profile",
   },

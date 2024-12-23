@@ -8,7 +8,7 @@ const HealthWellbeing = () => {
       <div className="flex flex-col justify-center items-center container mx-auto ">
         <div>
           <Image
-            src="/HomePage/ThematicAreas/img-1.png"
+            src="/HomePage/ThematicAreas/popup-1.png"
             width={800}
             height={300}
             alt="thematic image"

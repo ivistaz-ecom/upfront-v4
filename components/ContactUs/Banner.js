@@ -27,7 +27,7 @@ const Banner = () => {
         {/* Left Section - Image */}
         <div className="flex justify-center">
           <Image
-            src="/ContactUs/banner.png"
+            src="/ContactUs/banner-img.png"
             width={700}
             height={500}
             alt="Contact Us"
@@ -116,7 +116,7 @@ const Banner = () => {
             </div>
             <div>
               <p className="border-t border-[#CECECE] mt-9"></p>
-              <p className="mt-3 text-white">Delhi:</p>
+              <p className="mt-3 text-white">New Delhi:</p>
               <p className="text-[#CECECE] mt-2">
               C-23, Usha Niketan, Safdarjung development Area,
                 <br /> New Delhi - 110016
