@@ -1,12 +1,17 @@
-
-import HomePage from "../components/HomePage"
+import HomePage from "../components/HomePage";
+import Seo from "../components/Seo/Seo";
 export default function Home() {
+  const seoField = {
+    title: "",
+    description: "",
+    path: "",
+    metaImage: "",
+    pageType: "WebSite",
+  };
   return (
-   <>
-  <HomePage />
-  <div>
-
-  </div>
-   </>
+    <>
+      <Seo {...seoField} />
+      <HomePage />
+    </>
   );
 }

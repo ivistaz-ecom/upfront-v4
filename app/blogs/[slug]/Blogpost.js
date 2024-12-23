@@ -81,7 +81,12 @@ const BlogPosts = ({ slug }) => {
     fetchCategoryPosts();
   }, [siteUrl, slug]);
 
+  
+
   return (
+   
+    <>
+     
     <div className="custom-container">
       {isLoading ? (
         // Loading spinner or skeleton screen
@@ -363,6 +368,7 @@ const BlogPosts = ({ slug }) => {
         </div>
       )}
     </div>
+    </>
   );
 };
 
