@@ -96,7 +96,7 @@ const Tabs = () => {
 
       {activeTab === "partner" && (
         <div className="mt-20 text-center">
-          <h2 className="text-3xl text-[#2F2F2F]">Current Openings</h2>
+          <h2 className="text-3xl text-[#2F2F2F]">GET INVOLVED</h2>
           <p className="text-[#2F2F2F] text-2xl mt-3">
             Join the force behind the wellbeing of the workforce
           </p>
