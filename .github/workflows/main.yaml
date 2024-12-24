@@ -19,6 +19,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }} # Your server's SSH private key in PEM format
 
           script: |
-          echo cd /home/react-staging/upfront2
-          echo git config --global --add safe.directory /home/react-staging/upfront2
+          cd /home/react-staging/upfront2
+          echo sudo -S git config --global --add safe.directory /home/react-staging/upfront2
           
