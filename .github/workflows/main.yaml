@@ -22,5 +22,7 @@ jobs:
            cd /home/react-staging/upfront2
            echo sudo -S git config --global --add safe.directory /home/react-staging/cms
            echo sudo -S git pull origin main
-           echo sudo pm2 status
-           
+           echo sudo -S sudo npm install
+           echo sudo -S sudo npm run build
+           echo sudo -S pm2 status
+
