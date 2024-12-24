@@ -20,5 +20,4 @@ jobs:
 
           script: |
           cd /home/react-staging/upfront2
-          git config --global --add safe.directory /home/react-staging/upfront2
           
