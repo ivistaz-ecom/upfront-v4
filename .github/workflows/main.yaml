@@ -17,3 +17,7 @@ jobs:
           host: ${{ secrets.HOST }} # Your server's IP address
           username: ${{ secrets.USERNAME }} # Your server's username
           key: ${{ secrets.SSH_PRIVATE_KEY }} # Your server's SSH private key in PEM format
+
+          script: |
+            cd /home/react-staging/upfront2
+          
