@@ -1,6 +1,6 @@
-import { FaBullhorn } from "react-icons/fa";
-import { HiUsers } from "react-icons/hi2";
-import { FaUserCog } from "react-icons/fa";
+import { FaBullhorn } from "react-icons/fa"
+import { HiUsers } from "react-icons/hi2"
+import { FaUserCog } from "react-icons/fa"
 
 export const OurReach = [
   {
@@ -10,7 +10,7 @@ export const OurReach = [
     title: "Factory Workforce",
   },
   {
-    imageUrl: "/HomePage/OurReach/img-2.png",
+    imageUrl: "/HomePage/OurReach/img02.png",
     count: "393800",
     subtitle: "Street Vendor Workforce",
     title: "Street Vendors",
@@ -39,12 +39,12 @@ export const OurReach = [
     subtitle: "Fish Vendors",
     title: "Fish Vendors",
   },
-];
+]
 
 export const ThematicAreas = [
   {
     title: "Health and Wellbeing",
-    image: "/HomePage/ThematicAreas/popup-1.png",
+    image: "/HomePage/ThematicAreas/popup01.png",
     description: "Promoting good health and wellbeing across communities",
     tab: "profile",
   },
@@ -78,14 +78,14 @@ export const ThematicAreas = [
     description: "Ensuring safety nets for the vulnerable",
     tab: "social_protection",
   },
-];
+]
 
 export const HealthWellbeingData = {
   id: 1,
 
   sections: [
     {
-      icon: "/HomePage/ThematicAreas/Popup/img-1.svg", 
+      icon: "/HomePage/ThematicAreas/Popup/img-1.svg",
       title: "Nutrition, Sanitation and Personal Hygiene:",
       description:
         "We believe that everyday habits play a crucial role in maintaining good health. Through education and resources, we empower the workforce to make informed choices about nutrition, sanitation, and personal hygiene, promoting overall wellness in the workplace.",
@@ -109,7 +109,7 @@ export const HealthWellbeingData = {
         "Women’s health requires special attention. Through targeted initiatives, we raise awareness about menstrual health and hygiene, maternal health, and family planning and offer screenings for cancers related to women, ensuring comprehensive care for all women in the workforce.",
     },
   ],
-};
+}
 
 export const GenderEqualityData = {
   id: 1,
@@ -131,7 +131,7 @@ export const GenderEqualityData = {
         "We recognise the importance of making workplaces accessible and inclusive for everyone, regardless of caste, creed, gender identity, or physical ability. Our initiatives focus on removing barriers to participation and creating a culture of acceptance and belonging. We strive to foster an environment where all employees feel valued, respected, and empowered to contribute their unique perspectives and talents.",
     },
   ],
-};
+}
 
 export const AgencyData = {
   id: 1,
@@ -153,7 +153,7 @@ export const AgencyData = {
         "Supporting the career advancement of women and young girls in the workplace through mentorship programmes, skill development initiatives, and handholding to help women navigate their career paths with confidence. Additionally, Upfront works closely with employers to strengthen workplace policies and practices that promote gender equality and support professional growth irrespective of gender.",
     },
   ],
-};
+}
 
 export const FinancialData = {
   id: 1,
@@ -175,7 +175,7 @@ export const FinancialData = {
         "In today’s digital age, understanding how to navigate digital financial services is essential. We provide information and create awareness on digital financial literacy, covering topics such as online banking, mobile payments, and cybersecurity. By improving digital literacy skills, we empower our workforce to access and utilise digital financial services safely and efficiently.",
     },
   ],
-};
+}
 
 export const WorkplaceData = {
   id: 1,
@@ -197,7 +197,7 @@ export const WorkplaceData = {
         "The workforce should be aware of its rights and responsibilities in the workplace. Through workshops, training sessions, and informational resources, we educate the workforce about their legal rights under labour laws and human rights principles, empowering the employees to advocate for themselves and others in the workplace.",
     },
   ],
-};
+}
 
 export const SocialProtectionData = {
   id: 1,
@@ -225,7 +225,7 @@ export const SocialProtectionData = {
         "Understanding the needs and vulnerabilities of the workforce is essential for designing effective social protection interventions. Upfront conducts mapping exercises and research studies to identify gaps in coverage, assess the effectiveness of existing programmes, and gather insights into emerging needs and trends with different workforces/groups. By leveraging data and research findings, we can tailor our interventions to better meet the needs of the workforce and address systemic challenges.",
     },
   ],
-};
+}
 
 export const OurCollaborators = [
   {
@@ -249,7 +249,7 @@ export const OurCollaborators = [
   {
     logoUrl: "/HomePage/Collaborators/logo-7.png",
   },
-];
+]
 
 export const coreTeam = [
   {
@@ -310,7 +310,7 @@ export const coreTeam = [
     designation: "Implementation Manager",
     url: "https://www.linkedin.com/in/sandhya-shivaramaiah-107296119/",
   },
-  
+
   {
     id: 8,
     imageUrl: "/OurTeam/coreTeam/img-8.png",
@@ -376,9 +376,7 @@ export const coreTeam = [
     designation: "Marketing Communications Specialist ",
     url: "https://www.linkedin.com/in/alviya-haider22/",
   },
-
-  
-];
+]
 
 export const ourMentors = [
   {
@@ -397,7 +395,7 @@ export const ourMentors = [
 
     url: "https://www.linkedin.com/in/raghunathan-narayanan-495b587/",
   },
-];
+]
 
 export const CurrentOpenings = [
   {
@@ -418,7 +416,7 @@ export const CurrentOpenings = [
     logo: "/ContactUs/icon-3.svg",
     title: "Implementation Specialist",
   },
-];
+]
 
 export const StrengtheningData = [
   {
@@ -467,27 +465,28 @@ export const StrengtheningData = [
     image: "/WhyWorkForce/Strength/img-4.png",
     reverse: true,
   },
-];
+]
 
 export const WhyWorkForceData = [
   {
     image: "/WhyWorkForce/Why-ww-Slides/Slide-1.png",
-    source : "",
+    source: "",
   },
   {
     image: "/WhyWorkForce/Why-ww-Slides/slides-2nd.png",
-    source : "",
+    source: "",
   },
   {
     image: "/WhyWorkForce/Why-ww-Slides/Slide-3.png",
-    source : "* Source: <span class='text-[#1B6CCB]'>CEBR</span>",
+    source: "* Source: <span class='text-[#1B6CCB]'>CEBR</span>",
   },
   {
     image: "/WhyWorkForce/Why-ww-Slides/Slide-4.png",
-    source : " ** Source: <span class='text-[#1B6CCB]'>npr.org</span>  <span>*** Source:</span> <span class='text-[#1B6CCB]'>Forbes</span>",
+    source:
+      " ** Source: <span class='text-[#1B6CCB]'>npr.org</span>  <span>*** Source:</span> <span class='text-[#1B6CCB]'>Forbes</span>",
   },
   {
     image: "/WhyWorkForce/Why-ww-Slides/Slide-5.png",
-    source : "",
+    source: "",
   },
-];
+]

@@ -1,10 +1,10 @@
-'use client';
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import { FaLinkedin } from "react-icons/fa6";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa";
+"use client"
+import Image from "next/image"
+import Link from "next/link"
+import React from "react"
+import { FaLinkedin } from "react-icons/fa6"
+import { FaXTwitter } from "react-icons/fa6"
+import { FaInstagram } from "react-icons/fa"
 
 const Banner = () => {
   return (
@@ -27,7 +27,7 @@ const Banner = () => {
         {/* Left Section - Image */}
         <div className="flex justify-center">
           <Image
-            src="/ContactUs/banner-img.png"
+            src="/ContactUs/map.png"
             width={700}
             height={500}
             alt="Contact Us"
@@ -43,7 +43,7 @@ const Banner = () => {
               <p className="text-[#CECECE] mt-2">
                 Email:{" "}
                 <Link href="mailto: contactupfront@catalysts.org" className="">
-                contactupfront@catalysts.org
+                  contactupfront@catalysts.org
                 </Link>
               </p>
             </div>
@@ -118,7 +118,7 @@ const Banner = () => {
               <p className="border-t border-[#CECECE] mt-9"></p>
               <p className="mt-3 text-white">New Delhi:</p>
               <p className="text-[#CECECE] mt-2">
-              C-23, Usha Niketan, Safdarjung development Area,
+                C-23, Usha Niketan, Safdarjung development Area,
                 <br /> New Delhi - 110016
               </p>
             </div>
@@ -126,7 +126,7 @@ const Banner = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Banner;
+export default Banner

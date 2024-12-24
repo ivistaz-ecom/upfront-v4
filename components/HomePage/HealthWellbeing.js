@@ -1,6 +1,6 @@
-import React from "react";
-import { HealthWellbeingData, modalContent } from "@/utils/data";
-import Image from "next/image";
+import React from "react"
+import { HealthWellbeingData, modalContent } from "@/utils/data"
+import Image from "next/image"
 
 const HealthWellbeing = () => {
   return (
@@ -8,7 +8,7 @@ const HealthWellbeing = () => {
       <div className="flex flex-col justify-center items-center container mx-auto ">
         <div>
           <Image
-            src="/HomePage/ThematicAreas/popup-1.png"
+            src="/HomePage/ThematicAreas/popup01.png"
             width={800}
             height={300}
             alt="thematic image"
@@ -96,7 +96,6 @@ const HealthWellbeing = () => {
                 </p>
               </div>
             </div>
-            
 
             {/* 4th */}
             <div className="flex items-start space-x-4 justify-center mt-5">
@@ -128,7 +127,7 @@ const HealthWellbeing = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default HealthWellbeing;
+export default HealthWellbeing

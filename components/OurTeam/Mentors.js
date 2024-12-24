@@ -1,7 +1,7 @@
-'use client'
-import { ourMentors } from "@/utils/data";
-import Image from "next/image";
-import React from "react";
+"use client"
+import { ourMentors } from "@/utils/data"
+import Image from "next/image"
+import React from "react"
 
 const Mentors = () => {
   return (
@@ -9,7 +9,7 @@ const Mentors = () => {
       <div className="text-center mb-8">
         <p className="text-white text-3xl">Our Mentors</p>
       </div>
-      <div className="flex flex-col lg:space-x-[300px] container mx-auto lg:gap-3">
+      <div className="flex flex-col lg:space-x-[405px] container mx-auto lg:gap-3">
         {ourMentors.map((item, index) => (
           <div
             key={index}
@@ -58,7 +58,7 @@ const Mentors = () => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Mentors;
+export default Mentors

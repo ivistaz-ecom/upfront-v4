@@ -1,12 +1,12 @@
-'use client'
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
+"use client"
+import Image from "next/image"
+import Link from "next/link"
+import React from "react"
 
 const Banner = () => {
   return (
     <>
-     <div className="bg-[#0A0A0A]">
+      <div className="bg-[#0A0A0A]">
         <div className="text-white">
           <p className="text-center pt-10 text-2xl">OUR TEAM</p>
         </div>
@@ -18,10 +18,16 @@ const Banner = () => {
         </div>
       </div>
       <div className="">
-        <Image src="/OurTeam/banner.png" width={900} height={500} className="w-full h-auto" alt="banner team"/>
+        <Image
+          src="/OurTeam/banner01.png"
+          width={900}
+          height={500}
+          className="w-full h-auto"
+          alt="banner team"
+        />
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Banner;
+export default Banner
