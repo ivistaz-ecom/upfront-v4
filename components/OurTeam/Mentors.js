@@ -6,10 +6,10 @@ import React from "react"
 const Mentors = () => {
   return (
     <div className="bg-black py-10 pb-48 border-b border-[#909090]">
-      <div className="text-center mb-8">
+      <div className="text-center mb-10">
         <p className="text-white text-3xl">Our Mentors</p>
       </div>
-      <div className="flex flex-col lg:space-x-[405px] container mx-auto lg:gap-3">
+      <div className="flex flex-col lg:space-x-[300px] container mx-auto lg:gap-3 max-w-screen-lg">
         {ourMentors.map((item, index) => (
           <div
             key={index}
@@ -22,7 +22,7 @@ const Mentors = () => {
                 width={600}
                 height={300}
                 alt={item.name}
-                className="rounded-none lg:w-[400px] w-full p-5 lg:p-0 transition-all group-hover:scale-110 duration-500"
+                className="rounded-none lg:w-[300px] w-full p-5 lg:p-0 transition-all group-hover:scale-110 duration-500"
               />
             </div>
 

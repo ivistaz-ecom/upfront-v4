@@ -1,17 +1,18 @@
-"use client";
-import { CurrentOpenings } from "@/utils/data";
-import JoinUsForm from "@/utils/JoinUsForm";
-import PartnerForm from "@/utils/PartnerForm";
-import Image from "next/image";
-import React, { useState } from "react";
-import { FaBullhorn } from "react-icons/fa";
+"use client"
+import { CurrentOpenings } from "@/utils/data"
+import JoinUsForm from "@/utils/JoinUsForm"
+import PartnerForm from "@/utils/PartnerForm"
+import Image from "next/image"
+import Link from "next/link"
+import React, { useState } from "react"
+import { FaBullhorn } from "react-icons/fa"
 
 const Tabs = () => {
-  const [activeTab, setActiveTab] = useState("join");
+  const [activeTab, setActiveTab] = useState("join")
 
   const handleTabClick = (tab) => {
-    setActiveTab(tab);
-  };
+    setActiveTab(tab)
+  }
 
   return (
     <div className="bg-white mb-40">
@@ -72,12 +73,19 @@ const Tabs = () => {
                   <p className="mb-2 text-xl text-left">
                     Position {item.position}
                   </p>
-                  <div className="flex items-center gap-3 bg-black h-28 lg:w-96 w-full lg:p-5 p-2 ">
-                    <div className="bg-white text-red-500 p-2 rounded-full">
-                      <Image src={item.logo} width={60} height={60} alt="logo"/>
+                  <Link href={item.link} target="_blank">
+                    <div className="flex items-center gap-3 bg-black h-28 lg:w-96 w-full lg:p-5 p-2 ">
+                      <div className="bg-white text-red-500 p-2 rounded-full">
+                        <Image
+                          src={item.logo}
+                          width={60}
+                          height={60}
+                          alt="logo"
+                        />
+                      </div>
+                      <h3 className="text-xl  text-white">{item.title}</h3>
                     </div>
-                    <h3 className="text-xl  text-white">{item.title}</h3>
-                  </div>
+                  </Link>
                 </div>
               </>
             ))}
@@ -106,7 +114,7 @@ const Tabs = () => {
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default Tabs;
+export default Tabs

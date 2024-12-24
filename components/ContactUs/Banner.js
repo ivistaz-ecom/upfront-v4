@@ -50,21 +50,21 @@ const Banner = () => {
             <div className="mb-6">
               <h2 className=" font-semibold mb-2 text-white">Social Media:</h2>
               <hr className="border-[#CECECE]" />
-              <div className="flex flex-col gap-2 mt-3">
+              <div className="flex gap-2 mt-3">
                 <div className=" gap-0">
                   <Link
                     href="https://www.linkedin.com/showcase/upfrontcg/"
                     target="_blank"
                     className="flex"
                   >
-                    <button className="bg-red-500 text-white px-3 py-2 rounded-l">
+                    <button className="bg-red-500 text-white px-3 py-2 rounded">
                       <FaLinkedin />
                     </button>
-                    <div>
+                    {/* <div>
                       <p className="bg-[#2F2F2F] rounded-r w-28 py-1 px-3">
                         LinkedIn
                       </p>
-                    </div>
+                    </div> */}
                   </Link>
                 </div>
                 <div className=" gap-0">
@@ -73,12 +73,12 @@ const Banner = () => {
                     target="_blank"
                     className="flex"
                   >
-                    <button className="bg-red-500 text-white px-3 py-2 rounded-l">
+                    <button className="bg-red-500 text-white px-3 py-2 rounded">
                       <FaXTwitter />
                     </button>
-                    <div>
+                    {/* <div>
                       <p className="bg-[#2F2F2F] rounded-r w-28 py-1 px-3">X</p>
-                    </div>
+                    </div> */}
                   </Link>
                 </div>
                 <div className="gap-0">
@@ -87,14 +87,14 @@ const Banner = () => {
                     target="_blank"
                     className="flex"
                   >
-                    <button className="bg-red-500 text-white px-3 py-2 rounded-l">
+                    <button className="bg-red-500 text-white px-3 py-2 rounded">
                       <FaInstagram />
                     </button>
-                    <div>
+                    {/* <div>
                       <p className="bg-[#2F2F2F] rounded-r w-28 py-1 px-3">
                         Instagram
                       </p>
-                    </div>
+                    </div> */}
                   </Link>
                 </div>
               </div>

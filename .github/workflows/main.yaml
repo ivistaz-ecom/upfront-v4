@@ -19,10 +19,9 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }} # Your server's SSH private key in PEM format
 
           script: |
-           cd /home/react-staging/upfront2
-           echo sudo -S git config --global --add safe.directory /home/react-staging/cms
-           echo sudo -S git pull origin main
-           echo sudo -S sudo npm install
-           echo sudo -S sudo npm run build
-           sudo -S pm2 restart 23
-
+            cd /home/react-staging/upfront2
+            echo sudo -S git config --global --add safe.directory /home/react-staging/upfront2
+            echo sudo -S git pull origin main
+            echo sudo -S sudo npm install
+            echo sudo -S sudo npm run build
+            sudo -S pm2 restart 23
