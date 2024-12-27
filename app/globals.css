@@ -44,21 +44,32 @@ body {
     }
   }
   
-  .post-content {
-    max-height: 4em;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2 !important;
-    -webkit-box-orient: vertical;
-  }
+  /* Ensure consistent height for titles and descriptions */
+.post-content {
+  min-height: 3rem; /* Adjust this based on your design */
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limits to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.post-content-title {
+  min-height: 3rem; /* Adjust this based on your design */
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limits to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
   
   .post-content-title {
-    height: 2.5em !important;
+    min-height: 1em !important;
     overflow: hidden !important;
     text-overflow: ellipsis !important;
     display: -webkit-box !important;
-    -webkit-line-clamp: 2 !important;
+    -webkit-line-clamp: 3 !important;
     -webkit-box-orient: vertical !important;
   }
 

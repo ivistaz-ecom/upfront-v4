@@ -9,6 +9,7 @@ const ImpactStories = () => {
   const siteUrl = ConfigData.wpApiUrl;
   const serverUrl = ConfigData.SERVER;
   const categoryId = 2;
+  const categoryId1 = 9;
 
   const [data, setData] = useState([]); // Initialize data state with an empty array
   const [isLoading, setIsLoading] = useState(true); // Initialize loading state
@@ -18,7 +19,7 @@ const ImpactStories = () => {
       try {
         setIsLoading(true); // Set loading to true before fetching
         const response = await fetch(
-          `${siteUrl}/posts?categories=${categoryId}&_embed&production_mode[]=${serverUrl}`
+          `${siteUrl}/posts?categories=${categoryId},${categoryId1}&_embed&production_mode[]=${serverUrl}`
         );
         const data = await response.json();
         setData(data);
@@ -82,14 +83,17 @@ const ImpactStories = () => {
                       <div
                         key={post.id}
                         className={`relative flex flex-col bg-white overflow-hidden lg:p-10 p-5 group 
-          ${!isLastRow ? " border border-gray-300" : "lg:border-t-0"} 
-          ${!isLastColumn ? "border border-gray-300" : "lg:border-l-0"}`}
+  ${!isLastRow ? " border border-gray-300" : "lg:border-t-0"} 
+  ${!isLastColumn ? "border border-gray-300" : "lg:border-l-0"}`}
                       >
                         {/* Background Effect */}
                         <div className="absolute inset-0 bg-[#000] transform scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100 z-0"></div>
-                        <div className="relative z-10">
+                        <div className="relative z-10 flex flex-col h-full">
                           <div className="relative overflow-hidden">
-                            <h3 className="lg:text-2xl text-xl text-[#262626] group-hover:text-white flex items-center mb-6">
+                            <h3
+                              className="lg:text-2xl text-xl text-[#262626] group-hover:text-white flex items-center mb-6"
+                              style={{ minHeight: "5rem", lineHeight: "1.5" }} // Ensures title height is consistent
+                            >
                               {post.title.rendered}
                             </h3>
                             <Image
@@ -97,26 +101,39 @@ const ImpactStories = () => {
                               height={400}
                               src={post.acf.additional_thumbnail_image.url}
                               alt={post.title.rendered}
+                              style={{
+                                minHeight: "10rem",
+                                overflow: "hidden",
+                                textOverflow: "ellipsis",
+                              }}
                               className="lg:h-72 object-cover w-full transform transition-transform duration-500 group-hover:scale-110"
                             />
                           </div>
-                          <div className="text-left transition-colors duration-300 flex items-end group-hover:text-white ">
+                          <div className="text-left transition-colors duration-300 flex items-end group-hover:text-white mt-4 flex-grow">
                             <div
                               dangerouslySetInnerHTML={{
                                 __html: post["excerpt"]["rendered"],
                               }}
-                              className="lg:mx-3 mt-5 p-1 post-content text-lg"
+                              className="lg:mx-3 p-1 post-content text-lg"
+                              style={{
+                                minHeight: "3rem",
+                                overflow: "hidden",
+                                textOverflow: "ellipsis",
+                              }}
                             ></div>
-                            <div className="hidden sm:block transform opacity-0 justify-center items-center w-9 h-9 bg-[#E82B52] p-2 lg:-mx-8 lg:-mb-8 group-hover:opacity-100 transition-transform duration-500 group-hover:scale-150">
-                              <Link href={`/impact-stories/${post.slug}`}>
-                                <FiArrowRight
-                                  className="text-[white]"
-                                  size={20}
-                                />
-                              </Link>
-                            </div>
+                            {!post.categories.includes(categoryId1) && (
+                              <div className="hidden sm:block transform opacity-0 justify-center items-center w-9 h-9 bg-[#E82B52] p-2 lg:-mx-8 lg:-mb-8 group-hover:opacity-100 transition-transform duration-500 group-hover:scale-150">
+                                <Link href={`/impact-stories/${post.slug}`}>
+                                  <FiArrowRight
+                                    className="text-[white]"
+                                    size={20}
+                                  />
+                                </Link>
+                              </div>
+                            )}
                           </div>
                           {/* for mobile read more */}
+                          {!post.categories.includes(categoryId1) && (
                           <div className="mt-7 lg:hidden">
                             <Link
                               href={`/impact-stories/${post.slug}`}
@@ -125,8 +142,10 @@ const ImpactStories = () => {
                               Read more
                             </Link>
                           </div>
+                           )}
                         </div>
                       </div>
+                      
                     );
                   })
               ) : (
