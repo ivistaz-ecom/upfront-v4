@@ -68,13 +68,14 @@ const Tabs = () => {
               <>
                 <div
                   key={index}
-                  className="flex flex-col items-start justify-start p-3"
+                  className="flex flex-col lg:items-start lg:justify-start p-3"
                 >
-                  <p className="mb-2 text-xl text-left">
+                  <p className="mb-2 text-xl lg:text-left">
                     Position {item.position}
                   </p>
                   <Link href={item.link} target="_blank">
-                    <div className="flex items-center gap-3 bg-black h-28 lg:w-96 w-full lg:p-5 p-2 ">
+                   <div className="flex justify-center items-center container mx-auto">
+                   <div className="flex items-center gap-3 bg-black h-28 lg:w-96 w-80 lg:p-5 p-2 ">
                       <div className="bg-white text-red-500 p-2 rounded-full">
                         <Image
                           src={item.logo}
@@ -85,6 +86,7 @@ const Tabs = () => {
                       </div>
                       <h3 className="text-xl  text-white">{item.title}</h3>
                     </div>
+                   </div>
                   </Link>
                 </div>
               </>

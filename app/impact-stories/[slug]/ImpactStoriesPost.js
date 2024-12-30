@@ -172,7 +172,7 @@ const ImpactStoriesPost = ({ slug }) => {
     target="_blank"
     rel="noopener noreferrer"
   >
-    <Image src="/OurTeam/linkedin.png" width={30} height={30} className="cursor-pointer" />
+    <Image src="/OurTeam/linkedin.png" width={30} height={30} className="cursor-pointer" alt="logo linkedin" />
   </a>
 
   {/* Copy Link */}

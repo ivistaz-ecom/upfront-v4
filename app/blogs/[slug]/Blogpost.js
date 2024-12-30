@@ -207,6 +207,7 @@ const BlogPosts = ({ slug }) => {
                           width={30}
                           height={30}
                           className="cursor-pointer"
+                          alt="linkedin logo"
                         />
                       </a>
 

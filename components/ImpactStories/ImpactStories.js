@@ -134,18 +134,17 @@ const ImpactStories = () => {
                           </div>
                           {/* for mobile read more */}
                           {!post.categories.includes(categoryId1) && (
-                          <div className="mt-7 lg:hidden">
-                            <Link
-                              href={`/impact-stories/${post.slug}`}
-                              className="bg-black text-white group-hover:bg-white group-hover:text-black p-3 rounded-md"
-                            >
-                              Read more
-                            </Link>
-                          </div>
-                           )}
+                            <div className="mt-7 lg:hidden">
+                              <Link
+                                href={`/impact-stories/${post.slug}`}
+                                className="bg-black text-white group-hover:bg-white group-hover:text-black p-3 rounded-md"
+                              >
+                                Read more
+                              </Link>
+                            </div>
+                          )}
                         </div>
                       </div>
-                      
                     );
                   })
               ) : (

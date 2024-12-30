@@ -403,21 +403,21 @@ export const CurrentOpenings = [
     position: "1",
     logo: "/ContactUs/icon-1.svg",
     title: "Marketing & Communication Specialist",
-    link: "https://upfront.global/pdf/JD%20_%20MarComms%20Specialist%20_%20Upfront.pdf",
+    link: "/pdf/JD _ MarComms Specialist _ Upfront.pdf",
   },
   {
     id: 2,
     position: "2",
     logo: "/ContactUs/icon-2.svg",
     title: "Monitoring, Learning & Evaluation Specialist",
-    link: "https://upfront.global/pdf/JD-%20MLE%20Specialist.docx.pdf",
+    link: "/pdf/JD- MLE Specialist.docx.pdf",
   },
   {
     id: 3,
     position: "3",
     logo: "/ContactUs/icon-3.svg",
     title: "Implementation Specialist",
-    link: "https://upfront.global/pdf/ToR-%20H4All%20Implementation%20Specialist%20as%20Network%20Consultant%20(NC)%20-%20Delhi-NCR.docx%20(3).pdf",
+    link: "/pdf/ToR- H4All Implementation Specialist as Network Consultant (NC) - Delhi-NCR.docx.pdf",
   },
 ]
 

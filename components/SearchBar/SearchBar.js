@@ -6,28 +6,27 @@ import Image from "next/image";
 
 export default function SearchBar() {
   const [isFocused, setIsFocused] = useState(false);
-  const [searchQuery, setSearchQuery] = useState(""); // State to track search input
-  const [searchResults, setSearchResults] = useState([]); // State to store search results
+  const [searchQuery, setSearchQuery] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(""); // State to handle errors
+  const [error, setError] = useState("");
   const router = useRouter();
 
-  // Fetch results as the user types
   useEffect(() => {
     if (!searchQuery.trim()) {
-      setSearchResults([]); // Clear results when input is empty
-      setError(""); // Clear error message when input is empty
+      setSearchResults([]);
+      setError("");
       return;
     }
 
     const fetchResults = async () => {
       setLoading(true);
-      setError(""); // Reset error on new search attempt
+      setError("");
       try {
         const response = await fetch(
           `https://beta.upfront.global/wp-json/wp/v2/posts?search=${searchQuery}&categories=3,2,5&_embed`
         );
-        
+
         if (!response.ok) {
           throw new Error("Failed to fetch search results");
         }
@@ -50,36 +49,36 @@ export default function SearchBar() {
   }, [searchQuery]);
 
   const handleSearch = () => {
-    if (!searchQuery.trim()) return; // Prevent empty searches
+    if (!searchQuery.trim()) return;
+    setSearchResults([]);
+    setSearchQuery("");
+    setIsFocused(false);
     router.push(`/search-results?query=${encodeURIComponent(searchQuery)}`);
   };
 
   return (
-    <div className="relative flex items-center gap-4 p-2 sm:p-4 pl-52">
+    <div className="relative flex flex-col sm:flex-row items-center gap-4 p-2 sm:p-4 w-full">
       <div
-        className={`absolute right-0 transition-all ${
-          isFocused ? "w-full sm:w-72 bg-white z-20" : "w-40 sm:w-32 bg-gray-100"
+        className={`relative transition-all ${
+          isFocused ? "w-full sm:w-72 bg-white z-20" : "w-full sm:w-32 bg-gray-100"
         } flex items-center rounded-full border ${
           isFocused ? "border-red-500 shadow-lg" : "border-gray-300"
         }`}
+        onClick={() => setIsFocused(true)}
       >
         <input
           type="text"
-          placeholder={isFocused ? "For example, upfront ↵" : "Search.."}
-          className="w-full py-2 pl-4 pr-10 text-gray-700 outline-none rounded-full transition-all duration-500 text-sm sm:text-base"
+          placeholder="Search.."
+          className="w-full py-2 px-4 text-gray-700 outline-none rounded-full transition-all duration-500 text-sm sm:text-base"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           onKeyDown={(e) => {
-            if (e.key === "Enter") handleSearch(); // Trigger search on Enter key press
+            if (e.key === "Enter") handleSearch();
           }}
-          onMouseOver={() => setIsFocused(true)}
-          onMouseLeave={() => setIsFocused(false)}
         />
         <div
           className="absolute inset-y-0 right-0 flex items-center pr-3 cursor-pointer"
           onClick={handleSearch}
-          onMouseOver={() => setIsFocused(true)}
-          onMouseLeave={() => setIsFocused(false)}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -101,10 +100,10 @@ export default function SearchBar() {
       </div>
 
       {/* Dropdown for search results */}
-      {searchQuery && !loading && (
-        <div className="absolute bg-white right-0 lg:w-96 w-72 lg:top-16 top-12 border border-gray-300 rounded-md mt-1 shadow-lg max-h-60 overflow-y-auto">
+      {searchQuery && !loading && isFocused && (
+        <div className="absolute bg-white lg:left-0 w-80 -right-12 sm:right-0 lg:w-96 top-16 sm:top-20 border border-gray-300 rounded-md mt-1 shadow-lg max-h-60 overflow-y-auto">
           {error ? (
-            <p className="p-2 text-red-500">{error}</p> // Show error message
+            <p className="p-2 text-red-500">{error}</p>
           ) : searchResults.length > 0 ? (
             <ul>
               {searchResults.map((result, index) => {
@@ -119,29 +118,33 @@ export default function SearchBar() {
                 }
 
                 return (
-                  <li key={index} className="p-2 hover:bg-gray-100 cursor-pointer">
+                  <li
+                    key={index}
+                    className="p-2 hover:bg-gray-100 cursor-pointer"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                    }}
+                  >
                     <a
                       href={dynamicUrl}
                       target={result.categories.includes(5) ? "_blank" : "_self"}
-                      className="text-black hover:text-red-600"
+                      className="text-black hover:text-red-600 flex items-center gap-2"
                     >
-                      <span className="flex items-center gap-2">
-                        <Image
+                      <Image
                         width={300}
                         height={300}
-                          src={
-                            result.acf?.additional_thumbnail_image?.url ||
-                            "/homePage/upfrontLogo.svg"
-                          }
-                          alt={result.title?.rendered || "Thumbnail"}
-                          className="w-8 h-8 object-cover rounded-md"
-                        />
-                        <span
-                          dangerouslySetInnerHTML={{
-                            __html: result.title?.rendered || "No Title Available",
-                          }}
-                        ></span>
-                      </span>
+                        src={
+                          result.acf?.additional_thumbnail_image?.url ||
+                          "/homePage/upfrontLogo.svg"
+                        }
+                        alt={result.title?.rendered || "Thumbnail"}
+                        className="w-8 h-8 object-cover rounded-md"
+                      />
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: result.title?.rendered || "No Title Available",
+                        }}
+                      ></span>
                     </a>
                   </li>
                 );

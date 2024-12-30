@@ -31,7 +31,7 @@ const Team = () => {
                     className="mx-auto pt-2 lg:w-[28vw] transition-transform duration-300 group-hover:scale-110 borer-0"
                   />
 
-                  <div className="absolute inset-0  bg-black translate-x-full transition-transform duration-500 group-hover:translate-x-0 border-0"></div>
+                  <div className="absolute inset-[-0.9px]  bg-black translate-x-full transition-transform duration-500 group-hover:translate-x-0 border-0"></div>
 
                   <div className="absolute inset-0 flex flex-col justify-center items-center text-white opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                     <p className="text-3xl p-5 text-center">
