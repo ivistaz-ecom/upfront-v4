@@ -310,11 +310,11 @@ const BlogPosts = ({ slug }) => {
                           </div>
                           <div className="flex justify-center mt-10">
                             <Link href={`/blogs/${post.slug}`}>
-                              <button className="relative group px-7 py-2 bg-transparent text-black w-96 text-lg font-semibold transition-all duration-500 hover:bg-black group-hover:text-white">
+                              <button className="relative group px-6 py-2 bg-transparent text-black w-96 text-lg font-semibold transition-all duration-500 hover:bg-black group-hover:text-white">
                                 <span className="absolute inset-0 bg-black scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100"></span>
                                 <span className="relative z-10 flex items-center ">
                                   Read more
-                                  <FiArrowRight className="text-[20px] transform transition-transform duration-500 translate-x-0 lg:group-hover:translate-x-52 opacity-0 group-hover:opacity-100" />
+                                  <FiArrowRight className="text-[20px] transform transition-transform duration-500 translate-x-0 lg:group-hover:translate-x-60 opacity-0 group-hover:opacity-100" />
                                 </span>
                               </button>
                             </Link>

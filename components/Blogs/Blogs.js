@@ -127,7 +127,7 @@ const Blogs = () => {
                           <span className="absolute inset-0 bg-black scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100"></span>
                           <span className="relative z-10 flex items-center">
                             Read more
-                            <FiArrowRight className="text-[20px] transform transition-transform duration-500 translate-x-0 lg:group-hover:translate-x-52 opacity-0 group-hover:opacity-100" />
+                            <FiArrowRight className="text-[20px] transform transition-transform duration-500 translate-x-0 lg:group-hover:translate-x-56 opacity-0 group-hover:opacity-100" />
                           </span>
                         </button>
                       </Link>
