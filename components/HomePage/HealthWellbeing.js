@@ -37,7 +37,7 @@ const HealthWellbeing = () => {
               {/* Content */}
               <div className="">
                 <h4 className="lg:text-3xl text-xl lg:w-96">
-                  Nutrition, Sanitation and Personal Hygiene:
+                  Nutrition, Sanitation and Personal Hygiene
                 </h4>
                 <p className="text-gray-600 lg:text-xl lg:w-96 mt-5">
                   We believe that everyday habits play a crucial role in
@@ -62,7 +62,7 @@ const HealthWellbeing = () => {
               {/* Content */}
               <div className="">
                 <h4 className="lg:text-3xl text-xl lg:w-96">
-                  Stress Management and Mental Health:
+                  Stress Management and Mental Health
                 </h4>
                 <p className="text-gray-600 lg:text-xl lg:w-96 mt-5">
                   We recognise the importance of mental health for productivity
