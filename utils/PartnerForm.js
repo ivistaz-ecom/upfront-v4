@@ -258,11 +258,11 @@ const PartnerForm = ({ subject }) => {
             </button>
           </form>
         ) : (
-          <div className="mt-5 text-center mb-5 p-5">
-            <h3 className="text-lg text-black ">
+          <div className="mt-5 text-center mb-5 p-5 bg-gray-500">
+            <h3 className=" text-gray-200 text-2xl">
               Thank you for your interest.
             </h3>
-            <p className="text-black ">
+            <p className="text-gray-200 text-3xl mt-3">
               We will get in touch with you as soon as possible.
             </p>
           </div>

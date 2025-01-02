@@ -334,11 +334,11 @@ const JoinUsForm = ({ subject }) => {
             </div>
           </>
         ) : (
-          <div className="mt-5 text-center mb-5 ">
-            <h3 className="fs-4 text-black">
-              Your application has been received.
+          <div className="mt-5 text-center mb-5 bg-gray-500 p-5">
+            <h3 className="text-3xl text-gray-200">
+              Your application has been received!
             </h3>
-            <h3 className="fs-4 text-white">We will contact you shortly.</h3>
+            <h3 className="text-3xl text-gray-200 mt-3">We will contact you shortly.</h3>
           </div>
         )}
       </div>

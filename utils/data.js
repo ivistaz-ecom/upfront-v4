@@ -416,7 +416,7 @@ export const CurrentOpenings = [
     id: 3,
     position: "3",
     logo: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ContactUs/icon-3.svg",
-    title: "Implementation Specialist",
+    title: "Implementation Specialist ",
     link: "/pdf/ToR- H4All Implementation Specialist as Network Consultant (NC) - Delhi-NCR.docx.pdf",
   },
 ]
