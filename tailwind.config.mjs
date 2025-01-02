@@ -11,6 +11,15 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      animation: {
+        swirl: "swirls 2s linear infinite",
+      },
+      keyframes: {
+        swirls: {
+          from: { strokeDashoffset: "0" },
+          to: { strokeDashoffset: "300" },
+        },
+      },
     },
   },
   plugins: [],

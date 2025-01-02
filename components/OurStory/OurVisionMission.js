@@ -23,7 +23,7 @@ const OurVisionMission = () => {
      
       <div className="relative rounded-full hover:scale-105 transition-transform duration-300 ease-in-out p-5 lg:p-0">
         <Image
-          src="/OurStory/vision-mission.png"
+          src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ourStory/vision-mission.png"
           className="rounded-full border p-5"
           width={700}
           height={500}

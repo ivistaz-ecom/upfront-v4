@@ -52,7 +52,7 @@ export default function BubbleTabs() {
             <Image
             width={900}
             height={300}
-              src="/HomePage/OurLocations/WorldMap.svg"
+              src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/OurLocations/WorldMap.svg"
               alt="Global Image"
               className="object-cover mb-10"
             />
@@ -63,7 +63,7 @@ export default function BubbleTabs() {
             <Image
             width={400}
             height={400}
-              src="/HomePage/OurLocations/IndiaMap.png"
+              src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/OurLocations/IndiaMap.png"
               alt="India Image"
               className="w-96"
             />

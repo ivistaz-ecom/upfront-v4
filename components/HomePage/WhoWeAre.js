@@ -16,7 +16,7 @@ const WhoWeAre = () => {
       <div className="container mx-auto px-5">
         <div className="flex justify-center lg:mt-10 mt-7">
           <Image
-            src="/HomePage/WhoWeAre/WhoWeAre.png"
+            src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/WhoWeAre/WhoWeAre.png"
             width={1200}
             height={300}
             alt="Who We Are"

@@ -8,7 +8,7 @@ const SocialProtection = () => {
       <div className="flex flex-col justify-center items-center container mx-auto ">
         <div>
           <Image
-            src="/HomePage/ThematicAreas/img-6.png"
+            src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ThematicAreas/img-6.png"
             width={800}
             height={300}
             alt="thematic image"
@@ -30,7 +30,7 @@ const SocialProtection = () => {
               <Image
                 width={400}
                 height={400}
-                src="/HomePage/ThematicAreas/Popup/img-13.svg"
+                src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ThematicAreas/Popup/img-13.svg"
                 alt="icon logo"
                 className="w-12 h-12 lg:w-16 lg:h-16"
               />
@@ -57,7 +57,7 @@ const SocialProtection = () => {
               <Image
                 width={400}
                 height={400}
-                src="/HomePage/ThematicAreas/Popup/img-14.svg"
+                src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ThematicAreas/Popup/img-14.svg"
                 alt="icon logo"
                 className="w-12 h-12 lg:w-16 lg:h-16"
               />
@@ -86,7 +86,7 @@ const SocialProtection = () => {
               <Image
                 width={400}
                 height={400}
-                src="/HomePage/ThematicAreas/Popup/img-15.svg"
+                src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ThematicAreas/Popup/img-15.svg"
                 alt="icon logo"
                 className="w-12 h-12 lg:w-16 lg:h-16"
               />

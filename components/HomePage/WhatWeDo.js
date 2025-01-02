@@ -20,7 +20,7 @@ const WhatWeDo = () => {
       </div>
       <div className="flex items-center justify-center lg:my-10">
         <Image
-          src="/HomePage/WhatWeDo/info.png"
+          src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/WhatWeDo/info.png"
           width={650}
           height={500}
           className="lg:p-0 p-5"

@@ -9,8 +9,8 @@ const OurApproach = () => {
         <p className="text-3xl">Our Approach</p>
       </div>
       <div className="flex flex-col justify-center items-center text-center">
-        <Image src="/OurStory/OurApproach/info.png" width={1200} height={400} alt="info" className="hidden lg:block"/>
-        <Image src="/OurStory/OurApproach/info-mobile.png" width={1200} height={400} alt="info" className="lg:hidden sm:block p-3"/>
+        <Image src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ourStory/OurApproach/info.png" width={1200} height={400} alt="info" className="hidden lg:block"/>
+        <Image src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ourStory/OurApproach/info-mobile.png" width={1200} height={400} alt="info" className="lg:hidden sm:block p-3"/>
         <p className="p-4 lg:w-[50vw] mt-7 lg:mt-10 text-xl">
           Upfront prioritises the wellbeing of both the formal and informal
           workforce, placing their health and happiness at the core of its work

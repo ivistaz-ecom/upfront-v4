@@ -22,7 +22,7 @@ const Banner = () => {
       {/* Image Banner Section */}
       <div className="relative">
         <Image
-          src="/OurStory/banner.png"
+          src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ourStory/banner.png"
           width={600}
           height={500}
           className="w-full"
@@ -40,7 +40,7 @@ const Banner = () => {
                   <Image
                   width={50}
                   height={50}
-                    src="/OurStory/img-1.svg"
+                    src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ourStory/img-1.svg"
                     alt="Potential Icon"
                     className="w-16 h-16"
                   />
@@ -54,7 +54,7 @@ const Banner = () => {
                   <Image
                   width={50}
                   height={50}
-                    src="/OurStory/img-2.svg"
+                    src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ourStory/img-2.svg"
                     alt="Wellbeing Icon"
                     className="w-16 h-16"
                   />
@@ -71,7 +71,7 @@ const Banner = () => {
                 <Image
                   width={50}
                   height={50}
-                    src="/OurStory/img-3.svg"
+                    src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ourStory/img-3.svg"
                     alt="Human Rights Icon"
                     className="w-16 h-16 mt-3"
                   />

@@ -62,7 +62,7 @@ const Thinking = () => {
         <Image
           width={500}
           height={300}
-          src="/WhyWorkForce/img-1.png"
+          src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/WhyWorkforceWellbeiing/img-1.png"
           className="lg:float-end lg:w-72 w-52 lg:mt-0 mt-5"
           alt="upfront"
         />
@@ -72,7 +72,7 @@ const Thinking = () => {
         <Image
           width={500}
           height={300}
-          src="/WhyWorkForce/img-2.png"
+          src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/WhyWorkforceWellbeiing/img-2.png"
           className="lg:w-full mx-auto w-56"
           alt="upfront"
         />

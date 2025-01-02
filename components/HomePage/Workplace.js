@@ -8,7 +8,7 @@ const Workplace = () => {
       <div className="flex flex-col justify-center items-center container mx-auto ">
         <div>
           <Image
-            src="/HomePage/ThematicAreas/img-5.png"
+            src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ThematicAreas/img-5.png"
             width={800}
             height={300}
             alt="thematic image"
@@ -32,7 +32,7 @@ const Workplace = () => {
               <Image
                 width={400}
                 height={400}
-                src="/HomePage/ThematicAreas/Popup/img-11.svg"
+                src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ThematicAreas/Popup/img-11.svg"
                 alt="icon logo"
                 className="lg:w-16 lg:h-16 w-12 h-12"
               />
@@ -60,7 +60,7 @@ const Workplace = () => {
               <Image
                 width={400}
                 height={400}
-                src="/HomePage/ThematicAreas/Popup/img-12.svg"
+                src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ThematicAreas/Popup/img-12.svg"
                 alt="icon logo"
                 className="lg:w-16 lg:h-16 w-12 h-12"
               />

@@ -19,7 +19,7 @@ const Banner = () => {
       </div>
       <div className="">
         <Image
-          src="/OurTeam/banner01.png"
+          src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/OurTeam/banner01.png"
           width={900}
           height={500}
           className="w-full h-auto"

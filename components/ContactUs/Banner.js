@@ -27,7 +27,7 @@ const Banner = () => {
         {/* Left Section - Image */}
         <div className="flex justify-center">
           <Image
-            src="/ContactUs/map.png"
+            src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ContactUs/banner-img.png"
             width={700}
             height={500}
             alt="Contact Us"

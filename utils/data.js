@@ -4,37 +4,37 @@ import { FaUserCog } from "react-icons/fa"
 
 export const OurReach = [
   {
-    imageUrl: "/HomePage/OurReach/img-1.png",
+    imageUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ourReach/img-1.png",
     count: "905054",
     subtitle: "Factory Workforce",
     title: "Factory Workforce",
   },
   {
-    imageUrl: "/HomePage/OurReach/img02.png",
+    imageUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ourReach/img02.png",
     count: "393800",
     subtitle: "Street Vendor Workforce",
     title: "Street Vendors",
   },
   {
-    imageUrl: "/HomePage/OurReach/img-3.png",
+    imageUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ourReach/img-3.png",
     count: "2586",
     subtitle: "Health Care Providers",
     title: "Frontline Health Workforce",
   },
   {
-    imageUrl: "/HomePage/OurReach/img-4.png",
+    imageUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ourReach/img-4.png",
     count: "2586",
     subtitle: "Farmers",
     title: "Farmer",
   },
   {
-    imageUrl: "/HomePage/OurReach/img-5.png",
+    imageUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ourReach/img-5.png",
     count: "306811",
     subtitle: "Construction Workers",
     title: "Construction Workforce",
   },
   {
-    imageUrl: "/HomePage/OurReach/img-6.png",
+    imageUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ourReach/img-6.png",
     count: "507670",
     subtitle: "Fish Vendors",
     title: "Fish Vendors",
@@ -44,37 +44,37 @@ export const OurReach = [
 export const ThematicAreas = [
   {
     title: "Health and Wellbeing",
-    image: "/HomePage/ThematicAreas/popup01.png",
+    image: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ThematicAreas/popup01.png",
     description: "Promoting good health and wellbeing across communities",
     tab: "profile",
   },
   {
     title: "Gender Equality, Inclusion, and Diversity",
-    image: "/HomePage/ThematicAreas/img-2.png",
+    image: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ThematicAreas/img-2.png",
     description: "Championing gender equality for all",
     tab: "genter_equality",
   },
   {
     title: "Agency Building for Women and Young Girls",
-    image: "/HomePage/ThematicAreas/img-3.png",
+    image: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ThematicAreas/img-3.png",
     description: "Empowering women and young girls",
     tab: "settings",
   },
   {
     title: "Financial and Digital Inclusion",
-    image: "/HomePage/ThematicAreas/img-4.png",
+    image: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ThematicAreas/img-4.png",
     description: "Promoting access to financial and digital services",
     tab: "contacts",
   },
   {
     title: "Workplace/Social Dialogues",
-    image: "/HomePage/ThematicAreas/img-5.png",
+    image: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ThematicAreas/img-5.png",
     description: "Creating inclusive work environments",
     tab: "workplace",
   },
   {
     title: "Social Protection",
-    image: "/HomePage/ThematicAreas/img-6.png",
+    image: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ThematicAreas/img-6.png",
     description: "Ensuring safety nets for the vulnerable",
     tab: "social_protection",
   },
@@ -229,32 +229,32 @@ export const SocialProtectionData = {
 
 export const OurCollaborators = [
   {
-    logoUrl: "/HomePage/Collaborators/logo-1.png",
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/Collaborators/logo-1.png",
   },
   {
-    logoUrl: "/HomePage/Collaborators/logo-2.png",
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/Collaborators/logo-2.png",
   },
   {
-    logoUrl: "/HomePage/Collaborators/logo-3.png",
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/Collaborators/logo-3.png",
   },
   {
-    logoUrl: "/HomePage/Collaborators/logo-4.png",
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/Collaborators/logo-4.png",
   },
   {
-    logoUrl: "/HomePage/Collaborators/logo-5.png",
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/Collaborators/logo-5.png",
   },
   {
-    logoUrl: "/HomePage/Collaborators/logo-6.png",
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/Collaborators/logo-6.png",
   },
   {
-    logoUrl: "/HomePage/Collaborators/logo-7.png",
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/Collaborators/logo-7.png",
   },
 ]
 
 export const coreTeam = [
   {
     id: 1,
-    imageUrl: "/OurTeam/coreTeam/img-1.png",
+    imageUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/OurTeam/coreTeam/img-1.png",
     name: "Shaonli Chakraborty",
     post: "",
     designation: "CEO - Upfront",
@@ -263,7 +263,7 @@ export const coreTeam = [
 
   {
     id: 2,
-    imageUrl: "/OurTeam/coreTeam/img-2.png",
+    imageUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/OurTeam/coreTeam/img-2.png",
     name: "Sonali Maheshwari",
     post: "",
     designation: "Associate Director, Programs & Partnerships",
@@ -271,7 +271,7 @@ export const coreTeam = [
   },
   {
     id: 3,
-    imageUrl: "/OurTeam/coreTeam/img-3.png",
+    imageUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/OurTeam/coreTeam/img-3.png",
     name: "Sathish.K.N",
     post: "",
     designation: "Senior Program Manager",
@@ -279,7 +279,7 @@ export const coreTeam = [
   },
   {
     id: 4,
-    imageUrl: "/OurTeam/coreTeam/img-4.png",
+    imageUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/OurTeam/coreTeam/img-4.png",
     name: "Abhinav Kumar",
     post: "",
     designation: "Project Manager",
@@ -287,7 +287,7 @@ export const coreTeam = [
   },
   {
     id: 5,
-    imageUrl: "/OurTeam/coreTeam/img-5.png",
+    imageUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/OurTeam/coreTeam/img-5.png",
     name: "Astha Bohra",
     post: "",
     designation: "Human Resource Manager",
@@ -295,7 +295,7 @@ export const coreTeam = [
   },
   {
     id: 6,
-    imageUrl: "/OurTeam/coreTeam/meeta.png",
+    imageUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/OurTeam/coreTeam/meeta.png",
     name: "Meeta Sen",
     post: "",
     designation: "Lead, Operations-Delhi/NCR",
@@ -304,7 +304,7 @@ export const coreTeam = [
 
   {
     id: 7,
-    imageUrl: "/OurTeam/coreTeam/img-7.png",
+    imageUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/OurTeam/coreTeam/img-7.png",
     name: "Sandhya G.S",
     post: "",
     designation: "Implementation Manager",
@@ -313,7 +313,7 @@ export const coreTeam = [
 
   {
     id: 8,
-    imageUrl: "/OurTeam/coreTeam/img-8.png",
+    imageUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/OurTeam/coreTeam/img-8.png",
     name: "Sunitha Bai",
     post: "",
     designation: "State Lead, Tamil Nadu",
@@ -322,7 +322,7 @@ export const coreTeam = [
 
   {
     id: 9,
-    imageUrl: "/OurTeam/coreTeam/img-9.png",
+    imageUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/OurTeam/coreTeam/img-9.png",
     name: "Prabhakaran V",
     post: "",
     designation: "Program Specialist",
@@ -330,7 +330,7 @@ export const coreTeam = [
   },
   {
     id: 10,
-    imageUrl: "/OurTeam/coreTeam/img-10.png",
+    imageUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/OurTeam/coreTeam/img-10.png",
     name: "Retu Singh",
     post: "",
     designation: "Lead, Learning and Development",
@@ -338,7 +338,7 @@ export const coreTeam = [
   },
   {
     id: 11,
-    imageUrl: "/OurTeam/coreTeam/ramji.png",
+    imageUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/OurTeam/coreTeam/ramji.png",
     name: "Ramji Tripathi",
     post: "",
     designation: "Implementation Specialist",
@@ -346,7 +346,7 @@ export const coreTeam = [
   },
   {
     id: 12,
-    imageUrl: "/OurTeam/coreTeam/mohd.png",
+    imageUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/OurTeam/coreTeam/mohd.png",
     name: "Shoaib Mohd",
     post: "",
     designation: "Implementation Specialist",
@@ -354,7 +354,7 @@ export const coreTeam = [
   },
   {
     id: 13,
-    imageUrl: "/OurTeam/coreTeam/sameer.png",
+    imageUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/OurTeam/coreTeam/sameer.png",
     name: "Sameer Ahmed",
     post: "",
     designation: "MLE Specialist",
@@ -362,7 +362,7 @@ export const coreTeam = [
   },
   {
     id: 14,
-    imageUrl: "/OurTeam/coreTeam/gaurang.png",
+    imageUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/OurTeam/coreTeam/gaurang.png",
     name: "Gaurang Mohan",
     post: "",
     designation: "Implementation Specialist",
@@ -370,7 +370,7 @@ export const coreTeam = [
   },
   {
     id: 15,
-    imageUrl: "/OurTeam/coreTeam/alviya.png",
+    imageUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/OurTeam/coreTeam/alviya.png",
     name: "Alviya Haider ",
     post: "",
     designation: "Marketing Communications Specialist ",
@@ -381,7 +381,7 @@ export const coreTeam = [
 export const ourMentors = [
   {
     id: 1,
-    imageUrl: "/OurTeam/coreTeam/shiv.png",
+    imageUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/OurTeam/coreTeam/shiv.png",
     name: "Shiv Kumar",
     post: "Co-Founder, Director",
 
@@ -389,7 +389,7 @@ export const ourMentors = [
   },
   {
     id: 2,
-    imageUrl: "/OurTeam/coreTeam/raghu.png",
+    imageUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/OurTeam/coreTeam/raghu.png",
     name: "Raghunathan N",
     post: "Co-Founder, Director",
 
@@ -401,21 +401,21 @@ export const CurrentOpenings = [
   {
     id: 1,
     position: "1",
-    logo: "/ContactUs/icon-1.svg",
+    logo: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ContactUs/icon-1.svg",
     title: "Marketing & Communication Specialist",
     link: "/pdf/JD _ MarComms Specialist _ Upfront.pdf",
   },
   {
     id: 2,
     position: "2",
-    logo: "/ContactUs/icon-2.svg",
+    logo: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ContactUs/icon-2.svg",
     title: "Monitoring, Learning & Evaluation Specialist",
     link: "/pdf/JD- MLE Specialist.docx.pdf",
   },
   {
     id: 3,
     position: "3",
-    logo: "/ContactUs/icon-3.svg",
+    logo: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ContactUs/icon-3.svg",
     title: "Implementation Specialist",
     link: "/pdf/ToR- H4All Implementation Specialist as Network Consultant (NC) - Delhi-NCR.docx.pdf",
   },
@@ -435,7 +435,7 @@ export const StrengtheningData = [
     description2: `There are also reports of improvement in overall turnover and 
       attrition by employers and management. Therefore, safe, inclusive programmes, policies, and practices will lead to work environments 
       that will improve outcomes related to safety, security, health, and productivity ultimately benefiting both the workforce and businesses.`,
-    image: "/WhyWorkForce/Strength/img-1.png",
+    image: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/WhyWorkforceWellbeiing/Strength/img-1.png",
     reverse: false,
   },
   {
@@ -445,7 +445,7 @@ export const StrengtheningData = [
       Implementing effective transformative policies and programmes has demonstrated measurable outcomes. The study by Tuft University indicates that increasing women’s earnings to 91 cents for every dollar earned by men, thereby contributing to a more equitable workplace. Study by Gartner has shown that inclusive teams <a href="https://www.gartner.com/en/documents/3979855" target="_blank" class="text-[#1B6CCB] underline">improve team performance by up to 30 percent</a> in high-diversity environments.
     `,
     description2: `“Furthermore, the SDGs promote <a href="https://www.un.org/sustainabledevelopment/economic-growth/" target="_blank" class="text-[#1B6CCB] underline">decent work and economic growth</a> by seeking full and productive employment and decent work for all women and men including for young people and persons with disabilities, and equal pay for work of equal value. Mainstreaming of a gender perspective is crucial in the implementation of the <a href="https://www.un.org/sustainabledevelopment/development-agenda/" target="_blank" class="text-[#1B6CCB] underline">2030 Agenda for Sustainable Development</a>” ~ UN`,
-    image: "/WhyWorkForce/Strength/img-2.png",
+    image: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/WhyWorkforceWellbeiing/Strength/img-2.png",
     reverse: true,
   },
   {
@@ -455,7 +455,7 @@ export const StrengtheningData = [
       A resilient and well-supported workforce is fundamental to establishing a robust and healthy economy that is capable of withstanding economic and environmental fluctuations and uncertainties.
     `,
     description2: null,
-    image: "/WhyWorkForce/Strength/img-3.png",
+    image: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/WhyWorkforceWellbeiing/Strength/img-3.png",
     reverse: true,
   },
   {
@@ -465,31 +465,31 @@ export const StrengtheningData = [
       Occupational health and safety measures, eco-friendly facilities and services, green jobs and safe and environment-friendly practices can boost green carbon credits and environmental outcomes for industries, local governments, and the communities. Governments and Industries can improve climate and environmental outcomes by adaptations of safe, healthy, and green practices in their supply chains.
     `,
     description2: null,
-    image: "/WhyWorkForce/Strength/img-4.png",
+    image: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/WhyWorkforceWellbeiing/Strength/img-4.png",
     reverse: true,
   },
 ]
 
 export const WhyWorkForceData = [
   {
-    image: "/WhyWorkForce/Why-ww-Slides/Slide-1.png",
+    image: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/WhyWorkforceWellbeiing/Why-ww-Slides/Slide-1.png",
     source: "",
   },
   {
-    image: "/WhyWorkForce/Why-ww-Slides/slides-2nd.png",
+    image: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/WhyWorkforceWellbeiing/Why-ww-Slides/slides-2nd.png",
     source: "",
   },
   {
-    image: "/WhyWorkForce/Why-ww-Slides/Slide-3.png",
+    image: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/WhyWorkforceWellbeiing/Why-ww-Slides/Slide-3.png",
     source: "* Source: <span class='text-[#1B6CCB]'>CEBR</span>",
   },
   {
-    image: "/WhyWorkForce/Why-ww-Slides/Slide-4.png",
+    image: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/WhyWorkforceWellbeiing/Why-ww-Slides/Slide-4.png",
     source:
       " ** Source: <span class='text-[#1B6CCB]'>npr.org</span>  <span>*** Source:</span> <span class='text-[#1B6CCB]'>Forbes</span>",
   },
   {
-    image: "/WhyWorkForce/Why-ww-Slides/Slide-5.png",
+    image: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/WhyWorkforceWellbeiing/Why-ww-Slides/Slide-5.png",
     source: "",
   },
 ]

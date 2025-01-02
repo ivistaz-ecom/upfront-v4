@@ -13,15 +13,15 @@ const OurHistory = () => {
       <div className="lg:flex justify-center gap-10 mt-10">
         {[
           {
-            src: "/OurStory/OurHistory/img-1.png",
+            src: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ourStory/OurHistory/img-1.png",
             text: "Started our mission of workforce empowerment 20 years ago",
           },
           {
-            src: "/OurStory/OurHistory/img-2.png",
+            src: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ourStory/OurHistory/img-2.png",
             text: "Partnered with over 100 brands and organisations",
           },
           {
-            src: "/OurStory/OurHistory/img-3.png",
+            src: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ourStory/OurHistory/img-3.png",
             text: "Presence in over 600 factories across 19 states in India and 13 countries in South Asia and Africa",
           },
         ].map((item, index) => (
