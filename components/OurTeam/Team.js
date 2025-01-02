@@ -8,9 +8,9 @@ const Team = () => {
   return (
     <div className="">
       <div className="text-center">
-        <p className="secondar-title text-3xl lg:mt-20 mt-10">
+        <h1 className="secondar-title text-3xl lg:mt-20 mt-10">
           The Minds Behind The Mission
-        </p>
+        </h1>
       </div>
       <div className="container mx-auto py-10 flex justify-center items-center">
         <ul className="grid lg:grid-cols-3 gap-8 container mx-auto">

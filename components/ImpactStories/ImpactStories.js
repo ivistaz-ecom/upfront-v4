@@ -37,13 +37,13 @@ const ImpactStories = () => {
     <>
       <div className="bg-[#0A0A0A]">
         <div className="text-white">
-          <p className="text-center pt-10 text-2xl">IMPACT STORIES</p>
+          <h1 className="text-center pt-10 text-2xl">IMPACT STORIES</h1>
         </div>
         <div className="flex text-[#B9B9B9] items-end justify-start mt-4 p-4 container mx-auto">
           <p>
             <Link href="/">Home</Link> /{" "}
           </p>
-          <p className="px-1"> Impact Stories</p>
+          <h2 className="px-1"> Impact Stories</h2>
         </div>
       </div>
 

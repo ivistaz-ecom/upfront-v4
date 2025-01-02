@@ -7,9 +7,9 @@ import React from "react";
 const StrengtheningTheWorkforce = () => {
   return (
     <div className="mb-16">
-      <p className="text-center secondary-title text-3xl lg:my-10 my-5 font-bold lg:p-0 p-5">
+      <h3 className="text-center secondary-title text-3xl lg:my-10 my-5 font-semibold lg:p-0 p-5">
         Strengthening the Workforce for Sustainable Growth
-      </p>
+      </h3>
       {StrengtheningData.map((content, index) => (
         <div
           key={content.id}

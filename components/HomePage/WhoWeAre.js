@@ -6,12 +6,12 @@ const WhoWeAre = () => {
   return (
     <div className="lg:mt-28 mt-12">
       <div className="text-center px-5">
-        <p className="mt-5 custom-title lg:text-2xl text-xl md:text-3xl">
+        <h1 className="mt-5 custom-title lg:text-2xl text-xl md:text-3xl">
           Who We Are
-        </p>
-        <p className="secondary-title lg:text-5xl text-2xl md:text-5xl lg:mt-3 mt-2">
+        </h1>
+        <h2 className="secondary-title lg:text-5xl text-2xl md:text-5xl lg:mt-3 mt-2">
           Catalysts of Change for Workforce Wellbeing
-        </p>
+        </h2>
       </div>
       <div className="container mx-auto px-5">
         <div className="flex justify-center lg:mt-10 mt-7">

@@ -55,13 +55,13 @@ const NewsAndPublications = () => {
       </Head>
       <div className="bg-[#0A0A0A]">
         <div className="text-white">
-          <p className="text-center pt-10 text-2xl">NEWS AND PUBLICATIONS</p>
+          <h1 className="text-center pt-10 text-2xl">NEWS AND PUBLICATIONS</h1>
         </div>
         <div className="flex text-[#B9B9B9] items-end justify-start mt-4 p-4 container mx-auto">
           <p>
             <Link href="/">Home</Link> /{" "}
           </p>
-          <p className="px-1">News and Publications</p>
+          <h2 className="px-1">News and Publications</h2>
         </div>
       </div>
       {isLoading ? ( // Render loading indicator while loading
@@ -88,7 +88,7 @@ const NewsAndPublications = () => {
                       target="_blank"
                       href={`${post.acf.news_and_publications_url}`}
                     >
-                      <span
+                      <h3
                         className="text-[#0A0A0A] lg:text-2xl text-left"
                         dangerouslySetInnerHTML={{
                           __html: post.title.rendered,

@@ -7,7 +7,7 @@ const Mentors = () => {
   return (
     <div className="bg-black py-10 pb-48 border-b border-[#909090]">
       <div className="text-center mb-10">
-        <p className="text-white text-3xl">Our Mentors</p>
+        <h2 className="text-white text-3xl">Our Mentors</h2>
       </div>
       <div className="flex flex-col lg:space-x-[300px] container mx-auto lg:gap-3 max-w-screen-lg">
         {ourMentors.map((item, index) => (
@@ -28,12 +28,12 @@ const Mentors = () => {
 
             {/* Text Content */}
             <div className="relative z-10 p-6 text-white">
-              <p className="text-3xl group-hover:text-black transition-colors duration-500">
+              <h3 className="text-3xl group-hover:text-black transition-colors duration-500">
                 {item.name}
-              </p>
-              <p className="text-md font-light group-hover:text-black transition-colors duration-500">
+              </h3>
+              <h4 className="text-md font-light group-hover:text-black transition-colors duration-500">
                 {item.title}
-              </p>
+              </h4>
               <p className="text-3xl font-light group-hover:text-black transition-colors duration-500 mt-3">
                 {item.post}
               </p>

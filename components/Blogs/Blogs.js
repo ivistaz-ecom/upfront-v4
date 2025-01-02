@@ -37,7 +37,7 @@ const Blogs = () => {
     <>
       <div className="bg-[#0A0A0A]">
         <div className="text-white">
-          <p className="text-center pt-10 text-2xl">BLOGS</p>
+          <h1 className="text-center pt-10 text-2xl">BLOGS</h1>
         </div>
         <div className="flex text-[#B9B9B9] items-end justify-start mt-4 p-4 container mx-auto">
           <p>

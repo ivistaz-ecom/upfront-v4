@@ -35,7 +35,7 @@ const OurVisionMission = () => {
             isScrolled ? "lg:top-[28%] " : "lg:top-[70%] lg:bottom-0 bottom-[80%] lg:left-0 left-36"
           } left-0 transform -translate-x-1/3 flex flex-col justify-center items-center bg-black text-white rounded-full lg:w-72 lg:h-72 w-72 h-72  transition-all duration-700 ease-in-out`}
         >
-          <p className="text-2xl">Our Vision</p>
+          <h1 className="text-2xl">Our Vision</h1>
           <p className="text-center mt-3 text-lg px-3">
             Make wellbeing a reality for the workforce
           </p>
