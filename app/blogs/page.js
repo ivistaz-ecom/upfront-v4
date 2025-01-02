@@ -5,10 +5,10 @@ import Blogs from "../../components/Blogs/Blogs"
 import Seo from "../../components/Seo/Seo"
 const page = () => {
   const seoField = {
-    title: "",
-    description: "",
+    title: "Upfront Blogs: Insights on Workforce Wellbeing",
+    description: "Stay informed with Upfront Global's latest blogs featuring expert insights, news, and trends on workforce wellbeing",
     path: "blogs",
-    metaImage: "",
+    metaImage: "/HomePage/logo-upfront.png",
     pageType: "WebSite",
   };
   return (

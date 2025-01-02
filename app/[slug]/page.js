@@ -4,12 +4,22 @@ import config from "../../config";
 import NotFound from "../not-found";
 
 const Post = ({ params }) => {
-  const { slug } = params;
+  const [slug, setSlug] = useState(null);
   const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    const unwrapParams = async () => {
+      const resolvedParams = await params; // Unwrap the Promise
+      setSlug(resolvedParams.slug);
+    };
+    unwrapParams();
+  }, [params]);
+
+  useEffect(() => {
+    if (!slug) return; // Wait until slug is resolved
+
     const fetchData = async () => {
       try {
         const response = await fetch(
@@ -20,7 +30,6 @@ const Post = ({ params }) => {
         }
         const data = await response.json();
         setData(data);
-        // console.log(data)
       } catch (error) {
         console.error("Error fetching data:", error);
         setError(error);
@@ -28,7 +37,7 @@ const Post = ({ params }) => {
         setIsLoading(false);
       }
     };
-    // console.log(data)
+
     fetchData();
   }, [slug]);
 
@@ -59,21 +68,20 @@ const Post = ({ params }) => {
             />
             <title>{post.acf.meta_title_}</title>
             <meta name="description" content={post.acf.meta_description} />
-            {/* <meta name="robots" content="index, follow" /> */}
             <meta http-equiv="content-language" content="en"></meta>
             <meta name="robots" content="index, follow" />
-            <link rel="canonical" href="https://upfront.global  " />
+            <link rel="canonical" href="https://upfront.global" />
           </head>
 
           <div className="w-full">
-            <div className="bg-gradient-to-r from-gray-950 to-[#f40f34] bg-cover h-[80vh] flex flex-col pb-8">
+            <div className="bg-gradient-to-r from-gray-950 to-[#f40f34] bg-cover  flex flex-col pb-8">
               <div
                 dangerouslySetInnerHTML={{ __html: post.title.rendered }}
-                className="text-white text-center p-2 lg:p-0 lg:text-6xl text-3xl mt-60 align-middle justify-center lg:mt-72 lg:ps-16 container mx-auto"
+                className="text-white text-center p-2 lg:p-0 lg:text-6xl text-3xl my-52 align-middle justify-center lg:my-80 lg:ps-16 container mx-auto"
               />
             </div>
 
-            <div className="pt-5 px-10 text-xl pb-5 paragraph-height">
+            <div className="pt-5 lg:px-10 px-5 text-xl pb-32 paragraph-height">
               <div
                 dangerouslySetInnerHTML={{
                   __html: post["content"]["rendered"],

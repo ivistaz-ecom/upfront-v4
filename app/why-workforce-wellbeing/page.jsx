@@ -5,10 +5,10 @@ import WhyWorkforceWellbeing from "../../components/WhyWorkforceWellbeing"
 import Seo from "../../components/Seo/Seo"
 const page = () => {
   const seoField = {
-    title: "",
-    description: "",
+    title: "Upfront Global: Why Workforce Wellbeing Matters to Us",
+    description: "Understand the importance of workforce wellbeing and how Upfront Global empowers organisations to achieve happier, healthier, and more engaged teams",
     path: "why-workforce-wellbeing",
-    metaImage: "",
+    metaImage: "/HomePage/logo-upfront.png",
     pageType: "WebSite",
   };
   return (

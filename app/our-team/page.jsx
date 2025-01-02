@@ -6,10 +6,10 @@ import Seo from "../../components/Seo/Seo"
 
 const page = () => {
   const seoField = {
-    title: "",
-    description: "",
+    title: "Meet the Passionate Team Behind Upfront Global",
+    description: "Get to know the passionate area experts leading Upfront Global's initiatives to foster healthier, more productive workplaces worldwide.",
     path: "our-team",
-    metaImage: "",
+    metaImage: "/HomePage/logo-upfront.png",
     pageType: "WebSite",
   };
   return (
