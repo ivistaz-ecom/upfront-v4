@@ -1,5 +1,5 @@
 // pages/404.js
-
+'use client'
 import Link from "next/link";
 import { LuArrowLeft, LuArrowRight } from "react-icons/lu";
 

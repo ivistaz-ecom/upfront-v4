@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import ContactUs from "../../components/ContactUs"
 import Seo from "../../components/Seo/Seo"

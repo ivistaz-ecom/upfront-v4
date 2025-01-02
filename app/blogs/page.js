@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import Blogs from "../../components/Blogs/Blogs"
 import Seo from "../../components/Seo/Seo"

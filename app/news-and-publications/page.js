@@ -1,3 +1,5 @@
+'use client'
+
 import React from "react";
 import NewsAndPublications from "../../components/NewsAndPublications/NewsAndPublications";
 import Seo from "../../components/Seo/Seo"

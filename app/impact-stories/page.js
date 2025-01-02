@@ -1,3 +1,5 @@
+'use client'
+
 import React from "react";
 import ImpactStories from "../../components/ImpactStories/ImpactStories";
 import Seo from "../../components/Seo/Seo";
