@@ -41,7 +41,7 @@ const Team = () => {
                 </div>
 
                 <div className="">
-                  <p className="lg:text-3xl text-xl mt-3 lg:mx-0 mx-10">
+                  <p className="lg:text-3xl text-2xl mt-3 lg:mx-0 ">
                     {item.name}
                   </p>
 
@@ -52,7 +52,7 @@ const Team = () => {
                           src="/OurTeam/linkedin.png"
                           width={50}
                           height={30}
-                          className="mt-3 lg:mx-0 mx-10"
+                          className="mt-3 lg:mx-0"
                           alt="member"
                         />
                       </Link>

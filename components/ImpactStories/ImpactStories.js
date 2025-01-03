@@ -91,8 +91,8 @@ const ImpactStories = () => {
                         <div className="relative z-10 flex flex-col h-full">
                           <div className="relative overflow-hidden">
                             <h3
-                              className="lg:text-2xl text-xl text-[#262626] group-hover:text-white flex items-center mb-6"
-                              style={{ minHeight: "5rem", lineHeight: "1.5" }} // Ensures title height is consistent
+                              className="lg:text-2xl text-xl text-[#262626] group-hover:text-white flex items- mb-4"
+                              style={{ minHeight: "5rem", lineHeight: "" }} // Ensures title height is consistent
                             >
                               {post.title.rendered}
                             </h3>

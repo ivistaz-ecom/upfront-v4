@@ -108,7 +108,7 @@ const NewsAndPublications = () => {
                         height={300}
                           src={post.acf.thumbnail_image.url}
                           alt={post.title.rendered}
-                          className="w-52 transform transition-transform duration-500 group-hover:scale-125"
+                          className="w-52 transform transition-transform duration-500 lg:group-hover:scale-125"
                         />
                       </Link>
                     )}
