@@ -53,7 +53,7 @@ const NewsAndPublications = () => {
         <meta property="og:image" content={seoProps.metaImage} />
         <meta property="og:url" content={seoProps.path} />
       </Head>
-      <div className="bg-[#0A0A0A]">
+      <div className="bg-[#0A0A0A]  lg:pt-24 pt-20">
         <div className="text-white">
           <h1 className="text-center pt-10 text-2xl">NEWS AND PUBLICATIONS</h1>
         </div>

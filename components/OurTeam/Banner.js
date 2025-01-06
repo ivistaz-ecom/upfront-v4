@@ -6,7 +6,7 @@ import React from "react"
 const Banner = () => {
   return (
     <>
-      <div className="bg-[#0A0A0A]">
+      <div className="bg-[#0A0A0A] lg:pt-24 pt-20">
         <div className="text-white">
           <p className="text-center pt-10 text-2xl">OUR TEAM</p>
         </div>
