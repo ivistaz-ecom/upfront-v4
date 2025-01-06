@@ -24,6 +24,7 @@ const Banner = () => {
           height={500}
           className="w-full h-auto"
           alt="banner team"
+          priority 
         />
       </div>
     </>

@@ -21,6 +21,8 @@ const WhoWeAre = () => {
             height={300}
             alt="Who We Are"
             className="w-full lg:relative z-10"
+            layout="responsive"
+            priority
           />
         </div>
         <div className="flex justify-center items-center container mx-auto ">

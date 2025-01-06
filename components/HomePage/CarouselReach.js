@@ -54,6 +54,7 @@ const CarouseReach = () => {
                   src={item.imageUrl}
                   alt={item.title}
                   className="transition-transform duration-500 lg:w-60"
+                  
                 />
                 <div className="absolute inset-0 bg-black translate-x-full transition-transform duration-500 group-hover:translate-x-0"></div>
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">

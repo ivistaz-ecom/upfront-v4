@@ -38,7 +38,7 @@ const OurHistory = () => {
                 alt={`Our history image ${index + 1}`}
               />
             </div>
-            <div className="absolute -bottom-24  bg-black rounded-full lg:h-60 lg:w-60 w-52 h-52 flex justify-center items-center text-center text-white group-hover:bg-white group-hover:text-black transition-all duration-500">
+            <div className="absolute -bottom-24 bg-black rounded-full lg:h-60 lg:w-60 w-52 h-52 flex justify-center items-center text-center text-white group-hover:bg-white group-hover:text-black transition-all duration-500">
               <p className="p-6 text-sm lg:text-xl">{item.text}</p>
             </div>
           </div>

@@ -74,6 +74,7 @@ const Banner = () => {
                     src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ourStory/img-3.svg"
                     alt="Human Rights Icon"
                     className="w-16 h-16 mt-3"
+                    priority
                   />
                 </div>
                 <h3 className="para-color mt-3 p-2">

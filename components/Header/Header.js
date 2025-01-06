@@ -5,6 +5,7 @@ import { FaSearch, FaChevronRight } from "react-icons/fa";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import SearchBar from "../SearchBar/SearchBar";
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathName = usePathname();
@@ -13,18 +14,6 @@ const Header = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  // useEffect(() => {
-  //   const handleClickOutside = (e) => {
-  //     if (menuRef.current && !menuRef.current.contains(e.target)) {
-  //       setIsMenuOpen(false);
-  //     }
-  //   };
-
-  //   document.addEventListener("mousedown", handleClickOutside);
-  //   return () => {
-  //     document.removeEventListener("mousedown", handleClickOutside);
-  //   };
-  // }, []);
 
   useEffect(() => {
     const handleBodyScroll = () => {
@@ -46,6 +35,7 @@ const Header = () => {
       window.removeEventListener("resize", handleBodyScroll);
     };
   }, [isMenuOpen]);
+
   const navItems = [
     { name: "Home", href: "/" },
     { name: "Our Story", href: "/our-story" },
@@ -58,7 +48,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="bg-white shadow-md p-3 lg:px-0 px-4">
+    <div className="bg-white shadow-md p-3 lg:px-0 px-4 fixed top-0 left-0 w-full z-50">
       <div className="flex justify-between items-center container mx-auto">
         {/* Logo */}
         <div className="flex items-center space-x-2">
@@ -66,8 +56,9 @@ const Header = () => {
             <Image
               src="/HomePage/logo-upfront.png"
               width={70}
-              height={50}
+              height={70}
               alt="Logo"
+              priority
             />
           </Link>
         </div>
@@ -76,7 +67,7 @@ const Header = () => {
         <div className="flex items-center space-x-8">
           {/* Search */}
           <div className="flex items-center space-x-2 cursor-pointer">
-            <SearchBar/>
+            <SearchBar />
           </div>
 
           {/* Animated Menu Icon */}
@@ -109,27 +100,25 @@ const Header = () => {
         <div ref={menuRef} className="absolute left-0 w-full bg-gray-50 shadow-lg z-50">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 p-6 container mx-auto">
             {navItems.map((item, index) => (
-            <div key={index} className="border-b pb-2">
-            <Link
-              href={item.href}
-              className={`hover:text-[#E82B52] ${
-                pathName === item.href
-                  ? "font-bold text-[#E82B52]"
-                  : "text-[#262626]"
-              }`}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              <p className="flex justify-between items-end group text-xl">
-                <span className="lg:group-hover:translate-x-7 transition-all duration-500 flex items-center gap-3">
-                  {/* Red bar visible only on hover */}
-                  <p className="bg-red-600 h-1 w-7 lg:mx-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 hidden lg:block"></p>
-                  {item.name}
-                </span>
-                <FaChevronRight className="group-hover:translate-x-1 transition-all duration-500 lg:group-hover:scale-125" />
-              </p>
-            </Link>
-          </div>
-          
+              <div key={index} className="border-b pb-2">
+                <Link
+                  href={item.href}
+                  className={`hover:text-[#E82B52] ${
+                    pathName === item.href
+                      ? "font-bold text-[#E82B52]"
+                      : "text-[#262626]"
+                  }`}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <p className="flex justify-between items-end group text-xl">
+                    <span className="lg:group-hover:translate-x-7 transition-all duration-500 flex items-center gap-3">
+                      <p className="bg-red-600 h-1 w-7 lg:mx-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 hidden lg:block"></p>
+                      {item.name}
+                    </span>
+                    <FaChevronRight className="group-hover:translate-x-1 transition-all duration-500 lg:group-hover:scale-125" />
+                  </p>
+                </Link>
+              </div>
             ))}
           </div>
         </div>

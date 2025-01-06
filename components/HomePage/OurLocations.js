@@ -55,6 +55,7 @@ export default function BubbleTabs() {
               src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/OurLocations/WorldMap.svg"
               alt="Global Image"
               className="object-cover mb-10"
+              layout="responsive"
             />
           </div>
         )}
@@ -66,6 +67,7 @@ export default function BubbleTabs() {
               src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/OurLocations/IndiaMap.png"
               alt="India Image"
               className="w-96"
+              layout="responsive"
             />
           </div>
         )}

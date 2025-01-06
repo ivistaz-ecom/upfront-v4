@@ -31,6 +31,7 @@ const Banner = () => {
             width={700}
             height={500}
             alt="Contact Us"
+            priority
           />
         </div>
 

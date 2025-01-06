@@ -25,6 +25,8 @@ const WhatWeDo = () => {
           height={500}
           className="lg:p-0 p-5"
           alt="info-img"
+          // layout="responsive"
+          priority
         />
       </div>
       <div>
