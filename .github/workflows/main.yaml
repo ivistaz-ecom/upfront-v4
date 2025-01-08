@@ -20,8 +20,8 @@ jobs:
 
           script: |
             cd /home/react-staging/upfront2
-            echo sudo -S git config --global --add safe.directory /home/react-staging/upfront2
-            echo sudo -S git pull origin main
-            echo sudo -S sudo npm install
-            echo sudo -S sudo npm run build
-            sudo -S pm2 restart 23
+            echo sudo git config --global --add safe.directory /home/react-staging/upfront2
+            echo sudo git pull origin main
+            echo sudo npm install
+            echo sudo npm run build
+            sudo pm2 restart 23
