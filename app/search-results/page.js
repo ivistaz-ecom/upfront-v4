@@ -43,7 +43,7 @@ const SearchResultsPage = () => {
 
   return (
     <>
-      <div className="container mx-auto p-6 text-center border bg-[#f4f4f4e7] my-10 shadow-lg mb-32">
+      <div className="container mx-auto p-6 text-center border bg-[#f4f4f4e7] my-36 shadow-lg mb-32">
         <h1 className="mb-6 text-2xl font-bold">
           Search Results For:{" "}
           {searchQuery ? encodeURIComponent(searchQuery) : "No query provided"}

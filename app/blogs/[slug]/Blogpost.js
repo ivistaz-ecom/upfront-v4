@@ -90,7 +90,7 @@ const BlogPosts = ({ slug }) => {
     <div className="custom-container">
       {isLoading ? (
         // Loading spinner or skeleton screen
-        <div className="text-center py-20 p-5">
+        <div className="text-center py-20 my-16 p-5">
           <div className="animate-pulse container mx-auto border-2">
             <div className="flex justify-between items-center border-b-2">
               <div className=" h-6 w-40 bg-gray-300"></div>
@@ -109,7 +109,7 @@ const BlogPosts = ({ slug }) => {
           </div>
         </div>
       ) : post ? (
-        <div className="bg-[#EFEFEF] lg:p-10 p-3">
+        <div className="bg-[#EFEFEF] lg:p-10 p-3 lg:my-24 my-20 pt-8">
           <div>
             <p className="text-[#0A0A0A] container mx-auto lg:text-xl">
               <Link href="/">Home /</Link>
@@ -293,7 +293,7 @@ const BlogPosts = ({ slug }) => {
                               )}
                             </div>
                             <div className="pt-4 text-left">
-                              <h3 className="lg:text-2xl text-xl text-[#262626] flex items-center mt-6 ">
+                              <h3 className="lg:text-2xl text-xl text-[#262626] flex items-center mt-6 post-content-title-recent">
                                 <span
                                   dangerouslySetInnerHTML={{
                                     __html: post.title.rendered,

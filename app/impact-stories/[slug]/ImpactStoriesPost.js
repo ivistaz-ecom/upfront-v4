@@ -75,7 +75,7 @@ const ImpactStoriesPost = ({ slug }) => {
   return (
     <div className="custom-container">
       {isLoading ? (
-        <div className="text-center py-20">
+          <div className="text-center py-20 my-16 p-5">
           <div className="animate-pulse container mx-auto border-2">
             <div className="flex justify-between items-center border-b-2">
               <div className=" h-6 w-40 bg-gray-300"></div>
@@ -83,8 +83,8 @@ const ImpactStoriesPost = ({ slug }) => {
             </div>
             <div className="mb-2 h-6 w-[60%] container mx-auto mt-5 bg-gray-300"></div>
             <div className="mb-2 h-6 w-[60%] container mx-auto mt- bg-gray-300"></div>
-            <div className="mb-2 h-36 w-96 mx-auto mt-5 rounded bg-gray-400"></div>
-            <div className="mb-2 h-6 w-[60%] container mx-auto mt-5 bg-gray-300"></div>
+            <div className="mb-2 h-36 lg:w-96 mx-auto mt-5 rounded bg-gray-400"></div>
+            <div className="mb-2 h-6 lg:w-[60%] container mx-auto mt-5 bg-gray-300"></div>
             <div className="mb-2 h-6 w-[60%] container mx-auto mt-5 bg-gray-300"></div>
             <div className="mb-2 h-6 w-[60%] container mx-auto mt-5 bg-gray-300"></div>
             <div className="flex justify-between items-center border-t-2 mt-5">
@@ -94,7 +94,7 @@ const ImpactStoriesPost = ({ slug }) => {
           </div>
         </div>
       ) : post ? (
-        <div className="bg-[#EFEFEF] lg:p-10 p-3">
+        <div className="bg-[#EFEFEF] lg:p-10 p-3 lg:my-24 my-20 pt-8">
           <div>
             <p className="text-[#0A0A0A] container mx-auto text-xl">
               <Link href="/">Home /</Link>
@@ -197,7 +197,7 @@ const ImpactStoriesPost = ({ slug }) => {
                   </div>
                 )}
                 <div
-                  className="text-[#0A0A0A]"
+                  className="text-[#0A0A0A] p-3 lg:p-0"
                   dangerouslySetInnerHTML={{ __html: post.content.rendered }}
                 />
               </div>
