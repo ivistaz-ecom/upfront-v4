@@ -73,7 +73,7 @@ body {
     -webkit-box-orient: vertical !important;
   }
 
-  .post-content-popup {
+  .post-content-recent {
     max-height: 12em;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -82,12 +82,12 @@ body {
     -webkit-box-orient: vertical;
   }
   
-  .post-content-title-popup {
-    height: 5em !important;
+  .post-content-title-recent {
+    height: 2.5em !important;
     overflow: hidden !important;
     text-overflow: ellipsis !important;
     display: -webkit-box !important;
-    -webkit-line-clamp: 4 !important;
+    -webkit-line-clamp: 2 !important;
     -webkit-box-orient: vertical !important;
   }
 
