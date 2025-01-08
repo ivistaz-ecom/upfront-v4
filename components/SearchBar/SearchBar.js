@@ -68,7 +68,7 @@ export default function SearchBar() {
       >
         <input
           type="text"
-          placeholder="Search.."
+          placeholder="Search..."
           className="w-full py-2 px-4 text-gray-700 outline-none rounded-full transition-all duration-500 text-sm sm:text-base"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
