@@ -108,9 +108,9 @@ export const OurCollaborators = [
   {
     logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-9.png",
   },
-  {
-    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-10.png",
-  },
+  // {
+  //   logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-10.png",
+  // },
   {
     logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-11.png",
   },
