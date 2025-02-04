@@ -82,26 +82,84 @@ export const ThematicAreas = [
 
 export const OurCollaborators = [
   {
-    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/Collaborators/logo-1.png",
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-1.png",
   },
   {
-    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/Collaborators/logo-2.png",
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-2.png",
   },
   {
-    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/Collaborators/logo-3.png",
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-3.png",
   },
   {
-    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/Collaborators/logo-4.png",
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-4.png",
   },
   {
-    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/Collaborators/logo-5.png",
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-5.png",
   },
   {
-    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/Collaborators/logo-6.png",
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-6.png",
   },
   {
-    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/Collaborators/logo-7.png",
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-7.png",
   },
+  {
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-8.png",
+  },
+  {
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-9.png",
+  },
+  {
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-10.png",
+  },
+  {
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-11.png",
+  },
+  {
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-12.png",
+  },
+  {
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-13.png",
+  },
+  {
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-14.png",
+  },
+  {
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-15.png",
+  },
+  {
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-16.png",
+  },
+  {
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-17.png",
+  },
+  {
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-18.png",
+  },
+  {
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-19.png",
+  },
+  {
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-20.png",
+  },
+  {
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-21.png",
+  },
+  {
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-22.png",
+  },
+  {
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-23.png",
+  },
+  {
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-24.png",
+  },
+  {
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-25.png",
+  },
+  {
+    logoUrl: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-26.png",
+  },
+  
 ]
 
 export const coreTeam = [
