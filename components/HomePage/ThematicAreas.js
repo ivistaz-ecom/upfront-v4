@@ -66,7 +66,7 @@ const ThematicArea = () => {
 
   return (
     <>
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-8 mb-28">
         <div className="text-center flex flex-col justify-center items-center">
           <p className="custom-title lg:mt-28 mt-10 lg:text-3xl text-xl">
             Thematic Areas
