@@ -18,7 +18,7 @@ const index = () => {
       {/* <ReachCarousel/> */}
       <OurLocations/>
       <ThematicAreas/>
-      <OurCollaborators/>
+      {/* <OurCollaborators/> */}
     </div>
   )
 }
