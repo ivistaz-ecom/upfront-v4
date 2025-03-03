@@ -61,7 +61,7 @@ const Tabs = () => {
             CAREER OPPORTUNITIES
           </h2>
           <p className="text-[#2F2F2F] lg:text-2xl text-xl mt-3">
-            Current Openings
+            Current Opening
           </p>
           <div className="lg:flex justify-center lg:space-x-4 mt-6 container mx-auto">
             {CurrentOpenings.map((item, index) => (
