@@ -71,7 +71,7 @@ const Tabs = () => {
                   className="flex flex-col lg:items-start lg:justify-start p-3"
                 >
                   <p className="mb-2 text-xl lg:text-left">
-                    Position {item.position}
+                    {/* Position {item.position} */}
                   </p>
                   <Link href={item.link} target="_blank">
                    <div className="flex justify-center items-center container mx-auto">

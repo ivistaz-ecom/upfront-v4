@@ -311,25 +311,25 @@ export const ourMentors = [
 export const CurrentOpenings = [
   {
     id: 1,
-    position: "1",
-    logo: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ContactUs/icon-1.svg",
-    title: "Marketing & Communication Specialist",
-    link: "/pdf/JD _ MarComms Specialist _ Upfront.pdf",
+    // position: "1",
+    logo: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ContactUs/Icon+4.svg",
+    title: "State Project Implementation Specialist",
+    link: "/pdf/State Project Implementation Specialist .pdf",
   },
-  {
-    id: 2,
-    position: "2",
-    logo: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ContactUs/icon-2.svg",
-    title: "Monitoring, Learning & Evaluation Specialist",
-    link: "/pdf/JD- MLE Specialist.docx.pdf",
-  },
-  {
-    id: 3,
-    position: "3",
-    logo: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ContactUs/icon-3.svg",
-    title: "Implementation Specialist ",
-    link: "/pdf/ToR- H4All Implementation Specialist as Network Consultant (NC) - Delhi-NCR.docx.pdf",
-  },
+  // {
+  //   id: 2,
+  //   position: "2",
+  //   logo: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ContactUs/icon-2.svg",
+  //   title: "Monitoring, Learning & Evaluation Specialist",
+  //   link: "/pdf/JD- MLE Specialist.docx.pdf",
+  // },
+  // {
+  //   id: 3,
+  //   position: "3",
+  //   logo: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ContactUs/icon-3.svg",
+  //   title: "Implementation Specialist ",
+  //   link: "/pdf/ToR- H4All Implementation Specialist as Network Consultant (NC) - Delhi-NCR.docx.pdf",
+  // },
 ]
 
 export const StrengtheningData = [
