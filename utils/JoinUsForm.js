@@ -24,9 +24,9 @@ const JoinUsForm = ({ subject }) => {
     { id: "2", name: "Full Time" },
   ];
   const applying = [
-    { id: "1", position: "Marketing & Communication Specialist" },
-    { id: "2", position: "Monitoring, Learning & Evaluation Specialist " },
-    { id: "3", position: "Implementation Specialist" },
+    { id: "1", position: "State Project Implementation Specialist" },
+    // { id: "2", position: "Monitoring, Learning & Evaluation Specialist " },
+    // { id: "3", position: "Implementation Specialist" },
   ];
 
   const [formData, setFormData] = useState({
