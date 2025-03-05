@@ -313,8 +313,8 @@ export const CurrentOpenings = [
     id: 1,
     // position: "1",
     logo: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ContactUs/Icon+4.svg",
-    title: "State Project Implementation Specialist",
-    link: "/pdf/State Project Implementation Specialist .pdf",
+    title: "State Project Implementation Specialist - Kerala",
+    link: "/pdf/State Project Implementation Specialist ( Kerala).docx (1) (1).pdf",
   },
   // {
   //   id: 2,
