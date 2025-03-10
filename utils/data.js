@@ -316,6 +316,13 @@ export const CurrentOpenings = [
     title: "State Project Implementation Specialist - Kerala",
     link: "/pdf/State Project Implementation Specialist ( Kerala).docx (1) (1).pdf",
   },
+  {
+    id: 2,
+    // position: "2",
+    logo: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/Upfront-v4/ContactUs/Icon+4.svg",
+    title: "State Project Implementation Specialist - Rajasthan",
+    link: "/pdf/State Project Implementation Specialist ( Rajasthan_Jodhpur).docx.pdf",
+  },
   // {
   //   id: 2,
   //   position: "2",
