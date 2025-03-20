@@ -1,16 +1,11 @@
-'use client';
+"use client";
 
-import React from 'react';
-import Posts from './Blogpost'; // Adjust the import path accordingly
+import React, { use } from "react";
+import Posts from "./Blogpost"; // Adjust the import path accordingly
+const Page = ({ params }) => {
+  const { slug } = use(params) || {};
 
-const Page = async ({ params }) => {
-    const { slug } = await params; // Ensure params is awaited
-
-    return (
-        <div>
-            <Posts slug={slug} />
-        </div>
-    );
+  return <div>{slug ? <Posts slug={slug} /> : null}</div>;
 };
 
 export default Page;

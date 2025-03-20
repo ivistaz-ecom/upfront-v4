@@ -11,7 +11,7 @@ function NextSeo({ title, description, path, metaImage }) {
       <meta name="description" content={description} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content="index, follow" />
-      <link rel="icon" href="/Home/seslong-favicon.png" />
+      <link rel="icon" href="/favicon.ico" />
       <link rel="canonical" href={`${configData.WEBSITE_URL}${path}`} />
       <meta property="og:locale" content="en_US" />
       <meta property="og:type" content="website" />
