@@ -4,7 +4,7 @@ const config = {
   // Career form
   careeFormApi:
     "https://beta.upfront.global/wp-json/contact-form-7/v1/contact-forms/102/feedback",
-  SERVER: "7",
+  SERVER: "8",
   WEBSITE_URL: "https://upfront.global/",
 };
 
