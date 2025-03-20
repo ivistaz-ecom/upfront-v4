@@ -70,7 +70,7 @@ const Post = ({ params }) => {
             <meta name="description" content={post.acf.meta_description} />
             <meta http-equiv="content-language" content="en"></meta>
             <meta name="robots" content="index, follow" />
-            <link rel="canonical" href="https://upfront.global" />
+            <link rel="canonical" href={`https://upfront.global/${slug}`} />
           </head>
 
           <div className="w-full">

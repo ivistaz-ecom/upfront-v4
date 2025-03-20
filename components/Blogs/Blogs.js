@@ -90,7 +90,7 @@ const Blogs = () => {
                   ${index % 1 === 0 ? "md:border-r border-gray-300" : ""}`}
                   >
                     {/* Background Effect */}
-                    <div className=""></div>
+
                     <div className="relative z-10">
                       <div className="relative overflow-hidden">
                         {post.acf && post.acf.additional_thumbnail_image && (
@@ -121,21 +121,21 @@ const Blogs = () => {
                         ></div>
                       </div>
                     </div>
-                 <div className="hidden lg:block">
-                 <div className="flex justify-start mt-10 ">
-                      <Link href={`/blogs/${post.slug}`}>
-                        <button className="relative group px-4 py-2 bg-transparent text-black w-80 text-lg font-semibold transition-all duration-500 hover:bg-black group-hover:text-white">
-                          <span className="absolute inset-0 bg-black scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100"></span>
-                          <span className="relative z-10 flex items-center">
-                            Read more
-                            <FiArrowRight className="text-[20px] transform transition-transform duration-500 translate-x-0 lg:group-hover:translate-x-48 opacity-0 group-hover:opacity-100" />
-                          </span>
-                        </button>
-                      </Link>
+                    <div className="hidden lg:block">
+                      <div className="flex justify-start mt-10 ">
+                        <Link href={`/blogs/${post.slug}`}>
+                          <button className="relative group px-4 py-2 bg-transparent text-black w-80 text-lg font-semibold transition-all duration-500 hover:bg-black group-hover:text-white">
+                            <span className="absolute inset-0 bg-black scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100"></span>
+                            <span className="relative z-10 flex items-center">
+                              Read more
+                              <FiArrowRight className="text-[20px] transform transition-transform duration-500 translate-x-0 lg:group-hover:translate-x-48 opacity-0 group-hover:opacity-100" />
+                            </span>
+                          </button>
+                        </Link>
+                      </div>
                     </div>
-                 </div>
                     <div className="flex justify-start mt-10 lg:hidden sm:block">
-                    <Link href={`/blogs/${post.slug}`}>
+                      <Link href={`/blogs/${post.slug}`}>
                         <button className=" py-2 bg-black p-4 text-white text-lg rounded-lg  sm:block lg:hidden">
                           Read More
                           <FiArrowRight className="inline-block ml-2" />
